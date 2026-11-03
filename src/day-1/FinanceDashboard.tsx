@@ -42,9 +42,9 @@ const features = tableFeatures({
   paginatedRowModel: createPaginatedRowModel(),
 });
 
-const columnHelper = createColumnHelper<Invoice>();
+const columnHelper = createColumnHelper<any,any>();
 
-export function FinanceDashboard() {
+export function FinanceDashboardDay1() {
   const [globalFilter, setGlobalFilter] = useState('');
   const [pagination, setPagination] = useState({ pageIndex: 0, pageSize: 10 });
 
