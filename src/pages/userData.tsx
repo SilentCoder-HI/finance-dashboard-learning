@@ -79,6 +79,7 @@ export function UserDataPage() {
                             border: '1px solid #ccc',
                             outline: 'none',
                             background: 'white',
+                            color: 'black'
                         }}
                     />
 
