@@ -14,7 +14,7 @@ export function RevenueChart({ data }: RevenueChartProps) {
         <XAxis dataKey="id" tick={{ fontSize: 11 }} />
         <YAxis tickFormatter={(value) => `$${value / 1000}k`} />
         <Tooltip
-          formatter={(value: number) => [`$${value.toFixed(2)}`, 'Amount']}
+          formatter={(value) => [typeof value === 'number' ? `$${value.toFixed(2)}` : String(value), 'Amount']}
           labelFormatter={(label) => `Invoice ${label}`}
         />
         <Legend />

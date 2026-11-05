@@ -3,7 +3,7 @@ import { Box, Card, CardContent, Chip, Divider, Stack, Typography } from '@mui/m
 export function Day2LearningPage() {
   return (
     <Box sx={{ maxWidth: 1000, mx: 'auto', py: { xs: 2, md: 4 } }}>
-      <Stack direction="row" spacing={1} alignItems="center" sx={{ mb: 1 }}>
+      <Stack direction="row" spacing={1} sx={{ mb: 1, alignItems: "center" }}>
         <Chip label="Day 2" color="primary" />
         <Typography variant="overline" color="text.secondary">
           Learning journey

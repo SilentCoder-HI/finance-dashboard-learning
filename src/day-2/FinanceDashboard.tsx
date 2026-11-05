@@ -3,8 +3,6 @@ import type { SortingState } from '@tanstack/react-table';
 import {
   Box,
   Button,
-  Card,
-  CardContent,
   Chip,
   Paper,
   Table,
@@ -32,7 +30,7 @@ import {
 
 import { invoices } from '../data/invoices';
 import type { Invoice } from '../types/invoice';
-
+import { MetricCard } from '../components/ui/cards';
 const features = tableFeatures({
   columnVisibilityFeature,
   globalFilteringFeature,
@@ -210,26 +208,5 @@ export function FinanceDashboardDay2() {
         </Box>
       </Box>
     </Box>
-  );
-}
-
-type MetricCardProps = {
-  title: string;
-  value: string;
-  accent: string;
-};
-
-function MetricCard({ title, value, accent }: MetricCardProps) {
-  return (
-    <Card sx={{ borderTop: `4px solid ${accent}` }}>
-      <CardContent>
-        <Typography variant="body2" sx={{ color: '#64748b', mb: 1 }}>
-          {title}
-        </Typography>
-        <Typography variant="h5" sx={{ fontWeight: 700, color: '#0f172a' }}>
-          {value}
-        </Typography>
-      </CardContent>
-    </Card>
   );
 }

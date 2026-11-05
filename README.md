@@ -115,5 +115,10 @@ Every day I will improve one part of the app, and over time it will become a mor
 
 ## Status
 
-In progress — Day 1 foundation is complete, and the project will continue to evolve daily.
+In progress — Day 3 complete. Customer insights, combined filters, and learning journal are finished.
 
+
+
+## Next project
+
+This finance dashboard is wrapped up through Day 3. The next project will focus on forms, validation, and API-backed data.

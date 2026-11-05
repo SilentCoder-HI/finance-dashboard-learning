@@ -22,7 +22,7 @@ export function CustomerMixChart({ data }: CustomerMixChartProps) {
             <Cell key={`${entry.name}-${index}`} fill={COLORS[index % COLORS.length]} />
           ))}
         </Pie>
-        <Tooltip formatter={(value: number) => [`$${value.toFixed(2)}`, 'Revenue']} />
+        <Tooltip formatter={(value) => [typeof value === 'number' ? `$${value.toFixed(2)}` : String(value), 'Revenue']} />
       </PieChart>
     </ResponsiveContainer>
   );
