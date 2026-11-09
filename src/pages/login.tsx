@@ -12,6 +12,7 @@ import {
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import { login, useAppDispatch, useAppSelector } from '../store/store';
 import { Day1LearningPage } from './day1';
+import { invoices } from '../data/invoices';
 
 export default function LoginForm() {
     const user = useAppSelector((state) => state.auth.user)
@@ -20,10 +21,22 @@ export default function LoginForm() {
     const [error, setError] = useState('');
     const dispatch = useAppDispatch();
 
+    const users = invoices.map(user => user.customer.toLowerCase())
+    const uniqeUser = [... new Set(users)]
+
     // fixed: submit event type is FormEvent, not FocusEvent
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        dispatch(login({ id: "u1", name: "Litware", role: "user" }))
+
+        if (email === "" && password == "") {
+            setError("Write ")
+        }
+        if (uniqeUser.includes(email)) {
+            dispatch(login({ id: "u1", name: email, role: "user" }))
+        }
+        else{
+            setError("User don't exit")
+        }
     }
 
     return (
@@ -68,8 +81,8 @@ export default function LoginForm() {
                             {/* Email Field */}
                             <TextField
                                 name="email"
-                                label="Email Address"
-                                placeholder="abc@cde.abc"
+                                label="User Name"
+                                placeholder="abccdeabc"
                                 fullWidth
                                 margin="normal"
                                 value={email}

@@ -24,10 +24,11 @@ import Login from './login';
 import { useDispatch } from 'react-redux';
 import { logout, useAppSelector } from './../store/store';
 import { UserOnly } from './userOnly';
+import Profile from './profile';
 
 
 function App() {
-    const [activePage, setActivePage] = useState<'overview' | 'invoices' | 'userdata' | "useronly" | 'day-1' | 'day-2' | 'day-3' | 'day-4'>('overview');
+    const [activePage, setActivePage] = useState<'overview' | 'invoices' | 'userdata' | "useronly" | 'profile' | 'day-1' | 'day-2' | 'day-3' | 'day-4'>('overview');
     const dispacth = useDispatch()
 
     const user = useAppSelector((state) => state.auth.user)
@@ -112,6 +113,12 @@ function App() {
                     >
                         Login User Data Only
                     </Button>
+                    <Button
+                        variant={activePage === 'profile' ? 'contained' : 'outlined'}
+                        onClick={() => setActivePage('profile')}
+                    >
+                        Profile
+                    </Button>
                 </ButtonGroup>
                 <Typography variant="caption" sx={{ display: 'block', mt: 3, color: '#64748b', fontWeight: 700 }}>
                     LEARNING JOURNEY
@@ -151,6 +158,8 @@ function App() {
                     <UserDataPage />
                 ) : activePage === "useronly" ? (
                     <UserOnly />
+                ) : activePage === "profile" ? (
+                    <Profile />
                 ) : activePage === 'day-1' ? (
                     <Day1LearningPage />
                 ) : activePage === 'day-2' ? (
