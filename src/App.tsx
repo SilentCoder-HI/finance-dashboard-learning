@@ -8,6 +8,7 @@ import { Day1LearningPage } from './pages/day1';
 import { Day2LearningPage } from './pages/day2';
 import { Day3LearningPage } from './pages/day3';
 import { Day4LearningPage } from './pages/day4';
+import { Day5LearningPage } from './pages/day5';
 import { UserDataPage } from './pages/userData';
 import { FinanceDashboardDay2 } from './day-2/FinanceDashboard';
 import { useAppSelector } from './store/store';
@@ -30,6 +31,7 @@ function AppContent() {
           <Route path="/day2" element={<Day2LearningPage />} />
           <Route path="/day3" element={<Day3LearningPage />} />
           <Route path="/day4" element={<Day4LearningPage />} />
+          <Route path="/day5" element={<Day5LearningPage />} />
         </Routes>
       </Box>
     </>

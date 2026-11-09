@@ -18,6 +18,7 @@ import { Day1LearningPage } from './day1';
 import { Day2LearningPage } from './day2';
 import { Day3LearningPage } from './day3';
 import { Day4LearningPage } from './day4';
+import { Day5LearningPage } from './day5';
 import { UserDataPage } from './userData';
 import { FinanceDashboardDay2 } from './../day-2/FinanceDashboard';
 import Login from './login';
@@ -28,7 +29,7 @@ import Profile from './profile';
 
 
 function App() {
-    const [activePage, setActivePage] = useState<'overview' | 'invoices' | 'userdata' | "useronly" | 'profile' | 'day-1' | 'day-2' | 'day-3' | 'day-4'>('overview');
+    const [activePage, setActivePage] = useState<'overview' | 'invoices' | 'userdata' | "useronly" | 'profile' | 'day-1' | 'day-2' | 'day-3' | 'day-4' | 'day-5'>('overview');
     const dispacth = useDispatch()
 
     const user = useAppSelector((state) => state.auth.user)
@@ -148,6 +149,12 @@ function App() {
                     >
                         Day 4 — Redux Basics
                     </Button>
+                    <Button
+                        variant={activePage === 'day-5' ? 'contained' : 'outlined'}
+                        onClick={() => setActivePage('day-5')}
+                    >
+                        Day 5 — Invoices & Login
+                    </Button>
                 </ButtonGroup>
 
             </Box>
@@ -168,6 +175,8 @@ function App() {
                     <Day3LearningPage />
                 ) : activePage === 'day-4' ? (
                     <Day4LearningPage />
+                ) : activePage === 'day-5' ? (
+                    <Day5LearningPage />
                 ) : <>
                     <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 3, gap: 2, flexWrap: 'wrap', borderBottom: "1px solid #e2e8f0", pb: 2 }}>
                         <Box>
