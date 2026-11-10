@@ -11,12 +11,14 @@ import {
 } from '@mui/material';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import { login, useAppDispatch, useAppSelector } from '../store/store';
-import { Day1LearningPage } from './day1';
 import { invoices } from '../data/invoices';
-
+type User = {
+    id: string;
+    name: string;
+    role: "admin" | "user",
+}
 export default function LoginForm() {
-    const user = useAppSelector((state) => state.auth.user)
-    const [email, setEmail] = useState('');
+    const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const dispatch = useAppDispatch();
@@ -25,16 +27,29 @@ export default function LoginForm() {
     const uniqeUser = [... new Set(users)]
 
     // fixed: submit event type is FormEvent, not FocusEvent
-    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
+        try {
+            const res = await fetch("http://localhost:2000/auth/login", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ username })
+            })
+            console.log(res)
+            const data = (await res.json()) as User
+            if(!res.ok){
+                return null
+            }
+            
+            dispatch(login(data))
+        } catch (error) {
+            setError(String(error))
+        }
 
-        if (email === "" && password == "") {
+        if (username === "" && password == "") {
             setError("Write ")
         }
-        if (uniqeUser.includes(email)) {
-            dispatch(login({ id: "u1", name: email, role: "user" }))
-        }
-        else{
+        else {
             setError("User don't exit")
         }
     }
@@ -85,8 +100,8 @@ export default function LoginForm() {
                                 placeholder="abccdeabc"
                                 fullWidth
                                 margin="normal"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
+                                value={username}
+                                onChange={(e) => setUsername(e.target.value)}
                             />
 
                             {/* Password Field */}

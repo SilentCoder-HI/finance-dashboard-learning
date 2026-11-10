@@ -1,0 +1,7002 @@
+[
+  {
+    "id": "INV-2026-0001",
+    "date": "2026-01-01",
+    "customer": "Trey Research",
+    "amount": 3950.87,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0002",
+    "date": "2026-01-01",
+    "customer": "Litware",
+    "amount": 315.72,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0003",
+    "date": "2026-01-02",
+    "customer": "Margie's Travel",
+    "amount": 149.2,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0004",
+    "date": "2026-01-02",
+    "customer": "Nod Publishers",
+    "amount": 175.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0005",
+    "date": "2026-01-03",
+    "customer": "Fabrikam Inc.",
+    "amount": 7243.26,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0006",
+    "date": "2026-01-03",
+    "customer": "City Power & Light",
+    "amount": 8101.09,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0007",
+    "date": "2026-01-02",
+    "customer": "Munson's Pickles",
+    "amount": 397.88,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0008",
+    "date": "2026-01-04",
+    "customer": "Southridge Video",
+    "amount": 6856.14,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0009",
+    "date": "2026-01-03",
+    "customer": "Trey Research",
+    "amount": 989.62,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0010",
+    "date": "2026-01-03",
+    "customer": "Lucerne Publishing",
+    "amount": 358.08,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0011",
+    "date": "2026-01-05",
+    "customer": "Lucerne Publishing",
+    "amount": 6186.67,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0012",
+    "date": "2026-01-05",
+    "customer": "Best For You Organics",
+    "amount": 7342.43,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0013",
+    "date": "2026-01-05",
+    "customer": "Adventure Works",
+    "amount": 2495.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0014",
+    "date": "2026-01-04",
+    "customer": "Woodgrove Bank",
+    "amount": 332.35,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0015",
+    "date": "2026-01-06",
+    "customer": "School of Fine Art",
+    "amount": 2574.63,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0016",
+    "date": "2026-01-06",
+    "customer": "Best For You Organics",
+    "amount": 395.87,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0017",
+    "date": "2026-01-06",
+    "customer": "Graphic Design Institute",
+    "amount": 487.35,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0018",
+    "date": "2026-01-06",
+    "customer": "Coho Winery",
+    "amount": 6005.96,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0019",
+    "date": "2026-01-06",
+    "customer": "VanArsdel Ltd.",
+    "amount": 1225.96,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0020",
+    "date": "2026-01-06",
+    "customer": "Coho Winery",
+    "amount": 2949.88,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0021",
+    "date": "2026-01-07",
+    "customer": "Relecloud",
+    "amount": 169.28,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0022",
+    "date": "2026-01-07",
+    "customer": "Adventure Works",
+    "amount": 1297.98,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0023",
+    "date": "2026-01-07",
+    "customer": "Relecloud",
+    "amount": 151.11,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0024",
+    "date": "2026-01-07",
+    "customer": "Coho Winery",
+    "amount": 153.02,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0025",
+    "date": "2026-01-08",
+    "customer": "Lamna Healthcare",
+    "amount": 8235.49,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0026",
+    "date": "2026-01-09",
+    "customer": "Contoso Ltd.",
+    "amount": 693.86,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0027",
+    "date": "2026-01-08",
+    "customer": "Woodgrove Bank",
+    "amount": 77.28,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0028",
+    "date": "2026-01-09",
+    "customer": "Trey Research",
+    "amount": 239.85,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0029",
+    "date": "2026-01-09",
+    "customer": "Wide World Importers",
+    "amount": 72.76,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0030",
+    "date": "2026-01-10",
+    "customer": "Lucerne Publishing",
+    "amount": 268.54,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0031",
+    "date": "2026-01-11",
+    "customer": "Trey Research",
+    "amount": 4354.12,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0032",
+    "date": "2026-01-11",
+    "customer": "Fourth Coffee",
+    "amount": 8796.61,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0033",
+    "date": "2026-01-10",
+    "customer": "Fabrikam Inc.",
+    "amount": 8476.02,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0034",
+    "date": "2026-01-10",
+    "customer": "Tailspin Toys",
+    "amount": 635.92,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0035",
+    "date": "2026-01-11",
+    "customer": "City Power & Light",
+    "amount": 6293.87,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0036",
+    "date": "2026-01-12",
+    "customer": "Datum Corporation",
+    "amount": 1291.57,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0037",
+    "date": "2026-01-11",
+    "customer": "Proseware",
+    "amount": 54.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0038",
+    "date": "2026-01-12",
+    "customer": "Trey Research",
+    "amount": 2261.73,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0039",
+    "date": "2026-01-13",
+    "customer": "Datum Corporation",
+    "amount": 325.25,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0040",
+    "date": "2026-01-12",
+    "customer": "Consolidated Messenger",
+    "amount": 472.52,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0041",
+    "date": "2026-01-13",
+    "customer": "Datum Corporation",
+    "amount": 907.19,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0042",
+    "date": "2026-01-13",
+    "customer": "Proseware",
+    "amount": 91.53,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0043",
+    "date": "2026-01-13",
+    "customer": "Relecloud",
+    "amount": 383.55,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0044",
+    "date": "2026-01-14",
+    "customer": "Humongous Insurance",
+    "amount": 295.52,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0045",
+    "date": "2026-01-14",
+    "customer": "Nod Publishers",
+    "amount": 454.52,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0046",
+    "date": "2026-01-15",
+    "customer": "Lamna Healthcare",
+    "amount": 488.23,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0047",
+    "date": "2026-01-14",
+    "customer": "City Power & Light",
+    "amount": 549.57,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0048",
+    "date": "2026-01-15",
+    "customer": "Munson's Pickles",
+    "amount": 170.06,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0049",
+    "date": "2026-01-16",
+    "customer": "Fourth Coffee",
+    "amount": 207.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0050",
+    "date": "2026-01-16",
+    "customer": "Munson's Pickles",
+    "amount": 4314.31,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0051",
+    "date": "2026-01-17",
+    "customer": "Contoso Ltd.",
+    "amount": 472.66,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0052",
+    "date": "2026-01-16",
+    "customer": "Lucerne Publishing",
+    "amount": 1191.37,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0053",
+    "date": "2026-01-16",
+    "customer": "Wingtip Toys",
+    "amount": 2510.99,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0054",
+    "date": "2026-01-17",
+    "customer": "Adventure Works",
+    "amount": 639.95,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0055",
+    "date": "2026-01-18",
+    "customer": "Margie's Travel",
+    "amount": 4620.19,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0056",
+    "date": "2026-01-18",
+    "customer": "Consolidated Messenger",
+    "amount": 2305.61,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0057",
+    "date": "2026-01-18",
+    "customer": "Litware",
+    "amount": 2071.52,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0058",
+    "date": "2026-01-19",
+    "customer": "Graphic Design Institute",
+    "amount": 7284.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0059",
+    "date": "2026-01-19",
+    "customer": "Northwind Traders",
+    "amount": 2404.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0060",
+    "date": "2026-01-18",
+    "customer": "VanArsdel Ltd.",
+    "amount": 160.18,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0061",
+    "date": "2026-01-19",
+    "customer": "School of Fine Art",
+    "amount": 373.26,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0062",
+    "date": "2026-01-19",
+    "customer": "Tailspin Toys",
+    "amount": 7726.71,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0063",
+    "date": "2026-01-19",
+    "customer": "Best For You Organics",
+    "amount": 6839.26,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0064",
+    "date": "2026-01-21",
+    "customer": "Nod Publishers",
+    "amount": 5781.06,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0065",
+    "date": "2026-01-21",
+    "customer": "Graphic Design Institute",
+    "amount": 2003.55,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0066",
+    "date": "2026-01-20",
+    "customer": "Fabrikam Inc.",
+    "amount": 654.97,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0067",
+    "date": "2026-01-20",
+    "customer": "Trey Research",
+    "amount": 118.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0068",
+    "date": "2026-01-22",
+    "customer": "Best For You Organics",
+    "amount": 5230.93,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0069",
+    "date": "2026-01-22",
+    "customer": "Margie's Travel",
+    "amount": 2385.48,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0070",
+    "date": "2026-01-21",
+    "customer": "Lucerne Publishing",
+    "amount": 1045.87,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0071",
+    "date": "2026-01-22",
+    "customer": "VanArsdel Ltd.",
+    "amount": 8875.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0072",
+    "date": "2026-01-22",
+    "customer": "Litware",
+    "amount": 88.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0073",
+    "date": "2026-01-23",
+    "customer": "Northwind Traders",
+    "amount": 2022.46,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0074",
+    "date": "2026-01-23",
+    "customer": "Tailspin Toys",
+    "amount": 6726.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0075",
+    "date": "2026-01-23",
+    "customer": "Litware",
+    "amount": 1742.67,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0076",
+    "date": "2026-01-24",
+    "customer": "School of Fine Art",
+    "amount": 3590.63,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0077",
+    "date": "2026-01-24",
+    "customer": "Lucerne Publishing",
+    "amount": 716.2,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0078",
+    "date": "2026-01-25",
+    "customer": "Consolidated Messenger",
+    "amount": 6348.64,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0079",
+    "date": "2026-01-24",
+    "customer": "Alpine Ski House",
+    "amount": 2766.95,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0080",
+    "date": "2026-01-25",
+    "customer": "Munson's Pickles",
+    "amount": 1340.12,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0081",
+    "date": "2026-01-26",
+    "customer": "Trey Research",
+    "amount": 7269.67,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0082",
+    "date": "2026-01-26",
+    "customer": "Fabrikam Inc.",
+    "amount": 2151.47,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0083",
+    "date": "2026-01-26",
+    "customer": "Coho Winery",
+    "amount": 5520.61,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0084",
+    "date": "2026-01-27",
+    "customer": "Best For You Organics",
+    "amount": 924.24,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0085",
+    "date": "2026-01-27",
+    "customer": "School of Fine Art",
+    "amount": 300.11,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0086",
+    "date": "2026-01-26",
+    "customer": "Relecloud",
+    "amount": 361.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0087",
+    "date": "2026-01-27",
+    "customer": "Trey Research",
+    "amount": 5576.19,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0088",
+    "date": "2026-01-28",
+    "customer": "Adventure Works",
+    "amount": 208.31,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0089",
+    "date": "2026-01-27",
+    "customer": "Consolidated Messenger",
+    "amount": 4297.25,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0090",
+    "date": "2026-01-27",
+    "customer": "Proseware",
+    "amount": 1092.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0091",
+    "date": "2026-01-28",
+    "customer": "Adventure Works",
+    "amount": 488.43,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0092",
+    "date": "2026-01-28",
+    "customer": "Nod Publishers",
+    "amount": 308.33,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0093",
+    "date": "2026-01-29",
+    "customer": "Blue Yonder Airlines",
+    "amount": 5696.35,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0094",
+    "date": "2026-01-30",
+    "customer": "Tailspin Toys",
+    "amount": 996.38,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0095",
+    "date": "2026-01-30",
+    "customer": "Southridge Video",
+    "amount": 1385.44,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0096",
+    "date": "2026-01-29",
+    "customer": "Trey Research",
+    "amount": 3872.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0097",
+    "date": "2026-01-30",
+    "customer": "Relecloud",
+    "amount": 1317.04,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0098",
+    "date": "2026-01-31",
+    "customer": "City Power & Light",
+    "amount": 1408.06,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0099",
+    "date": "2026-01-30",
+    "customer": "Wide World Importers",
+    "amount": 1589.12,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0100",
+    "date": "2026-01-31",
+    "customer": "Relecloud",
+    "amount": 2148.48,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0101",
+    "date": "2026-02-01",
+    "customer": "Wingtip Toys",
+    "amount": 474.2,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0102",
+    "date": "2026-02-01",
+    "customer": "Northwind Traders",
+    "amount": 3988.01,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0103",
+    "date": "2026-02-01",
+    "customer": "Wide World Importers",
+    "amount": 3638.74,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0104",
+    "date": "2026-02-02",
+    "customer": "Adventure Works",
+    "amount": 1483.45,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0105",
+    "date": "2026-02-01",
+    "customer": "Woodgrove Bank",
+    "amount": 1887.35,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0106",
+    "date": "2026-02-01",
+    "customer": "Northwind Traders",
+    "amount": 1146.55,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0107",
+    "date": "2026-02-03",
+    "customer": "Litware",
+    "amount": 875.17,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0108",
+    "date": "2026-02-03",
+    "customer": "Graphic Design Institute",
+    "amount": 5347.75,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0109",
+    "date": "2026-02-02",
+    "customer": "Datum Corporation",
+    "amount": 1122.0,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0110",
+    "date": "2026-02-03",
+    "customer": "Relecloud",
+    "amount": 734.93,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0111",
+    "date": "2026-02-04",
+    "customer": "Datum Corporation",
+    "amount": 1465.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0112",
+    "date": "2026-02-03",
+    "customer": "Proseware",
+    "amount": 1052.49,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0113",
+    "date": "2026-02-03",
+    "customer": "Trey Research",
+    "amount": 6315.1,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0114",
+    "date": "2026-02-05",
+    "customer": "Relecloud",
+    "amount": 1603.83,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0115",
+    "date": "2026-02-04",
+    "customer": "Datum Corporation",
+    "amount": 307.31,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0116",
+    "date": "2026-02-05",
+    "customer": "Alpine Ski House",
+    "amount": 223.74,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0117",
+    "date": "2026-02-06",
+    "customer": "Blue Yonder Airlines",
+    "amount": 5361.99,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0118",
+    "date": "2026-02-06",
+    "customer": "Graphic Design Institute",
+    "amount": 2439.91,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0119",
+    "date": "2026-02-05",
+    "customer": "Best For You Organics",
+    "amount": 2204.68,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0120",
+    "date": "2026-02-07",
+    "customer": "Tailspin Toys",
+    "amount": 2944.73,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0121",
+    "date": "2026-02-06",
+    "customer": "Best For You Organics",
+    "amount": 245.29,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0122",
+    "date": "2026-02-06",
+    "customer": "Margie's Travel",
+    "amount": 2092.29,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0123",
+    "date": "2026-02-06",
+    "customer": "VanArsdel Ltd.",
+    "amount": 8160.46,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0124",
+    "date": "2026-02-07",
+    "customer": "Best For You Organics",
+    "amount": 5487.0,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0125",
+    "date": "2026-02-08",
+    "customer": "Margie's Travel",
+    "amount": 815.95,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0126",
+    "date": "2026-02-08",
+    "customer": "Humongous Insurance",
+    "amount": 1104.24,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0127",
+    "date": "2026-02-09",
+    "customer": "Nod Publishers",
+    "amount": 8856.64,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0128",
+    "date": "2026-02-08",
+    "customer": "Lamna Healthcare",
+    "amount": 1990.34,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0129",
+    "date": "2026-02-09",
+    "customer": "Blue Yonder Airlines",
+    "amount": 4129.07,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0130",
+    "date": "2026-02-09",
+    "customer": "Blue Yonder Airlines",
+    "amount": 1793.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0131",
+    "date": "2026-02-09",
+    "customer": "Humongous Insurance",
+    "amount": 459.33,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0132",
+    "date": "2026-02-10",
+    "customer": "Nod Publishers",
+    "amount": 1013.94,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0133",
+    "date": "2026-02-10",
+    "customer": "Lucerne Publishing",
+    "amount": 411.9,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0134",
+    "date": "2026-02-11",
+    "customer": "City Power & Light",
+    "amount": 90.64,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0135",
+    "date": "2026-02-11",
+    "customer": "Southridge Video",
+    "amount": 313.05,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0136",
+    "date": "2026-02-11",
+    "customer": "Margie's Travel",
+    "amount": 942.73,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0137",
+    "date": "2026-02-11",
+    "customer": "Trey Research",
+    "amount": 2392.52,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0138",
+    "date": "2026-02-11",
+    "customer": "Wingtip Toys",
+    "amount": 8670.97,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0139",
+    "date": "2026-02-11",
+    "customer": "Contoso Ltd.",
+    "amount": 7919.01,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0140",
+    "date": "2026-02-13",
+    "customer": "Trey Research",
+    "amount": 1389.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0141",
+    "date": "2026-02-13",
+    "customer": "Graphic Design Institute",
+    "amount": 1052.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0142",
+    "date": "2026-02-12",
+    "customer": "Trey Research",
+    "amount": 8927.34,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0143",
+    "date": "2026-02-13",
+    "customer": "Proseware",
+    "amount": 313.87,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0144",
+    "date": "2026-02-13",
+    "customer": "Northwind Traders",
+    "amount": 494.39,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0145",
+    "date": "2026-02-14",
+    "customer": "Margie's Travel",
+    "amount": 405.49,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0146",
+    "date": "2026-02-13",
+    "customer": "Tailspin Toys",
+    "amount": 7557.11,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0147",
+    "date": "2026-02-14",
+    "customer": "Contoso Ltd.",
+    "amount": 2317.5,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0148",
+    "date": "2026-02-15",
+    "customer": "Fabrikam Inc.",
+    "amount": 3201.75,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0149",
+    "date": "2026-02-15",
+    "customer": "Lucerne Publishing",
+    "amount": 4287.6,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0150",
+    "date": "2026-02-16",
+    "customer": "Best For You Organics",
+    "amount": 3144.66,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0151",
+    "date": "2026-02-15",
+    "customer": "Fourth Coffee",
+    "amount": 2276.18,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0152",
+    "date": "2026-02-16",
+    "customer": "Munson's Pickles",
+    "amount": 8698.35,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0153",
+    "date": "2026-02-16",
+    "customer": "Trey Research",
+    "amount": 91.95,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0154",
+    "date": "2026-02-17",
+    "customer": "Consolidated Messenger",
+    "amount": 1321.62,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0155",
+    "date": "2026-02-17",
+    "customer": "Humongous Insurance",
+    "amount": 3882.8,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0156",
+    "date": "2026-02-17",
+    "customer": "Munson's Pickles",
+    "amount": 1057.14,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0157",
+    "date": "2026-02-17",
+    "customer": "Consolidated Messenger",
+    "amount": 324.05,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0158",
+    "date": "2026-02-18",
+    "customer": "Graphic Design Institute",
+    "amount": 3431.13,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0159",
+    "date": "2026-02-17",
+    "customer": "Wingtip Toys",
+    "amount": 1560.97,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0160",
+    "date": "2026-02-19",
+    "customer": "Contoso Ltd.",
+    "amount": 399.58,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0161",
+    "date": "2026-02-18",
+    "customer": "Alpine Ski House",
+    "amount": 1823.88,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0162",
+    "date": "2026-02-18",
+    "customer": "Contoso Ltd.",
+    "amount": 6908.42,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0163",
+    "date": "2026-02-19",
+    "customer": "School of Fine Art",
+    "amount": 1698.65,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0164",
+    "date": "2026-02-20",
+    "customer": "Relecloud",
+    "amount": 739.97,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0165",
+    "date": "2026-02-19",
+    "customer": "Margie's Travel",
+    "amount": 275.12,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0166",
+    "date": "2026-02-19",
+    "customer": "Margie's Travel",
+    "amount": 655.73,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0167",
+    "date": "2026-02-21",
+    "customer": "Humongous Insurance",
+    "amount": 4610.99,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0168",
+    "date": "2026-02-20",
+    "customer": "Consolidated Messenger",
+    "amount": 711.73,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0169",
+    "date": "2026-02-21",
+    "customer": "Best For You Organics",
+    "amount": 2996.47,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0170",
+    "date": "2026-02-22",
+    "customer": "Litware",
+    "amount": 207.99,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0171",
+    "date": "2026-02-21",
+    "customer": "Woodgrove Bank",
+    "amount": 321.08,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0172",
+    "date": "2026-02-22",
+    "customer": "Fourth Coffee",
+    "amount": 6679.45,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0173",
+    "date": "2026-02-22",
+    "customer": "Fabrikam Inc.",
+    "amount": 1437.84,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0174",
+    "date": "2026-02-23",
+    "customer": "Nod Publishers",
+    "amount": 575.0,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0175",
+    "date": "2026-02-22",
+    "customer": "Contoso Ltd.",
+    "amount": 5507.63,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0176",
+    "date": "2026-02-24",
+    "customer": "Contoso Ltd.",
+    "amount": 3723.56,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0177",
+    "date": "2026-02-24",
+    "customer": "Contoso Ltd.",
+    "amount": 4732.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0178",
+    "date": "2026-02-23",
+    "customer": "Consolidated Messenger",
+    "amount": 5906.45,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0179",
+    "date": "2026-02-24",
+    "customer": "Adventure Works",
+    "amount": 6386.26,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0180",
+    "date": "2026-02-25",
+    "customer": "VanArsdel Ltd.",
+    "amount": 6767.67,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0181",
+    "date": "2026-02-24",
+    "customer": "Fabrikam Inc.",
+    "amount": 6764.36,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0182",
+    "date": "2026-02-25",
+    "customer": "Wingtip Toys",
+    "amount": 301.51,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0183",
+    "date": "2026-02-25",
+    "customer": "Fourth Coffee",
+    "amount": 1346.81,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0184",
+    "date": "2026-02-26",
+    "customer": "School of Fine Art",
+    "amount": 2499.95,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0185",
+    "date": "2026-02-25",
+    "customer": "Munson's Pickles",
+    "amount": 6517.2,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0186",
+    "date": "2026-02-26",
+    "customer": "Consolidated Messenger",
+    "amount": 4867.95,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0187",
+    "date": "2026-02-27",
+    "customer": "City Power & Light",
+    "amount": 978.34,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0188",
+    "date": "2026-02-27",
+    "customer": "Litware",
+    "amount": 4982.17,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0189",
+    "date": "2026-02-26",
+    "customer": "Nod Publishers",
+    "amount": 604.36,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0190",
+    "date": "2026-02-27",
+    "customer": "Datum Corporation",
+    "amount": 4273.14,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0191",
+    "date": "2026-02-27",
+    "customer": "Tailspin Toys",
+    "amount": 2269.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0192",
+    "date": "2026-02-28",
+    "customer": "Lamna Healthcare",
+    "amount": 497.54,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0193",
+    "date": "2026-02-28",
+    "customer": "Coho Winery",
+    "amount": 7893.45,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0194",
+    "date": "2026-03-01",
+    "customer": "Wingtip Toys",
+    "amount": 326.91,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0195",
+    "date": "2026-03-01",
+    "customer": "Southridge Video",
+    "amount": 100.03,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0196",
+    "date": "2026-03-02",
+    "customer": "Tailspin Toys",
+    "amount": 5749.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0197",
+    "date": "2026-03-01",
+    "customer": "Fabrikam Inc.",
+    "amount": 4793.3,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0198",
+    "date": "2026-03-02",
+    "customer": "Coho Winery",
+    "amount": 5797.63,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0199",
+    "date": "2026-03-01",
+    "customer": "Tailspin Toys",
+    "amount": 336.05,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0200",
+    "date": "2026-03-02",
+    "customer": "Graphic Design Institute",
+    "amount": 397.18,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0201",
+    "date": "2026-03-02",
+    "customer": "Fabrikam Inc.",
+    "amount": 1869.37,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0202",
+    "date": "2026-03-03",
+    "customer": "Lucerne Publishing",
+    "amount": 66.64,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0203",
+    "date": "2026-03-04",
+    "customer": "Graphic Design Institute",
+    "amount": 2006.58,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0204",
+    "date": "2026-03-04",
+    "customer": "Lucerne Publishing",
+    "amount": 2098.68,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0205",
+    "date": "2026-03-04",
+    "customer": "Margie's Travel",
+    "amount": 5733.9,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0206",
+    "date": "2026-03-04",
+    "customer": "City Power & Light",
+    "amount": 2490.2,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0207",
+    "date": "2026-03-05",
+    "customer": "Wingtip Toys",
+    "amount": 5269.75,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0208",
+    "date": "2026-03-05",
+    "customer": "Humongous Insurance",
+    "amount": 327.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0209",
+    "date": "2026-03-05",
+    "customer": "School of Fine Art",
+    "amount": 786.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0210",
+    "date": "2026-03-06",
+    "customer": "Humongous Insurance",
+    "amount": 212.97,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0211",
+    "date": "2026-03-06",
+    "customer": "Adventure Works",
+    "amount": 1647.84,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0212",
+    "date": "2026-03-05",
+    "customer": "Relecloud",
+    "amount": 5015.42,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0213",
+    "date": "2026-03-07",
+    "customer": "Fabrikam Inc.",
+    "amount": 1723.75,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0214",
+    "date": "2026-03-07",
+    "customer": "City Power & Light",
+    "amount": 8982.21,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0215",
+    "date": "2026-03-07",
+    "customer": "Datum Corporation",
+    "amount": 1599.99,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0216",
+    "date": "2026-03-07",
+    "customer": "Coho Winery",
+    "amount": 407.16,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0217",
+    "date": "2026-03-07",
+    "customer": "Fabrikam Inc.",
+    "amount": 5538.14,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0218",
+    "date": "2026-03-08",
+    "customer": "Fabrikam Inc.",
+    "amount": 1933.87,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0219",
+    "date": "2026-03-08",
+    "customer": "Munson's Pickles",
+    "amount": 5424.83,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0220",
+    "date": "2026-03-08",
+    "customer": "Consolidated Messenger",
+    "amount": 395.5,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0221",
+    "date": "2026-03-08",
+    "customer": "Proseware",
+    "amount": 3965.56,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0222",
+    "date": "2026-03-08",
+    "customer": "Graphic Design Institute",
+    "amount": 1601.68,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0223",
+    "date": "2026-03-09",
+    "customer": "Munson's Pickles",
+    "amount": 3612.8,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0224",
+    "date": "2026-03-09",
+    "customer": "Litware",
+    "amount": 2795.5,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0225",
+    "date": "2026-03-10",
+    "customer": "Coho Winery",
+    "amount": 8278.48,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0226",
+    "date": "2026-03-10",
+    "customer": "Margie's Travel",
+    "amount": 412.11,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0227",
+    "date": "2026-03-11",
+    "customer": "Humongous Insurance",
+    "amount": 3433.85,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0228",
+    "date": "2026-03-11",
+    "customer": "Woodgrove Bank",
+    "amount": 1241.08,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0229",
+    "date": "2026-03-11",
+    "customer": "Best For You Organics",
+    "amount": 8645.0,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0230",
+    "date": "2026-03-11",
+    "customer": "Alpine Ski House",
+    "amount": 416.07,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0231",
+    "date": "2026-03-12",
+    "customer": "Litware",
+    "amount": 1117.08,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0232",
+    "date": "2026-03-12",
+    "customer": "Northwind Traders",
+    "amount": 6383.87,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0233",
+    "date": "2026-03-12",
+    "customer": "VanArsdel Ltd.",
+    "amount": 2264.91,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0234",
+    "date": "2026-03-12",
+    "customer": "Southridge Video",
+    "amount": 1077.2,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0235",
+    "date": "2026-03-12",
+    "customer": "Blue Yonder Airlines",
+    "amount": 693.36,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0236",
+    "date": "2026-03-13",
+    "customer": "Coho Winery",
+    "amount": 321.11,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0237",
+    "date": "2026-03-14",
+    "customer": "Southridge Video",
+    "amount": 3408.58,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0238",
+    "date": "2026-03-14",
+    "customer": "Munson's Pickles",
+    "amount": 1514.63,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0239",
+    "date": "2026-03-14",
+    "customer": "Nod Publishers",
+    "amount": 8869.34,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0240",
+    "date": "2026-03-14",
+    "customer": "VanArsdel Ltd.",
+    "amount": 6761.34,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0241",
+    "date": "2026-03-15",
+    "customer": "Contoso Ltd.",
+    "amount": 1758.05,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0242",
+    "date": "2026-03-15",
+    "customer": "School of Fine Art",
+    "amount": 1382.08,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0243",
+    "date": "2026-03-16",
+    "customer": "City Power & Light",
+    "amount": 442.77,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0244",
+    "date": "2026-03-16",
+    "customer": "School of Fine Art",
+    "amount": 3625.69,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0245",
+    "date": "2026-03-16",
+    "customer": "Consolidated Messenger",
+    "amount": 4102.37,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0246",
+    "date": "2026-03-17",
+    "customer": "Lamna Healthcare",
+    "amount": 1880.48,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0247",
+    "date": "2026-03-17",
+    "customer": "Lamna Healthcare",
+    "amount": 1646.95,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0248",
+    "date": "2026-03-16",
+    "customer": "Wingtip Toys",
+    "amount": 1075.26,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0249",
+    "date": "2026-03-18",
+    "customer": "Southridge Video",
+    "amount": 4262.36,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0250",
+    "date": "2026-03-17",
+    "customer": "Fourth Coffee",
+    "amount": 5951.77,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0251",
+    "date": "2026-03-18",
+    "customer": "Graphic Design Institute",
+    "amount": 2533.68,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0252",
+    "date": "2026-03-19",
+    "customer": "School of Fine Art",
+    "amount": 898.91,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0253",
+    "date": "2026-03-18",
+    "customer": "Best For You Organics",
+    "amount": 343.53,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0254",
+    "date": "2026-03-18",
+    "customer": "Nod Publishers",
+    "amount": 572.68,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0255",
+    "date": "2026-03-19",
+    "customer": "Woodgrove Bank",
+    "amount": 444.53,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0256",
+    "date": "2026-03-20",
+    "customer": "Wide World Importers",
+    "amount": 768.4,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0257",
+    "date": "2026-03-20",
+    "customer": "School of Fine Art",
+    "amount": 1937.2,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0258",
+    "date": "2026-03-19",
+    "customer": "City Power & Light",
+    "amount": 2212.29,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0259",
+    "date": "2026-03-20",
+    "customer": "Woodgrove Bank",
+    "amount": 133.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0260",
+    "date": "2026-03-21",
+    "customer": "Tailspin Toys",
+    "amount": 479.32,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0261",
+    "date": "2026-03-20",
+    "customer": "Relecloud",
+    "amount": 3538.16,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0262",
+    "date": "2026-03-22",
+    "customer": "Blue Yonder Airlines",
+    "amount": 1777.42,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0263",
+    "date": "2026-03-22",
+    "customer": "School of Fine Art",
+    "amount": 1995.47,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0264",
+    "date": "2026-03-21",
+    "customer": "Humongous Insurance",
+    "amount": 392.84,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0265",
+    "date": "2026-03-21",
+    "customer": "Wide World Importers",
+    "amount": 7887.03,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0266",
+    "date": "2026-03-23",
+    "customer": "Alpine Ski House",
+    "amount": 6921.92,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0267",
+    "date": "2026-03-23",
+    "customer": "City Power & Light",
+    "amount": 1406.86,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0268",
+    "date": "2026-03-23",
+    "customer": "Margie's Travel",
+    "amount": 7806.95,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0269",
+    "date": "2026-03-24",
+    "customer": "Consolidated Messenger",
+    "amount": 365.17,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0270",
+    "date": "2026-03-24",
+    "customer": "Best For You Organics",
+    "amount": 6669.91,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0271",
+    "date": "2026-03-24",
+    "customer": "Trey Research",
+    "amount": 251.84,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0272",
+    "date": "2026-03-24",
+    "customer": "Tailspin Toys",
+    "amount": 3660.08,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0273",
+    "date": "2026-03-24",
+    "customer": "Munson's Pickles",
+    "amount": 5509.53,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0274",
+    "date": "2026-03-24",
+    "customer": "City Power & Light",
+    "amount": 4291.72,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0275",
+    "date": "2026-03-26",
+    "customer": "Contoso Ltd.",
+    "amount": 326.72,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0276",
+    "date": "2026-03-26",
+    "customer": "Trey Research",
+    "amount": 2816.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0277",
+    "date": "2026-03-25",
+    "customer": "VanArsdel Ltd.",
+    "amount": 2052.13,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0278",
+    "date": "2026-03-26",
+    "customer": "City Power & Light",
+    "amount": 309.86,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0279",
+    "date": "2026-03-26",
+    "customer": "Graphic Design Institute",
+    "amount": 6118.67,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0280",
+    "date": "2026-03-27",
+    "customer": "Fourth Coffee",
+    "amount": 4738.7,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0281",
+    "date": "2026-03-27",
+    "customer": "Consolidated Messenger",
+    "amount": 3695.21,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0282",
+    "date": "2026-03-27",
+    "customer": "Tailspin Toys",
+    "amount": 2329.48,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0283",
+    "date": "2026-03-28",
+    "customer": "Litware",
+    "amount": 1793.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0284",
+    "date": "2026-03-27",
+    "customer": "Wingtip Toys",
+    "amount": 170.81,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0285",
+    "date": "2026-03-28",
+    "customer": "Wingtip Toys",
+    "amount": 265.73,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0286",
+    "date": "2026-03-28",
+    "customer": "Datum Corporation",
+    "amount": 8443.87,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0287",
+    "date": "2026-03-28",
+    "customer": "Humongous Insurance",
+    "amount": 4974.3,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0288",
+    "date": "2026-03-29",
+    "customer": "Margie's Travel",
+    "amount": 2105.63,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0289",
+    "date": "2026-03-29",
+    "customer": "Wingtip Toys",
+    "amount": 942.55,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0290",
+    "date": "2026-03-30",
+    "customer": "Graphic Design Institute",
+    "amount": 3995.12,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0291",
+    "date": "2026-03-30",
+    "customer": "Wingtip Toys",
+    "amount": 8782.3,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0292",
+    "date": "2026-03-31",
+    "customer": "Alpine Ski House",
+    "amount": 5674.06,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0293",
+    "date": "2026-03-30",
+    "customer": "Munson's Pickles",
+    "amount": 427.58,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0294",
+    "date": "2026-03-30",
+    "customer": "City Power & Light",
+    "amount": 802.06,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0295",
+    "date": "2026-04-01",
+    "customer": "Proseware",
+    "amount": 531.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0296",
+    "date": "2026-04-01",
+    "customer": "Blue Yonder Airlines",
+    "amount": 57.71,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0297",
+    "date": "2026-03-31",
+    "customer": "Lucerne Publishing",
+    "amount": 1552.91,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0298",
+    "date": "2026-04-01",
+    "customer": "Nod Publishers",
+    "amount": 3968.07,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0299",
+    "date": "2026-04-01",
+    "customer": "Fabrikam Inc.",
+    "amount": 92.08,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0300",
+    "date": "2026-04-02",
+    "customer": "Tailspin Toys",
+    "amount": 430.4,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0301",
+    "date": "2026-04-01",
+    "customer": "Datum Corporation",
+    "amount": 1885.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0302",
+    "date": "2026-04-03",
+    "customer": "Blue Yonder Airlines",
+    "amount": 1627.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0303",
+    "date": "2026-04-03",
+    "customer": "Best For You Organics",
+    "amount": 6165.73,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0304",
+    "date": "2026-04-03",
+    "customer": "Humongous Insurance",
+    "amount": 7638.24,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0305",
+    "date": "2026-04-03",
+    "customer": "Lucerne Publishing",
+    "amount": 2994.12,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0306",
+    "date": "2026-04-04",
+    "customer": "Lucerne Publishing",
+    "amount": 1046.65,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0307",
+    "date": "2026-04-04",
+    "customer": "Fabrikam Inc.",
+    "amount": 4970.47,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0308",
+    "date": "2026-04-04",
+    "customer": "Adventure Works",
+    "amount": 170.59,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0309",
+    "date": "2026-04-04",
+    "customer": "Margie's Travel",
+    "amount": 1116.53,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0310",
+    "date": "2026-04-05",
+    "customer": "Southridge Video",
+    "amount": 300.64,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0311",
+    "date": "2026-04-05",
+    "customer": "Tailspin Toys",
+    "amount": 438.67,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0312",
+    "date": "2026-04-05",
+    "customer": "Margie's Travel",
+    "amount": 839.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0313",
+    "date": "2026-04-06",
+    "customer": "Coho Winery",
+    "amount": 1468.46,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0314",
+    "date": "2026-04-05",
+    "customer": "Lamna Healthcare",
+    "amount": 770.98,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0315",
+    "date": "2026-04-07",
+    "customer": "Fourth Coffee",
+    "amount": 7852.98,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0316",
+    "date": "2026-04-06",
+    "customer": "Coho Winery",
+    "amount": 855.27,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0317",
+    "date": "2026-04-06",
+    "customer": "VanArsdel Ltd.",
+    "amount": 1060.6,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0318",
+    "date": "2026-04-07",
+    "customer": "Lamna Healthcare",
+    "amount": 1600.2,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0319",
+    "date": "2026-04-08",
+    "customer": "Consolidated Messenger",
+    "amount": 638.32,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0320",
+    "date": "2026-04-07",
+    "customer": "Coho Winery",
+    "amount": 808.0,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0321",
+    "date": "2026-04-08",
+    "customer": "Humongous Insurance",
+    "amount": 2346.99,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0322",
+    "date": "2026-04-08",
+    "customer": "Graphic Design Institute",
+    "amount": 99.22,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0323",
+    "date": "2026-04-09",
+    "customer": "Alpine Ski House",
+    "amount": 485.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0324",
+    "date": "2026-04-08",
+    "customer": "Northwind Traders",
+    "amount": 7520.22,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0325",
+    "date": "2026-04-10",
+    "customer": "Humongous Insurance",
+    "amount": 97.05,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0326",
+    "date": "2026-04-10",
+    "customer": "Relecloud",
+    "amount": 2068.54,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0327",
+    "date": "2026-04-10",
+    "customer": "Adventure Works",
+    "amount": 194.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0328",
+    "date": "2026-04-10",
+    "customer": "Woodgrove Bank",
+    "amount": 5853.96,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0329",
+    "date": "2026-04-10",
+    "customer": "Southridge Video",
+    "amount": 3711.52,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0330",
+    "date": "2026-04-10",
+    "customer": "Lamna Healthcare",
+    "amount": 252.31,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0331",
+    "date": "2026-04-10",
+    "customer": "Proseware",
+    "amount": 2099.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0332",
+    "date": "2026-04-12",
+    "customer": "Humongous Insurance",
+    "amount": 6380.31,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0333",
+    "date": "2026-04-12",
+    "customer": "City Power & Light",
+    "amount": 2127.48,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0334",
+    "date": "2026-04-11",
+    "customer": "Margie's Travel",
+    "amount": 977.15,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0335",
+    "date": "2026-04-12",
+    "customer": "Wide World Importers",
+    "amount": 5663.36,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0336",
+    "date": "2026-04-12",
+    "customer": "Northwind Traders",
+    "amount": 780.59,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0337",
+    "date": "2026-04-13",
+    "customer": "Coho Winery",
+    "amount": 8764.89,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0338",
+    "date": "2026-04-14",
+    "customer": "Consolidated Messenger",
+    "amount": 3587.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0339",
+    "date": "2026-04-13",
+    "customer": "Coho Winery",
+    "amount": 1575.22,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0340",
+    "date": "2026-04-13",
+    "customer": "School of Fine Art",
+    "amount": 1035.78,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0341",
+    "date": "2026-04-15",
+    "customer": "Contoso Ltd.",
+    "amount": 3165.71,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0342",
+    "date": "2026-04-15",
+    "customer": "Lamna Healthcare",
+    "amount": 168.27,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0343",
+    "date": "2026-04-15",
+    "customer": "Litware",
+    "amount": 5283.09,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0344",
+    "date": "2026-04-14",
+    "customer": "Consolidated Messenger",
+    "amount": 306.53,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0345",
+    "date": "2026-04-16",
+    "customer": "Margie's Travel",
+    "amount": 478.58,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0346",
+    "date": "2026-04-15",
+    "customer": "Munson's Pickles",
+    "amount": 496.62,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0347",
+    "date": "2026-04-15",
+    "customer": "Lucerne Publishing",
+    "amount": 5681.48,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0348",
+    "date": "2026-04-17",
+    "customer": "Datum Corporation",
+    "amount": 2089.2,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0349",
+    "date": "2026-04-17",
+    "customer": "Graphic Design Institute",
+    "amount": 6283.0,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0350",
+    "date": "2026-04-17",
+    "customer": "Fourth Coffee",
+    "amount": 2091.36,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0351",
+    "date": "2026-04-18",
+    "customer": "School of Fine Art",
+    "amount": 1655.87,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0352",
+    "date": "2026-04-17",
+    "customer": "Woodgrove Bank",
+    "amount": 70.67,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0353",
+    "date": "2026-04-18",
+    "customer": "Consolidated Messenger",
+    "amount": 3815.07,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0354",
+    "date": "2026-04-17",
+    "customer": "Best For You Organics",
+    "amount": 2253.19,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0355",
+    "date": "2026-04-18",
+    "customer": "Adventure Works",
+    "amount": 73.3,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0356",
+    "date": "2026-04-18",
+    "customer": "Relecloud",
+    "amount": 6358.92,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0357",
+    "date": "2026-04-19",
+    "customer": "Fabrikam Inc.",
+    "amount": 417.7,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0358",
+    "date": "2026-04-19",
+    "customer": "Blue Yonder Airlines",
+    "amount": 1235.12,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0359",
+    "date": "2026-04-19",
+    "customer": "Graphic Design Institute",
+    "amount": 80.79,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0360",
+    "date": "2026-04-19",
+    "customer": "School of Fine Art",
+    "amount": 464.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0361",
+    "date": "2026-04-20",
+    "customer": "Graphic Design Institute",
+    "amount": 1268.06,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0362",
+    "date": "2026-04-20",
+    "customer": "Nod Publishers",
+    "amount": 1702.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0363",
+    "date": "2026-04-21",
+    "customer": "Best For You Organics",
+    "amount": 1713.85,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0364",
+    "date": "2026-04-20",
+    "customer": "Northwind Traders",
+    "amount": 5747.0,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0365",
+    "date": "2026-04-22",
+    "customer": "Wide World Importers",
+    "amount": 8095.29,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0366",
+    "date": "2026-04-22",
+    "customer": "Datum Corporation",
+    "amount": 480.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0367",
+    "date": "2026-04-21",
+    "customer": "Relecloud",
+    "amount": 4362.17,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0368",
+    "date": "2026-04-23",
+    "customer": "Datum Corporation",
+    "amount": 1573.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0369",
+    "date": "2026-04-22",
+    "customer": "City Power & Light",
+    "amount": 4623.88,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0370",
+    "date": "2026-04-22",
+    "customer": "Margie's Travel",
+    "amount": 190.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0371",
+    "date": "2026-04-23",
+    "customer": "Northwind Traders",
+    "amount": 4510.39,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0372",
+    "date": "2026-04-23",
+    "customer": "Proseware",
+    "amount": 8694.61,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0373",
+    "date": "2026-04-23",
+    "customer": "Northwind Traders",
+    "amount": 8177.49,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0374",
+    "date": "2026-04-25",
+    "customer": "Coho Winery",
+    "amount": 2915.17,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0375",
+    "date": "2026-04-25",
+    "customer": "Adventure Works",
+    "amount": 279.85,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0376",
+    "date": "2026-04-24",
+    "customer": "Lucerne Publishing",
+    "amount": 152.78,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0377",
+    "date": "2026-04-24",
+    "customer": "Fourth Coffee",
+    "amount": 2729.86,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0378",
+    "date": "2026-04-25",
+    "customer": "City Power & Light",
+    "amount": 237.32,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0379",
+    "date": "2026-04-25",
+    "customer": "Consolidated Messenger",
+    "amount": 2109.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0380",
+    "date": "2026-04-26",
+    "customer": "Wingtip Toys",
+    "amount": 197.29,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0381",
+    "date": "2026-04-26",
+    "customer": "Lamna Healthcare",
+    "amount": 258.77,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0382",
+    "date": "2026-04-26",
+    "customer": "Best For You Organics",
+    "amount": 2655.42,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0383",
+    "date": "2026-04-26",
+    "customer": "Alpine Ski House",
+    "amount": 6772.48,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0384",
+    "date": "2026-04-27",
+    "customer": "Datum Corporation",
+    "amount": 238.92,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0385",
+    "date": "2026-04-27",
+    "customer": "VanArsdel Ltd.",
+    "amount": 1539.52,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0386",
+    "date": "2026-04-27",
+    "customer": "Blue Yonder Airlines",
+    "amount": 5063.28,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0387",
+    "date": "2026-04-27",
+    "customer": "Fourth Coffee",
+    "amount": 2201.83,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0388",
+    "date": "2026-04-29",
+    "customer": "Woodgrove Bank",
+    "amount": 3817.63,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0389",
+    "date": "2026-04-29",
+    "customer": "Nod Publishers",
+    "amount": 191.31,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0390",
+    "date": "2026-04-28",
+    "customer": "Munson's Pickles",
+    "amount": 4477.4,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0391",
+    "date": "2026-04-30",
+    "customer": "Proseware",
+    "amount": 1922.31,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0392",
+    "date": "2026-04-29",
+    "customer": "Adventure Works",
+    "amount": 5439.31,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0393",
+    "date": "2026-04-29",
+    "customer": "Humongous Insurance",
+    "amount": 104.65,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0394",
+    "date": "2026-04-30",
+    "customer": "Graphic Design Institute",
+    "amount": 312.05,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0395",
+    "date": "2026-05-01",
+    "customer": "Contoso Ltd.",
+    "amount": 683.96,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0396",
+    "date": "2026-04-30",
+    "customer": "Wide World Importers",
+    "amount": 1366.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0397",
+    "date": "2026-05-01",
+    "customer": "Tailspin Toys",
+    "amount": 147.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0398",
+    "date": "2026-05-02",
+    "customer": "Litware",
+    "amount": 274.5,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0399",
+    "date": "2026-05-01",
+    "customer": "Trey Research",
+    "amount": 2104.34,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0400",
+    "date": "2026-05-02",
+    "customer": "Tailspin Toys",
+    "amount": 1631.3,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0401",
+    "date": "2026-05-02",
+    "customer": "Tailspin Toys",
+    "amount": 2057.08,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0402",
+    "date": "2026-05-02",
+    "customer": "Tailspin Toys",
+    "amount": 4232.0,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0403",
+    "date": "2026-05-03",
+    "customer": "Wingtip Toys",
+    "amount": 209.66,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0404",
+    "date": "2026-05-04",
+    "customer": "Litware",
+    "amount": 7053.65,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0405",
+    "date": "2026-05-04",
+    "customer": "Alpine Ski House",
+    "amount": 293.96,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0406",
+    "date": "2026-05-04",
+    "customer": "Lamna Healthcare",
+    "amount": 50.31,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0407",
+    "date": "2026-05-05",
+    "customer": "Nod Publishers",
+    "amount": 76.8,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0408",
+    "date": "2026-05-05",
+    "customer": "Fourth Coffee",
+    "amount": 1247.18,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0409",
+    "date": "2026-05-04",
+    "customer": "Wide World Importers",
+    "amount": 5339.64,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0410",
+    "date": "2026-05-05",
+    "customer": "Wide World Importers",
+    "amount": 1677.9,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0411",
+    "date": "2026-05-05",
+    "customer": "Datum Corporation",
+    "amount": 5045.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0412",
+    "date": "2026-05-05",
+    "customer": "Fourth Coffee",
+    "amount": 708.22,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0413",
+    "date": "2026-05-05",
+    "customer": "Woodgrove Bank",
+    "amount": 7840.8,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0414",
+    "date": "2026-05-06",
+    "customer": "Contoso Ltd.",
+    "amount": 999.08,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0415",
+    "date": "2026-05-07",
+    "customer": "Trey Research",
+    "amount": 1339.31,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0416",
+    "date": "2026-05-07",
+    "customer": "Woodgrove Bank",
+    "amount": 8116.33,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0417",
+    "date": "2026-05-07",
+    "customer": "Wide World Importers",
+    "amount": 566.83,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0418",
+    "date": "2026-05-08",
+    "customer": "Best For You Organics",
+    "amount": 122.41,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0419",
+    "date": "2026-05-08",
+    "customer": "Adventure Works",
+    "amount": 6748.63,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0420",
+    "date": "2026-05-08",
+    "customer": "City Power & Light",
+    "amount": 7031.78,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0421",
+    "date": "2026-05-09",
+    "customer": "Humongous Insurance",
+    "amount": 5053.86,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0422",
+    "date": "2026-05-08",
+    "customer": "Litware",
+    "amount": 6803.13,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0423",
+    "date": "2026-05-08",
+    "customer": "Coho Winery",
+    "amount": 337.19,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0424",
+    "date": "2026-05-10",
+    "customer": "Proseware",
+    "amount": 1588.25,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0425",
+    "date": "2026-05-10",
+    "customer": "Adventure Works",
+    "amount": 259.28,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0426",
+    "date": "2026-05-09",
+    "customer": "Lucerne Publishing",
+    "amount": 5190.91,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0427",
+    "date": "2026-05-11",
+    "customer": "Fabrikam Inc.",
+    "amount": 8586.35,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0428",
+    "date": "2026-05-11",
+    "customer": "Southridge Video",
+    "amount": 5763.66,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0429",
+    "date": "2026-05-10",
+    "customer": "Blue Yonder Airlines",
+    "amount": 104.13,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0430",
+    "date": "2026-05-10",
+    "customer": "Fourth Coffee",
+    "amount": 5330.06,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0431",
+    "date": "2026-05-11",
+    "customer": "Northwind Traders",
+    "amount": 1612.73,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0432",
+    "date": "2026-05-12",
+    "customer": "Datum Corporation",
+    "amount": 6182.86,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0433",
+    "date": "2026-05-11",
+    "customer": "Proseware",
+    "amount": 4359.6,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0434",
+    "date": "2026-05-13",
+    "customer": "Southridge Video",
+    "amount": 344.65,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0435",
+    "date": "2026-05-13",
+    "customer": "Proseware",
+    "amount": 67.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0436",
+    "date": "2026-05-13",
+    "customer": "City Power & Light",
+    "amount": 2134.77,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0437",
+    "date": "2026-05-13",
+    "customer": "Proseware",
+    "amount": 4453.12,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0438",
+    "date": "2026-05-14",
+    "customer": "Nod Publishers",
+    "amount": 678.57,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0439",
+    "date": "2026-05-14",
+    "customer": "School of Fine Art",
+    "amount": 1530.54,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0440",
+    "date": "2026-05-14",
+    "customer": "Datum Corporation",
+    "amount": 128.18,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0441",
+    "date": "2026-05-15",
+    "customer": "City Power & Light",
+    "amount": 7852.79,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0442",
+    "date": "2026-05-14",
+    "customer": "Wide World Importers",
+    "amount": 1477.57,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0443",
+    "date": "2026-05-15",
+    "customer": "School of Fine Art",
+    "amount": 1878.0,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0444",
+    "date": "2026-05-15",
+    "customer": "Nod Publishers",
+    "amount": 1794.76,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0445",
+    "date": "2026-05-15",
+    "customer": "Consolidated Messenger",
+    "amount": 263.34,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0446",
+    "date": "2026-05-16",
+    "customer": "Alpine Ski House",
+    "amount": 1252.95,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0447",
+    "date": "2026-05-17",
+    "customer": "Consolidated Messenger",
+    "amount": 514.7,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0448",
+    "date": "2026-05-17",
+    "customer": "Proseware",
+    "amount": 1463.48,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0449",
+    "date": "2026-05-17",
+    "customer": "Southridge Video",
+    "amount": 134.76,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0450",
+    "date": "2026-05-18",
+    "customer": "Datum Corporation",
+    "amount": 7188.34,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0451",
+    "date": "2026-05-18",
+    "customer": "Relecloud",
+    "amount": 6289.65,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0452",
+    "date": "2026-05-17",
+    "customer": "Wide World Importers",
+    "amount": 5592.28,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0453",
+    "date": "2026-05-17",
+    "customer": "Wide World Importers",
+    "amount": 7315.97,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0454",
+    "date": "2026-05-19",
+    "customer": "Humongous Insurance",
+    "amount": 944.51,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0455",
+    "date": "2026-05-19",
+    "customer": "Southridge Video",
+    "amount": 313.51,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0456",
+    "date": "2026-05-18",
+    "customer": "Contoso Ltd.",
+    "amount": 3278.8,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0457",
+    "date": "2026-05-19",
+    "customer": "Blue Yonder Airlines",
+    "amount": 5159.75,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0458",
+    "date": "2026-05-20",
+    "customer": "Graphic Design Institute",
+    "amount": 860.71,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0459",
+    "date": "2026-05-19",
+    "customer": "Lamna Healthcare",
+    "amount": 52.12,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0460",
+    "date": "2026-05-20",
+    "customer": "Contoso Ltd.",
+    "amount": 1367.42,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0461",
+    "date": "2026-05-20",
+    "customer": "Graphic Design Institute",
+    "amount": 8298.04,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0462",
+    "date": "2026-05-20",
+    "customer": "Wide World Importers",
+    "amount": 151.82,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0463",
+    "date": "2026-05-20",
+    "customer": "Margie's Travel",
+    "amount": 4390.38,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0464",
+    "date": "2026-05-21",
+    "customer": "Lamna Healthcare",
+    "amount": 204.23,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0465",
+    "date": "2026-05-22",
+    "customer": "Wide World Importers",
+    "amount": 58.61,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0466",
+    "date": "2026-05-21",
+    "customer": "Contoso Ltd.",
+    "amount": 2742.86,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0467",
+    "date": "2026-05-22",
+    "customer": "Adventure Works",
+    "amount": 2628.32,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0468",
+    "date": "2026-05-23",
+    "customer": "Adventure Works",
+    "amount": 7019.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0469",
+    "date": "2026-05-23",
+    "customer": "Consolidated Messenger",
+    "amount": 330.26,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0470",
+    "date": "2026-05-23",
+    "customer": "Humongous Insurance",
+    "amount": 1495.48,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0471",
+    "date": "2026-05-24",
+    "customer": "Tailspin Toys",
+    "amount": 182.91,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0472",
+    "date": "2026-05-23",
+    "customer": "Fabrikam Inc.",
+    "amount": 3217.8,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0473",
+    "date": "2026-05-24",
+    "customer": "Proseware",
+    "amount": 375.6,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0474",
+    "date": "2026-05-25",
+    "customer": "Margie's Travel",
+    "amount": 2126.36,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0475",
+    "date": "2026-05-24",
+    "customer": "Humongous Insurance",
+    "amount": 92.75,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0476",
+    "date": "2026-05-25",
+    "customer": "Lucerne Publishing",
+    "amount": 1036.62,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0477",
+    "date": "2026-05-26",
+    "customer": "Lamna Healthcare",
+    "amount": 1043.67,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0478",
+    "date": "2026-05-25",
+    "customer": "Coho Winery",
+    "amount": 100.88,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0479",
+    "date": "2026-05-26",
+    "customer": "Wingtip Toys",
+    "amount": 131.57,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0480",
+    "date": "2026-05-26",
+    "customer": "Fourth Coffee",
+    "amount": 1476.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0481",
+    "date": "2026-05-26",
+    "customer": "City Power & Light",
+    "amount": 7488.94,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0482",
+    "date": "2026-05-27",
+    "customer": "Humongous Insurance",
+    "amount": 1876.48,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0483",
+    "date": "2026-05-28",
+    "customer": "Wide World Importers",
+    "amount": 8298.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0484",
+    "date": "2026-05-28",
+    "customer": "Proseware",
+    "amount": 2238.83,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0485",
+    "date": "2026-05-27",
+    "customer": "VanArsdel Ltd.",
+    "amount": 278.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0486",
+    "date": "2026-05-28",
+    "customer": "Lucerne Publishing",
+    "amount": 1496.91,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0487",
+    "date": "2026-05-29",
+    "customer": "Best For You Organics",
+    "amount": 7868.41,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0488",
+    "date": "2026-05-28",
+    "customer": "Fourth Coffee",
+    "amount": 344.57,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0489",
+    "date": "2026-05-29",
+    "customer": "Fourth Coffee",
+    "amount": 372.5,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0490",
+    "date": "2026-05-30",
+    "customer": "Best For You Organics",
+    "amount": 4397.89,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0491",
+    "date": "2026-05-29",
+    "customer": "Litware",
+    "amount": 2143.68,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0492",
+    "date": "2026-05-29",
+    "customer": "Margie's Travel",
+    "amount": 468.6,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0493",
+    "date": "2026-05-30",
+    "customer": "Alpine Ski House",
+    "amount": 2174.93,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0494",
+    "date": "2026-05-30",
+    "customer": "Coho Winery",
+    "amount": 7285.39,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0495",
+    "date": "2026-05-30",
+    "customer": "Best For You Organics",
+    "amount": 361.32,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0496",
+    "date": "2026-05-31",
+    "customer": "Fourth Coffee",
+    "amount": 8866.75,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0497",
+    "date": "2026-06-01",
+    "customer": "Munson's Pickles",
+    "amount": 5182.85,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0498",
+    "date": "2026-06-01",
+    "customer": "City Power & Light",
+    "amount": 370.34,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0499",
+    "date": "2026-06-01",
+    "customer": "Fourth Coffee",
+    "amount": 464.54,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0500",
+    "date": "2026-06-01",
+    "customer": "Best For You Organics",
+    "amount": 6288.24,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0501",
+    "date": "2026-06-02",
+    "customer": "City Power & Light",
+    "amount": 445.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0502",
+    "date": "2026-06-01",
+    "customer": "Contoso Ltd.",
+    "amount": 2000.37,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0503",
+    "date": "2026-06-03",
+    "customer": "Wingtip Toys",
+    "amount": 1582.34,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0504",
+    "date": "2026-06-02",
+    "customer": "Datum Corporation",
+    "amount": 4044.37,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0505",
+    "date": "2026-06-03",
+    "customer": "Wingtip Toys",
+    "amount": 2413.4,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0506",
+    "date": "2026-06-04",
+    "customer": "Relecloud",
+    "amount": 2237.7,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0507",
+    "date": "2026-06-04",
+    "customer": "Wide World Importers",
+    "amount": 6422.02,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0508",
+    "date": "2026-06-03",
+    "customer": "Proseware",
+    "amount": 848.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0509",
+    "date": "2026-06-03",
+    "customer": "Blue Yonder Airlines",
+    "amount": 2192.03,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0510",
+    "date": "2026-06-05",
+    "customer": "Trey Research",
+    "amount": 6564.88,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0511",
+    "date": "2026-06-05",
+    "customer": "Wide World Importers",
+    "amount": 82.8,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0512",
+    "date": "2026-06-05",
+    "customer": "Consolidated Messenger",
+    "amount": 294.39,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0513",
+    "date": "2026-06-05",
+    "customer": "Northwind Traders",
+    "amount": 5586.57,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0514",
+    "date": "2026-06-05",
+    "customer": "Contoso Ltd.",
+    "amount": 8379.23,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0515",
+    "date": "2026-06-06",
+    "customer": "Datum Corporation",
+    "amount": 2092.41,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0516",
+    "date": "2026-06-07",
+    "customer": "Alpine Ski House",
+    "amount": 1517.47,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0517",
+    "date": "2026-06-06",
+    "customer": "Litware",
+    "amount": 8715.8,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0518",
+    "date": "2026-06-06",
+    "customer": "Wingtip Toys",
+    "amount": 3175.52,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0519",
+    "date": "2026-06-07",
+    "customer": "Contoso Ltd.",
+    "amount": 341.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0520",
+    "date": "2026-06-07",
+    "customer": "Proseware",
+    "amount": 82.96,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0521",
+    "date": "2026-06-08",
+    "customer": "Northwind Traders",
+    "amount": 224.61,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0522",
+    "date": "2026-06-07",
+    "customer": "Consolidated Messenger",
+    "amount": 390.18,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0523",
+    "date": "2026-06-09",
+    "customer": "Coho Winery",
+    "amount": 1063.03,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0524",
+    "date": "2026-06-08",
+    "customer": "Consolidated Messenger",
+    "amount": 5041.45,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0525",
+    "date": "2026-06-09",
+    "customer": "Southridge Video",
+    "amount": 480.83,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0526",
+    "date": "2026-06-10",
+    "customer": "Litware",
+    "amount": 4480.49,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0527",
+    "date": "2026-06-10",
+    "customer": "Litware",
+    "amount": 457.53,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0528",
+    "date": "2026-06-09",
+    "customer": "Consolidated Messenger",
+    "amount": 8039.63,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0529",
+    "date": "2026-06-09",
+    "customer": "Tailspin Toys",
+    "amount": 894.84,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0530",
+    "date": "2026-06-10",
+    "customer": "Consolidated Messenger",
+    "amount": 639.62,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0531",
+    "date": "2026-06-10",
+    "customer": "Lamna Healthcare",
+    "amount": 1228.99,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0532",
+    "date": "2026-06-10",
+    "customer": "Best For You Organics",
+    "amount": 1781.68,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0533",
+    "date": "2026-06-12",
+    "customer": "Fabrikam Inc.",
+    "amount": 4485.57,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0534",
+    "date": "2026-06-12",
+    "customer": "Wingtip Toys",
+    "amount": 780.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0535",
+    "date": "2026-06-11",
+    "customer": "Litware",
+    "amount": 6605.57,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0536",
+    "date": "2026-06-12",
+    "customer": "Lucerne Publishing",
+    "amount": 1586.94,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0537",
+    "date": "2026-06-12",
+    "customer": "Lucerne Publishing",
+    "amount": 451.15,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0538",
+    "date": "2026-06-13",
+    "customer": "Blue Yonder Airlines",
+    "amount": 8011.88,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0539",
+    "date": "2026-06-14",
+    "customer": "Humongous Insurance",
+    "amount": 121.65,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0540",
+    "date": "2026-06-13",
+    "customer": "Alpine Ski House",
+    "amount": 1475.28,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0541",
+    "date": "2026-06-14",
+    "customer": "Relecloud",
+    "amount": 224.64,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0542",
+    "date": "2026-06-14",
+    "customer": "VanArsdel Ltd.",
+    "amount": 425.69,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0543",
+    "date": "2026-06-14",
+    "customer": "Humongous Insurance",
+    "amount": 8397.08,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0544",
+    "date": "2026-06-15",
+    "customer": "Alpine Ski House",
+    "amount": 406.7,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0545",
+    "date": "2026-06-15",
+    "customer": "Margie's Travel",
+    "amount": 4854.45,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0546",
+    "date": "2026-06-16",
+    "customer": "Margie's Travel",
+    "amount": 374.12,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0547",
+    "date": "2026-06-15",
+    "customer": "VanArsdel Ltd.",
+    "amount": 159.65,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0548",
+    "date": "2026-06-15",
+    "customer": "Northwind Traders",
+    "amount": 1016.52,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0549",
+    "date": "2026-06-17",
+    "customer": "Munson's Pickles",
+    "amount": 933.19,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0550",
+    "date": "2026-06-17",
+    "customer": "Wide World Importers",
+    "amount": 320.38,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0551",
+    "date": "2026-06-17",
+    "customer": "Litware",
+    "amount": 1693.07,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0552",
+    "date": "2026-06-17",
+    "customer": "Trey Research",
+    "amount": 3653.24,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0553",
+    "date": "2026-06-17",
+    "customer": "School of Fine Art",
+    "amount": 8362.9,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0554",
+    "date": "2026-06-18",
+    "customer": "Coho Winery",
+    "amount": 2782.35,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0555",
+    "date": "2026-06-18",
+    "customer": "Proseware",
+    "amount": 8401.08,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0556",
+    "date": "2026-06-19",
+    "customer": "Litware",
+    "amount": 3044.81,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0557",
+    "date": "2026-06-18",
+    "customer": "Litware",
+    "amount": 369.12,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0558",
+    "date": "2026-06-19",
+    "customer": "Margie's Travel",
+    "amount": 5269.47,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0559",
+    "date": "2026-06-20",
+    "customer": "Coho Winery",
+    "amount": 325.35,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0560",
+    "date": "2026-06-19",
+    "customer": "Lucerne Publishing",
+    "amount": 1609.82,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0561",
+    "date": "2026-06-19",
+    "customer": "Adventure Works",
+    "amount": 1818.57,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0562",
+    "date": "2026-06-19",
+    "customer": "Wide World Importers",
+    "amount": 7705.55,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0563",
+    "date": "2026-06-21",
+    "customer": "Fabrikam Inc.",
+    "amount": 484.06,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0564",
+    "date": "2026-06-20",
+    "customer": "Southridge Video",
+    "amount": 6458.69,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0565",
+    "date": "2026-06-21",
+    "customer": "Litware",
+    "amount": 370.22,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0566",
+    "date": "2026-06-22",
+    "customer": "Contoso Ltd.",
+    "amount": 5818.56,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0567",
+    "date": "2026-06-22",
+    "customer": "Lucerne Publishing",
+    "amount": 500.57,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0568",
+    "date": "2026-06-22",
+    "customer": "Wingtip Toys",
+    "amount": 313.74,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0569",
+    "date": "2026-06-23",
+    "customer": "Northwind Traders",
+    "amount": 206.36,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0570",
+    "date": "2026-06-23",
+    "customer": "Lamna Healthcare",
+    "amount": 6131.1,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0571",
+    "date": "2026-06-23",
+    "customer": "Coho Winery",
+    "amount": 6236.81,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0572",
+    "date": "2026-06-23",
+    "customer": "Coho Winery",
+    "amount": 2422.48,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0573",
+    "date": "2026-06-23",
+    "customer": "Fourth Coffee",
+    "amount": 166.02,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0574",
+    "date": "2026-06-24",
+    "customer": "City Power & Light",
+    "amount": 1533.01,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0575",
+    "date": "2026-06-24",
+    "customer": "Wide World Importers",
+    "amount": 2362.79,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0576",
+    "date": "2026-06-24",
+    "customer": "Tailspin Toys",
+    "amount": 899.33,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0577",
+    "date": "2026-06-25",
+    "customer": "Northwind Traders",
+    "amount": 8481.22,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0578",
+    "date": "2026-06-24",
+    "customer": "School of Fine Art",
+    "amount": 4550.21,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0579",
+    "date": "2026-06-26",
+    "customer": "Trey Research",
+    "amount": 3333.6,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0580",
+    "date": "2026-06-25",
+    "customer": "Alpine Ski House",
+    "amount": 276.11,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0581",
+    "date": "2026-06-26",
+    "customer": "Southridge Video",
+    "amount": 516.84,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0582",
+    "date": "2026-06-27",
+    "customer": "Margie's Travel",
+    "amount": 4251.15,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0583",
+    "date": "2026-06-26",
+    "customer": "Blue Yonder Airlines",
+    "amount": 2004.39,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0584",
+    "date": "2026-06-26",
+    "customer": "Blue Yonder Airlines",
+    "amount": 7726.57,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0585",
+    "date": "2026-06-26",
+    "customer": "Alpine Ski House",
+    "amount": 262.84,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0586",
+    "date": "2026-06-28",
+    "customer": "Wide World Importers",
+    "amount": 6154.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0587",
+    "date": "2026-06-27",
+    "customer": "Humongous Insurance",
+    "amount": 146.96,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0588",
+    "date": "2026-06-28",
+    "customer": "City Power & Light",
+    "amount": 302.16,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0589",
+    "date": "2026-06-28",
+    "customer": "Coho Winery",
+    "amount": 1799.73,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0590",
+    "date": "2026-06-29",
+    "customer": "Graphic Design Institute",
+    "amount": 4362.4,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0591",
+    "date": "2026-06-29",
+    "customer": "Fourth Coffee",
+    "amount": 240.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0592",
+    "date": "2026-06-30",
+    "customer": "Nod Publishers",
+    "amount": 1920.87,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0593",
+    "date": "2026-06-30",
+    "customer": "Wingtip Toys",
+    "amount": 386.55,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0594",
+    "date": "2026-06-29",
+    "customer": "Adventure Works",
+    "amount": 347.91,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0595",
+    "date": "2026-06-29",
+    "customer": "Adventure Works",
+    "amount": 1446.37,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0596",
+    "date": "2026-07-01",
+    "customer": "Consolidated Messenger",
+    "amount": 668.62,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0597",
+    "date": "2026-07-01",
+    "customer": "Datum Corporation",
+    "amount": 332.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0598",
+    "date": "2026-07-01",
+    "customer": "Relecloud",
+    "amount": 1434.39,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0599",
+    "date": "2026-07-01",
+    "customer": "Trey Research",
+    "amount": 7367.93,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0600",
+    "date": "2026-07-02",
+    "customer": "Proseware",
+    "amount": 459.02,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0601",
+    "date": "2026-07-01",
+    "customer": "Northwind Traders",
+    "amount": 186.61,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0602",
+    "date": "2026-07-03",
+    "customer": "Lamna Healthcare",
+    "amount": 1454.13,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0603",
+    "date": "2026-07-02",
+    "customer": "Wingtip Toys",
+    "amount": 877.14,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0604",
+    "date": "2026-07-03",
+    "customer": "Datum Corporation",
+    "amount": 3014.86,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0605",
+    "date": "2026-07-04",
+    "customer": "Blue Yonder Airlines",
+    "amount": 1985.85,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0606",
+    "date": "2026-07-04",
+    "customer": "Northwind Traders",
+    "amount": 5442.99,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0607",
+    "date": "2026-07-03",
+    "customer": "Woodgrove Bank",
+    "amount": 72.33,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0608",
+    "date": "2026-07-03",
+    "customer": "Coho Winery",
+    "amount": 801.37,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0609",
+    "date": "2026-07-05",
+    "customer": "Fabrikam Inc.",
+    "amount": 259.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0610",
+    "date": "2026-07-05",
+    "customer": "School of Fine Art",
+    "amount": 2291.4,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0611",
+    "date": "2026-07-04",
+    "customer": "Adventure Works",
+    "amount": 223.16,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0612",
+    "date": "2026-07-05",
+    "customer": "Wingtip Toys",
+    "amount": 1862.88,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0613",
+    "date": "2026-07-05",
+    "customer": "Adventure Works",
+    "amount": 163.99,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0614",
+    "date": "2026-07-05",
+    "customer": "Tailspin Toys",
+    "amount": 1149.03,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0615",
+    "date": "2026-07-06",
+    "customer": "Fabrikam Inc.",
+    "amount": 6989.88,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0616",
+    "date": "2026-07-06",
+    "customer": "Blue Yonder Airlines",
+    "amount": 6521.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0617",
+    "date": "2026-07-06",
+    "customer": "Woodgrove Bank",
+    "amount": 8880.89,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0618",
+    "date": "2026-07-06",
+    "customer": "Woodgrove Bank",
+    "amount": 1255.54,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0619",
+    "date": "2026-07-08",
+    "customer": "Proseware",
+    "amount": 6183.56,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0620",
+    "date": "2026-07-07",
+    "customer": "School of Fine Art",
+    "amount": 810.05,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0621",
+    "date": "2026-07-08",
+    "customer": "Wingtip Toys",
+    "amount": 2265.86,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0622",
+    "date": "2026-07-08",
+    "customer": "Blue Yonder Airlines",
+    "amount": 5018.69,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0623",
+    "date": "2026-07-09",
+    "customer": "Blue Yonder Airlines",
+    "amount": 3218.02,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0624",
+    "date": "2026-07-08",
+    "customer": "Lucerne Publishing",
+    "amount": 443.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0625",
+    "date": "2026-07-10",
+    "customer": "Northwind Traders",
+    "amount": 1902.63,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0626",
+    "date": "2026-07-09",
+    "customer": "Trey Research",
+    "amount": 2356.81,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0627",
+    "date": "2026-07-10",
+    "customer": "Fabrikam Inc.",
+    "amount": 2878.95,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0628",
+    "date": "2026-07-10",
+    "customer": "Litware",
+    "amount": 85.07,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0629",
+    "date": "2026-07-10",
+    "customer": "Wingtip Toys",
+    "amount": 286.79,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0630",
+    "date": "2026-07-10",
+    "customer": "Wide World Importers",
+    "amount": 6884.2,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0631",
+    "date": "2026-07-10",
+    "customer": "Humongous Insurance",
+    "amount": 6773.96,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0632",
+    "date": "2026-07-12",
+    "customer": "Wingtip Toys",
+    "amount": 2493.7,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0633",
+    "date": "2026-07-12",
+    "customer": "Woodgrove Bank",
+    "amount": 3890.53,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0634",
+    "date": "2026-07-12",
+    "customer": "Best For You Organics",
+    "amount": 500.39,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0635",
+    "date": "2026-07-13",
+    "customer": "Relecloud",
+    "amount": 2469.0,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0636",
+    "date": "2026-07-13",
+    "customer": "Humongous Insurance",
+    "amount": 6209.34,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0637",
+    "date": "2026-07-12",
+    "customer": "VanArsdel Ltd.",
+    "amount": 112.28,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0638",
+    "date": "2026-07-14",
+    "customer": "Munson's Pickles",
+    "amount": 934.87,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0639",
+    "date": "2026-07-13",
+    "customer": "Datum Corporation",
+    "amount": 7250.13,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0640",
+    "date": "2026-07-14",
+    "customer": "Graphic Design Institute",
+    "amount": 206.57,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0641",
+    "date": "2026-07-13",
+    "customer": "Blue Yonder Airlines",
+    "amount": 2852.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0642",
+    "date": "2026-07-15",
+    "customer": "School of Fine Art",
+    "amount": 2828.38,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0643",
+    "date": "2026-07-14",
+    "customer": "Wingtip Toys",
+    "amount": 149.94,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0644",
+    "date": "2026-07-14",
+    "customer": "Blue Yonder Airlines",
+    "amount": 1025.12,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0645",
+    "date": "2026-07-16",
+    "customer": "Alpine Ski House",
+    "amount": 301.68,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0646",
+    "date": "2026-07-15",
+    "customer": "City Power & Light",
+    "amount": 5295.43,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0647",
+    "date": "2026-07-16",
+    "customer": "Wide World Importers",
+    "amount": 4584.8,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0648",
+    "date": "2026-07-17",
+    "customer": "Tailspin Toys",
+    "amount": 327.3,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0649",
+    "date": "2026-07-16",
+    "customer": "Southridge Video",
+    "amount": 358.41,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0650",
+    "date": "2026-07-16",
+    "customer": "Coho Winery",
+    "amount": 2589.27,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0651",
+    "date": "2026-07-16",
+    "customer": "Coho Winery",
+    "amount": 3877.19,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0652",
+    "date": "2026-07-17",
+    "customer": "Contoso Ltd.",
+    "amount": 4947.94,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0653",
+    "date": "2026-07-18",
+    "customer": "Lucerne Publishing",
+    "amount": 1893.05,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0654",
+    "date": "2026-07-18",
+    "customer": "Graphic Design Institute",
+    "amount": 348.0,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0655",
+    "date": "2026-07-19",
+    "customer": "Southridge Video",
+    "amount": 154.03,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0656",
+    "date": "2026-07-18",
+    "customer": "Alpine Ski House",
+    "amount": 5477.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0657",
+    "date": "2026-07-19",
+    "customer": "Consolidated Messenger",
+    "amount": 1286.8,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0658",
+    "date": "2026-07-19",
+    "customer": "Best For You Organics",
+    "amount": 498.2,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0659",
+    "date": "2026-07-19",
+    "customer": "Fabrikam Inc.",
+    "amount": 2398.23,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0660",
+    "date": "2026-07-20",
+    "customer": "Blue Yonder Airlines",
+    "amount": 8172.56,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0661",
+    "date": "2026-07-20",
+    "customer": "VanArsdel Ltd.",
+    "amount": 4640.35,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0662",
+    "date": "2026-07-20",
+    "customer": "Datum Corporation",
+    "amount": 7083.39,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0663",
+    "date": "2026-07-20",
+    "customer": "Adventure Works",
+    "amount": 345.3,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0664",
+    "date": "2026-07-20",
+    "customer": "Margie's Travel",
+    "amount": 2259.28,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0665",
+    "date": "2026-07-22",
+    "customer": "Adventure Works",
+    "amount": 8311.85,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0666",
+    "date": "2026-07-21",
+    "customer": "Southridge Video",
+    "amount": 2024.89,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0667",
+    "date": "2026-07-21",
+    "customer": "Coho Winery",
+    "amount": 552.17,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0668",
+    "date": "2026-07-23",
+    "customer": "School of Fine Art",
+    "amount": 132.79,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0669",
+    "date": "2026-07-22",
+    "customer": "Fabrikam Inc.",
+    "amount": 3946.6,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0670",
+    "date": "2026-07-22",
+    "customer": "Best For You Organics",
+    "amount": 2471.26,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0671",
+    "date": "2026-07-23",
+    "customer": "Wingtip Toys",
+    "amount": 2052.43,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0672",
+    "date": "2026-07-23",
+    "customer": "Trey Research",
+    "amount": 284.29,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0673",
+    "date": "2026-07-24",
+    "customer": "Woodgrove Bank",
+    "amount": 5018.09,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0674",
+    "date": "2026-07-24",
+    "customer": "Contoso Ltd.",
+    "amount": 447.98,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0675",
+    "date": "2026-07-24",
+    "customer": "Best For You Organics",
+    "amount": 3087.87,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0676",
+    "date": "2026-07-24",
+    "customer": "Litware",
+    "amount": 1146.92,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0677",
+    "date": "2026-07-25",
+    "customer": "Adventure Works",
+    "amount": 6715.75,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0678",
+    "date": "2026-07-25",
+    "customer": "Alpine Ski House",
+    "amount": 4859.13,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0679",
+    "date": "2026-07-25",
+    "customer": "Blue Yonder Airlines",
+    "amount": 1261.21,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0680",
+    "date": "2026-07-25",
+    "customer": "Woodgrove Bank",
+    "amount": 857.73,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0681",
+    "date": "2026-07-27",
+    "customer": "Northwind Traders",
+    "amount": 332.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0682",
+    "date": "2026-07-27",
+    "customer": "VanArsdel Ltd.",
+    "amount": 7748.45,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0683",
+    "date": "2026-07-27",
+    "customer": "Southridge Video",
+    "amount": 254.18,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0684",
+    "date": "2026-07-26",
+    "customer": "VanArsdel Ltd.",
+    "amount": 72.01,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0685",
+    "date": "2026-07-28",
+    "customer": "City Power & Light",
+    "amount": 199.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0686",
+    "date": "2026-07-27",
+    "customer": "Humongous Insurance",
+    "amount": 485.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0687",
+    "date": "2026-07-28",
+    "customer": "Relecloud",
+    "amount": 419.12,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0688",
+    "date": "2026-07-29",
+    "customer": "Wingtip Toys",
+    "amount": 198.14,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0689",
+    "date": "2026-07-28",
+    "customer": "Fourth Coffee",
+    "amount": 8570.3,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0690",
+    "date": "2026-07-29",
+    "customer": "Wingtip Toys",
+    "amount": 286.43,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0691",
+    "date": "2026-07-30",
+    "customer": "Adventure Works",
+    "amount": 6461.14,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0692",
+    "date": "2026-07-29",
+    "customer": "Margie's Travel",
+    "amount": 259.2,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0693",
+    "date": "2026-07-29",
+    "customer": "Proseware",
+    "amount": 200.21,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0694",
+    "date": "2026-07-29",
+    "customer": "Lucerne Publishing",
+    "amount": 188.5,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0695",
+    "date": "2026-07-30",
+    "customer": "Contoso Ltd.",
+    "amount": 7919.86,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0696",
+    "date": "2026-07-30",
+    "customer": "Munson's Pickles",
+    "amount": 8298.38,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0697",
+    "date": "2026-07-31",
+    "customer": "Trey Research",
+    "amount": 5886.98,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0698",
+    "date": "2026-07-31",
+    "customer": "Munson's Pickles",
+    "amount": 1871.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0699",
+    "date": "2026-07-31",
+    "customer": "Southridge Video",
+    "amount": 202.62,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0700",
+    "date": "2026-07-31",
+    "customer": "Fabrikam Inc.",
+    "amount": 2003.08,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0701",
+    "date": "2026-08-02",
+    "customer": "Adventure Works",
+    "amount": 1243.17,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0702",
+    "date": "2026-08-02",
+    "customer": "Best For You Organics",
+    "amount": 2055.58,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0703",
+    "date": "2026-08-01",
+    "customer": "School of Fine Art",
+    "amount": 7260.87,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0704",
+    "date": "2026-08-02",
+    "customer": "Lucerne Publishing",
+    "amount": 419.96,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0705",
+    "date": "2026-08-02",
+    "customer": "Best For You Organics",
+    "amount": 6965.84,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0706",
+    "date": "2026-08-02",
+    "customer": "Best For You Organics",
+    "amount": 96.4,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0707",
+    "date": "2026-08-02",
+    "customer": "Proseware",
+    "amount": 885.09,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0708",
+    "date": "2026-08-03",
+    "customer": "Humongous Insurance",
+    "amount": 8728.94,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0709",
+    "date": "2026-08-04",
+    "customer": "Southridge Video",
+    "amount": 7726.02,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0710",
+    "date": "2026-08-04",
+    "customer": "Fabrikam Inc.",
+    "amount": 2688.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0711",
+    "date": "2026-08-05",
+    "customer": "Southridge Video",
+    "amount": 8293.29,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0712",
+    "date": "2026-08-05",
+    "customer": "Datum Corporation",
+    "amount": 7133.84,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0713",
+    "date": "2026-08-05",
+    "customer": "City Power & Light",
+    "amount": 7715.28,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0714",
+    "date": "2026-08-06",
+    "customer": "Wide World Importers",
+    "amount": 3434.19,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0715",
+    "date": "2026-08-06",
+    "customer": "Coho Winery",
+    "amount": 405.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0716",
+    "date": "2026-08-06",
+    "customer": "Munson's Pickles",
+    "amount": 4766.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0717",
+    "date": "2026-08-05",
+    "customer": "Tailspin Toys",
+    "amount": 7650.8,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0718",
+    "date": "2026-08-06",
+    "customer": "Margie's Travel",
+    "amount": 2447.78,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0719",
+    "date": "2026-08-07",
+    "customer": "Datum Corporation",
+    "amount": 305.25,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0720",
+    "date": "2026-08-07",
+    "customer": "Lucerne Publishing",
+    "amount": 101.45,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0721",
+    "date": "2026-08-07",
+    "customer": "Contoso Ltd.",
+    "amount": 1871.02,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0722",
+    "date": "2026-08-07",
+    "customer": "City Power & Light",
+    "amount": 6274.99,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0723",
+    "date": "2026-08-07",
+    "customer": "Fourth Coffee",
+    "amount": 1083.01,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0724",
+    "date": "2026-08-09",
+    "customer": "Fabrikam Inc.",
+    "amount": 2326.41,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0725",
+    "date": "2026-08-08",
+    "customer": "Contoso Ltd.",
+    "amount": 1521.0,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0726",
+    "date": "2026-08-08",
+    "customer": "Relecloud",
+    "amount": 2141.51,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0727",
+    "date": "2026-08-09",
+    "customer": "Coho Winery",
+    "amount": 1923.55,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0728",
+    "date": "2026-08-09",
+    "customer": "City Power & Light",
+    "amount": 1269.19,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0729",
+    "date": "2026-08-09",
+    "customer": "Blue Yonder Airlines",
+    "amount": 2602.1,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0730",
+    "date": "2026-08-09",
+    "customer": "Wide World Importers",
+    "amount": 8090.99,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0731",
+    "date": "2026-08-11",
+    "customer": "Northwind Traders",
+    "amount": 1604.1,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0732",
+    "date": "2026-08-11",
+    "customer": "Contoso Ltd.",
+    "amount": 973.5,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0733",
+    "date": "2026-08-10",
+    "customer": "Wingtip Toys",
+    "amount": 1909.77,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0734",
+    "date": "2026-08-12",
+    "customer": "City Power & Light",
+    "amount": 259.22,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0735",
+    "date": "2026-08-11",
+    "customer": "School of Fine Art",
+    "amount": 6268.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0736",
+    "date": "2026-08-11",
+    "customer": "Lamna Healthcare",
+    "amount": 5550.01,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0737",
+    "date": "2026-08-13",
+    "customer": "Proseware",
+    "amount": 8498.62,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0738",
+    "date": "2026-08-12",
+    "customer": "Southridge Video",
+    "amount": 6223.59,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0739",
+    "date": "2026-08-12",
+    "customer": "Proseware",
+    "amount": 665.02,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0740",
+    "date": "2026-08-13",
+    "customer": "Humongous Insurance",
+    "amount": 3634.99,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0741",
+    "date": "2026-08-13",
+    "customer": "Fabrikam Inc.",
+    "amount": 5651.97,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0742",
+    "date": "2026-08-13",
+    "customer": "Woodgrove Bank",
+    "amount": 2143.45,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0743",
+    "date": "2026-08-13",
+    "customer": "Contoso Ltd.",
+    "amount": 4742.99,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0744",
+    "date": "2026-08-14",
+    "customer": "Lucerne Publishing",
+    "amount": 5595.73,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0745",
+    "date": "2026-08-15",
+    "customer": "City Power & Light",
+    "amount": 1560.88,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0746",
+    "date": "2026-08-15",
+    "customer": "Margie's Travel",
+    "amount": 2766.61,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0747",
+    "date": "2026-08-16",
+    "customer": "City Power & Light",
+    "amount": 3138.8,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0748",
+    "date": "2026-08-15",
+    "customer": "Fourth Coffee",
+    "amount": 1677.45,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0749",
+    "date": "2026-08-15",
+    "customer": "Humongous Insurance",
+    "amount": 352.76,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0750",
+    "date": "2026-08-15",
+    "customer": "City Power & Light",
+    "amount": 2721.0,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0751",
+    "date": "2026-08-16",
+    "customer": "Lucerne Publishing",
+    "amount": 478.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0752",
+    "date": "2026-08-16",
+    "customer": "Woodgrove Bank",
+    "amount": 1891.31,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0753",
+    "date": "2026-08-17",
+    "customer": "Proseware",
+    "amount": 1884.44,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0754",
+    "date": "2026-08-17",
+    "customer": "Datum Corporation",
+    "amount": 1165.31,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0755",
+    "date": "2026-08-17",
+    "customer": "Southridge Video",
+    "amount": 324.64,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0756",
+    "date": "2026-08-17",
+    "customer": "School of Fine Art",
+    "amount": 461.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0757",
+    "date": "2026-08-19",
+    "customer": "Proseware",
+    "amount": 58.44,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0758",
+    "date": "2026-08-18",
+    "customer": "Coho Winery",
+    "amount": 6235.16,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0759",
+    "date": "2026-08-19",
+    "customer": "Relecloud",
+    "amount": 231.76,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0760",
+    "date": "2026-08-19",
+    "customer": "Graphic Design Institute",
+    "amount": 1570.61,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0761",
+    "date": "2026-08-19",
+    "customer": "Litware",
+    "amount": 2206.68,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0762",
+    "date": "2026-08-19",
+    "customer": "Graphic Design Institute",
+    "amount": 2435.03,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0763",
+    "date": "2026-08-20",
+    "customer": "Wingtip Toys",
+    "amount": 268.93,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0764",
+    "date": "2026-08-20",
+    "customer": "Lamna Healthcare",
+    "amount": 625.99,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0765",
+    "date": "2026-08-21",
+    "customer": "Adventure Works",
+    "amount": 532.84,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0766",
+    "date": "2026-08-20",
+    "customer": "Wingtip Toys",
+    "amount": 5479.41,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0767",
+    "date": "2026-08-21",
+    "customer": "Southridge Video",
+    "amount": 3420.0,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0768",
+    "date": "2026-08-21",
+    "customer": "Lamna Healthcare",
+    "amount": 2593.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0769",
+    "date": "2026-08-21",
+    "customer": "Southridge Video",
+    "amount": 255.28,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0770",
+    "date": "2026-08-22",
+    "customer": "City Power & Light",
+    "amount": 4692.73,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0771",
+    "date": "2026-08-22",
+    "customer": "Adventure Works",
+    "amount": 194.72,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0772",
+    "date": "2026-08-23",
+    "customer": "VanArsdel Ltd.",
+    "amount": 7025.92,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0773",
+    "date": "2026-08-22",
+    "customer": "Coho Winery",
+    "amount": 2082.1,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0774",
+    "date": "2026-08-23",
+    "customer": "Relecloud",
+    "amount": 3079.42,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0775",
+    "date": "2026-08-24",
+    "customer": "Wide World Importers",
+    "amount": 6658.87,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0776",
+    "date": "2026-08-23",
+    "customer": "Humongous Insurance",
+    "amount": 318.32,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0777",
+    "date": "2026-08-25",
+    "customer": "Nod Publishers",
+    "amount": 3263.8,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0778",
+    "date": "2026-08-24",
+    "customer": "City Power & Light",
+    "amount": 258.9,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0779",
+    "date": "2026-08-25",
+    "customer": "Margie's Travel",
+    "amount": 273.88,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0780",
+    "date": "2026-08-26",
+    "customer": "Trey Research",
+    "amount": 200.43,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0781",
+    "date": "2026-08-25",
+    "customer": "VanArsdel Ltd.",
+    "amount": 121.12,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0782",
+    "date": "2026-08-26",
+    "customer": "Adventure Works",
+    "amount": 238.58,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0783",
+    "date": "2026-08-25",
+    "customer": "Contoso Ltd.",
+    "amount": 382.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0784",
+    "date": "2026-08-27",
+    "customer": "Litware",
+    "amount": 2355.77,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0785",
+    "date": "2026-08-27",
+    "customer": "Adventure Works",
+    "amount": 3326.88,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0786",
+    "date": "2026-08-27",
+    "customer": "Graphic Design Institute",
+    "amount": 842.4,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0787",
+    "date": "2026-08-27",
+    "customer": "Litware",
+    "amount": 1605.51,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0788",
+    "date": "2026-08-28",
+    "customer": "Margie's Travel",
+    "amount": 7245.12,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0789",
+    "date": "2026-08-27",
+    "customer": "Contoso Ltd.",
+    "amount": 3468.3,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0790",
+    "date": "2026-08-28",
+    "customer": "Lamna Healthcare",
+    "amount": 1966.95,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0791",
+    "date": "2026-08-28",
+    "customer": "Litware",
+    "amount": 253.6,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0792",
+    "date": "2026-08-28",
+    "customer": "Relecloud",
+    "amount": 211.28,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0793",
+    "date": "2026-08-29",
+    "customer": "Relecloud",
+    "amount": 1994.57,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0794",
+    "date": "2026-08-30",
+    "customer": "Fabrikam Inc.",
+    "amount": 6574.27,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0795",
+    "date": "2026-08-30",
+    "customer": "Southridge Video",
+    "amount": 1165.81,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0796",
+    "date": "2026-08-29",
+    "customer": "Datum Corporation",
+    "amount": 8225.51,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0797",
+    "date": "2026-08-31",
+    "customer": "Graphic Design Institute",
+    "amount": 4876.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0798",
+    "date": "2026-08-30",
+    "customer": "Coho Winery",
+    "amount": 2047.15,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0799",
+    "date": "2026-08-30",
+    "customer": "Contoso Ltd.",
+    "amount": 2021.77,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0800",
+    "date": "2026-08-31",
+    "customer": "Munson's Pickles",
+    "amount": 217.77,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0801",
+    "date": "2026-09-01",
+    "customer": "Fabrikam Inc.",
+    "amount": 6876.49,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0802",
+    "date": "2026-08-31",
+    "customer": "Adventure Works",
+    "amount": 451.36,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0803",
+    "date": "2026-09-01",
+    "customer": "Consolidated Messenger",
+    "amount": 174.17,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0804",
+    "date": "2026-09-02",
+    "customer": "Northwind Traders",
+    "amount": 1582.87,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0805",
+    "date": "2026-09-02",
+    "customer": "Fourth Coffee",
+    "amount": 7712.93,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0806",
+    "date": "2026-09-02",
+    "customer": "Blue Yonder Airlines",
+    "amount": 5946.08,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0807",
+    "date": "2026-09-03",
+    "customer": "Humongous Insurance",
+    "amount": 1020.01,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0808",
+    "date": "2026-09-03",
+    "customer": "Wide World Importers",
+    "amount": 8506.86,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0809",
+    "date": "2026-09-02",
+    "customer": "Wide World Importers",
+    "amount": 8959.52,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0810",
+    "date": "2026-09-03",
+    "customer": "Wide World Importers",
+    "amount": 569.38,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0811",
+    "date": "2026-09-04",
+    "customer": "Blue Yonder Airlines",
+    "amount": 104.67,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0812",
+    "date": "2026-09-03",
+    "customer": "Consolidated Messenger",
+    "amount": 5798.16,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0813",
+    "date": "2026-09-04",
+    "customer": "Best For You Organics",
+    "amount": 1957.09,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0814",
+    "date": "2026-09-04",
+    "customer": "Humongous Insurance",
+    "amount": 1601.92,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0815",
+    "date": "2026-09-04",
+    "customer": "Proseware",
+    "amount": 3768.47,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0816",
+    "date": "2026-09-04",
+    "customer": "Lucerne Publishing",
+    "amount": 5395.48,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0817",
+    "date": "2026-09-05",
+    "customer": "Blue Yonder Airlines",
+    "amount": 270.71,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0818",
+    "date": "2026-09-06",
+    "customer": "Trey Research",
+    "amount": 1245.66,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0819",
+    "date": "2026-09-05",
+    "customer": "Lamna Healthcare",
+    "amount": 2275.61,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0820",
+    "date": "2026-09-07",
+    "customer": "Coho Winery",
+    "amount": 7931.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0821",
+    "date": "2026-09-07",
+    "customer": "Proseware",
+    "amount": 80.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0822",
+    "date": "2026-09-07",
+    "customer": "Consolidated Messenger",
+    "amount": 128.7,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0823",
+    "date": "2026-09-08",
+    "customer": "Tailspin Toys",
+    "amount": 2152.5,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0824",
+    "date": "2026-09-07",
+    "customer": "Graphic Design Institute",
+    "amount": 4451.1,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0825",
+    "date": "2026-09-08",
+    "customer": "Coho Winery",
+    "amount": 238.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0826",
+    "date": "2026-09-07",
+    "customer": "Coho Winery",
+    "amount": 1223.52,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0827",
+    "date": "2026-09-08",
+    "customer": "Fourth Coffee",
+    "amount": 1965.91,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0828",
+    "date": "2026-09-09",
+    "customer": "Humongous Insurance",
+    "amount": 770.99,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0829",
+    "date": "2026-09-08",
+    "customer": "School of Fine Art",
+    "amount": 8586.06,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0830",
+    "date": "2026-09-09",
+    "customer": "Consolidated Messenger",
+    "amount": 834.27,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0831",
+    "date": "2026-09-10",
+    "customer": "Blue Yonder Airlines",
+    "amount": 3122.92,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0832",
+    "date": "2026-09-10",
+    "customer": "Tailspin Toys",
+    "amount": 217.86,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0833",
+    "date": "2026-09-10",
+    "customer": "Relecloud",
+    "amount": 6982.74,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0834",
+    "date": "2026-09-10",
+    "customer": "Consolidated Messenger",
+    "amount": 237.81,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0835",
+    "date": "2026-09-11",
+    "customer": "Relecloud",
+    "amount": 8919.28,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0836",
+    "date": "2026-09-12",
+    "customer": "Blue Yonder Airlines",
+    "amount": 3945.33,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0837",
+    "date": "2026-09-11",
+    "customer": "School of Fine Art",
+    "amount": 109.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0838",
+    "date": "2026-09-12",
+    "customer": "Datum Corporation",
+    "amount": 7654.86,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0839",
+    "date": "2026-09-12",
+    "customer": "Litware",
+    "amount": 69.48,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0840",
+    "date": "2026-09-12",
+    "customer": "Humongous Insurance",
+    "amount": 3090.07,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0841",
+    "date": "2026-09-13",
+    "customer": "Munson's Pickles",
+    "amount": 122.25,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0842",
+    "date": "2026-09-12",
+    "customer": "Wingtip Toys",
+    "amount": 287.98,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0843",
+    "date": "2026-09-13",
+    "customer": "Woodgrove Bank",
+    "amount": 2340.95,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0844",
+    "date": "2026-09-13",
+    "customer": "School of Fine Art",
+    "amount": 131.38,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0845",
+    "date": "2026-09-14",
+    "customer": "Contoso Ltd.",
+    "amount": 720.63,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0846",
+    "date": "2026-09-14",
+    "customer": "Munson's Pickles",
+    "amount": 4343.47,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0847",
+    "date": "2026-09-15",
+    "customer": "Munson's Pickles",
+    "amount": 1314.56,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0848",
+    "date": "2026-09-15",
+    "customer": "Woodgrove Bank",
+    "amount": 2583.11,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0849",
+    "date": "2026-09-14",
+    "customer": "Wide World Importers",
+    "amount": 103.65,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0850",
+    "date": "2026-09-15",
+    "customer": "Wingtip Toys",
+    "amount": 898.17,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0851",
+    "date": "2026-09-16",
+    "customer": "Lucerne Publishing",
+    "amount": 1926.99,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0852",
+    "date": "2026-09-16",
+    "customer": "Woodgrove Bank",
+    "amount": 1706.33,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0853",
+    "date": "2026-09-16",
+    "customer": "Munson's Pickles",
+    "amount": 105.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0854",
+    "date": "2026-09-16",
+    "customer": "Southridge Video",
+    "amount": 3664.12,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0855",
+    "date": "2026-09-16",
+    "customer": "City Power & Light",
+    "amount": 1822.16,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0856",
+    "date": "2026-09-18",
+    "customer": "Contoso Ltd.",
+    "amount": 4733.5,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0857",
+    "date": "2026-09-18",
+    "customer": "Wide World Importers",
+    "amount": 738.27,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0858",
+    "date": "2026-09-18",
+    "customer": "Adventure Works",
+    "amount": 828.29,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0859",
+    "date": "2026-09-18",
+    "customer": "Contoso Ltd.",
+    "amount": 1870.75,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0860",
+    "date": "2026-09-19",
+    "customer": "Fourth Coffee",
+    "amount": 4955.69,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0861",
+    "date": "2026-09-18",
+    "customer": "School of Fine Art",
+    "amount": 590.24,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0862",
+    "date": "2026-09-19",
+    "customer": "Tailspin Toys",
+    "amount": 1356.3,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0863",
+    "date": "2026-09-19",
+    "customer": "Wide World Importers",
+    "amount": 341.64,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0864",
+    "date": "2026-09-19",
+    "customer": "Proseware",
+    "amount": 574.76,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0865",
+    "date": "2026-09-19",
+    "customer": "Adventure Works",
+    "amount": 1675.98,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0866",
+    "date": "2026-09-21",
+    "customer": "Wide World Importers",
+    "amount": 4683.79,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0867",
+    "date": "2026-09-21",
+    "customer": "Consolidated Messenger",
+    "amount": 213.5,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0868",
+    "date": "2026-09-21",
+    "customer": "Relecloud",
+    "amount": 71.39,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0869",
+    "date": "2026-09-21",
+    "customer": "Lamna Healthcare",
+    "amount": 6181.78,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0870",
+    "date": "2026-09-21",
+    "customer": "Margie's Travel",
+    "amount": 1103.69,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0871",
+    "date": "2026-09-22",
+    "customer": "Relecloud",
+    "amount": 6865.14,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0872",
+    "date": "2026-09-21",
+    "customer": "Graphic Design Institute",
+    "amount": 8753.76,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0873",
+    "date": "2026-09-23",
+    "customer": "Blue Yonder Airlines",
+    "amount": 470.59,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0874",
+    "date": "2026-09-23",
+    "customer": "Proseware",
+    "amount": 429.85,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0875",
+    "date": "2026-09-23",
+    "customer": "Northwind Traders",
+    "amount": 1012.89,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0876",
+    "date": "2026-09-23",
+    "customer": "Litware",
+    "amount": 1121.08,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0877",
+    "date": "2026-09-23",
+    "customer": "Nod Publishers",
+    "amount": 558.28,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0878",
+    "date": "2026-09-23",
+    "customer": "Fabrikam Inc.",
+    "amount": 483.7,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0879",
+    "date": "2026-09-25",
+    "customer": "Blue Yonder Airlines",
+    "amount": 1843.34,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0880",
+    "date": "2026-09-24",
+    "customer": "School of Fine Art",
+    "amount": 8564.08,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0881",
+    "date": "2026-09-25",
+    "customer": "Lucerne Publishing",
+    "amount": 680.5,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0882",
+    "date": "2026-09-24",
+    "customer": "Proseware",
+    "amount": 470.98,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0883",
+    "date": "2026-09-25",
+    "customer": "Tailspin Toys",
+    "amount": 1249.41,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0884",
+    "date": "2026-09-26",
+    "customer": "Graphic Design Institute",
+    "amount": 4859.49,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0885",
+    "date": "2026-09-25",
+    "customer": "Proseware",
+    "amount": 8615.51,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0886",
+    "date": "2026-09-27",
+    "customer": "Nod Publishers",
+    "amount": 4858.56,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0887",
+    "date": "2026-09-27",
+    "customer": "School of Fine Art",
+    "amount": 2319.58,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0888",
+    "date": "2026-09-26",
+    "customer": "School of Fine Art",
+    "amount": 2218.83,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0889",
+    "date": "2026-09-28",
+    "customer": "Munson's Pickles",
+    "amount": 1048.07,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0890",
+    "date": "2026-09-28",
+    "customer": "Humongous Insurance",
+    "amount": 372.82,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0891",
+    "date": "2026-09-28",
+    "customer": "Graphic Design Institute",
+    "amount": 2126.86,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0892",
+    "date": "2026-09-27",
+    "customer": "VanArsdel Ltd.",
+    "amount": 2082.04,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0893",
+    "date": "2026-09-28",
+    "customer": "City Power & Light",
+    "amount": 7138.17,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0894",
+    "date": "2026-09-29",
+    "customer": "VanArsdel Ltd.",
+    "amount": 5609.38,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0895",
+    "date": "2026-09-29",
+    "customer": "Munson's Pickles",
+    "amount": 409.79,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0896",
+    "date": "2026-09-29",
+    "customer": "Woodgrove Bank",
+    "amount": 6130.44,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0897",
+    "date": "2026-09-29",
+    "customer": "Fabrikam Inc.",
+    "amount": 2823.59,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0898",
+    "date": "2026-09-30",
+    "customer": "Woodgrove Bank",
+    "amount": 2591.75,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0899",
+    "date": "2026-10-01",
+    "customer": "Blue Yonder Airlines",
+    "amount": 1927.13,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0900",
+    "date": "2026-10-01",
+    "customer": "Wide World Importers",
+    "amount": 1700.17,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0901",
+    "date": "2026-10-01",
+    "customer": "Humongous Insurance",
+    "amount": 406.61,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0902",
+    "date": "2026-10-02",
+    "customer": "Lucerne Publishing",
+    "amount": 8164.38,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0903",
+    "date": "2026-10-02",
+    "customer": "Coho Winery",
+    "amount": 381.0,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0904",
+    "date": "2026-10-02",
+    "customer": "Northwind Traders",
+    "amount": 8786.86,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0905",
+    "date": "2026-10-02",
+    "customer": "Trey Research",
+    "amount": 8853.91,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0906",
+    "date": "2026-10-02",
+    "customer": "Fourth Coffee",
+    "amount": 1020.58,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0907",
+    "date": "2026-10-03",
+    "customer": "Proseware",
+    "amount": 113.81,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0908",
+    "date": "2026-10-03",
+    "customer": "Alpine Ski House",
+    "amount": 8200.09,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0909",
+    "date": "2026-10-04",
+    "customer": "Nod Publishers",
+    "amount": 829.97,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0910",
+    "date": "2026-10-04",
+    "customer": "Woodgrove Bank",
+    "amount": 73.95,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0911",
+    "date": "2026-10-04",
+    "customer": "Coho Winery",
+    "amount": 2290.35,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0912",
+    "date": "2026-10-05",
+    "customer": "Consolidated Messenger",
+    "amount": 271.84,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0913",
+    "date": "2026-10-04",
+    "customer": "VanArsdel Ltd.",
+    "amount": 7846.72,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0914",
+    "date": "2026-10-04",
+    "customer": "Adventure Works",
+    "amount": 286.71,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0915",
+    "date": "2026-10-05",
+    "customer": "Adventure Works",
+    "amount": 1862.62,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0916",
+    "date": "2026-10-06",
+    "customer": "Proseware",
+    "amount": 7899.54,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0917",
+    "date": "2026-10-05",
+    "customer": "Wingtip Toys",
+    "amount": 587.69,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0918",
+    "date": "2026-10-05",
+    "customer": "Trey Research",
+    "amount": 597.36,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0919",
+    "date": "2026-10-07",
+    "customer": "Wide World Importers",
+    "amount": 1010.0,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0920",
+    "date": "2026-10-07",
+    "customer": "Lamna Healthcare",
+    "amount": 7391.63,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0921",
+    "date": "2026-10-07",
+    "customer": "Munson's Pickles",
+    "amount": 8374.27,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0922",
+    "date": "2026-10-08",
+    "customer": "Fabrikam Inc.",
+    "amount": 1479.25,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0923",
+    "date": "2026-10-08",
+    "customer": "Woodgrove Bank",
+    "amount": 1728.0,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0924",
+    "date": "2026-10-07",
+    "customer": "Consolidated Messenger",
+    "amount": 8549.34,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0925",
+    "date": "2026-10-08",
+    "customer": "Consolidated Messenger",
+    "amount": 246.81,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0926",
+    "date": "2026-10-08",
+    "customer": "Alpine Ski House",
+    "amount": 285.39,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0927",
+    "date": "2026-10-09",
+    "customer": "School of Fine Art",
+    "amount": 1429.31,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0928",
+    "date": "2026-10-08",
+    "customer": "Margie's Travel",
+    "amount": 101.27,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0929",
+    "date": "2026-10-10",
+    "customer": "Datum Corporation",
+    "amount": 1948.19,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0930",
+    "date": "2026-10-09",
+    "customer": "Trey Research",
+    "amount": 656.44,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0931",
+    "date": "2026-10-09",
+    "customer": "City Power & Light",
+    "amount": 733.36,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0932",
+    "date": "2026-10-11",
+    "customer": "Lucerne Publishing",
+    "amount": 6508.84,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0933",
+    "date": "2026-10-11",
+    "customer": "Northwind Traders",
+    "amount": 89.44,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0934",
+    "date": "2026-10-10",
+    "customer": "Fabrikam Inc.",
+    "amount": 4071.57,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0935",
+    "date": "2026-10-12",
+    "customer": "Relecloud",
+    "amount": 396.37,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0936",
+    "date": "2026-10-12",
+    "customer": "Munson's Pickles",
+    "amount": 8088.68,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0937",
+    "date": "2026-10-12",
+    "customer": "Coho Winery",
+    "amount": 6597.66,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0938",
+    "date": "2026-10-12",
+    "customer": "Munson's Pickles",
+    "amount": 5836.81,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0939",
+    "date": "2026-10-13",
+    "customer": "Best For You Organics",
+    "amount": 2623.63,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0940",
+    "date": "2026-10-13",
+    "customer": "Northwind Traders",
+    "amount": 6547.53,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0941",
+    "date": "2026-10-12",
+    "customer": "City Power & Light",
+    "amount": 179.6,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0942",
+    "date": "2026-10-14",
+    "customer": "Relecloud",
+    "amount": 2206.91,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0943",
+    "date": "2026-10-14",
+    "customer": "Nod Publishers",
+    "amount": 6875.2,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0944",
+    "date": "2026-10-13",
+    "customer": "Wide World Importers",
+    "amount": 7370.15,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0945",
+    "date": "2026-10-15",
+    "customer": "Northwind Traders",
+    "amount": 1331.97,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0946",
+    "date": "2026-10-15",
+    "customer": "Margie's Travel",
+    "amount": 3531.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0947",
+    "date": "2026-10-14",
+    "customer": "School of Fine Art",
+    "amount": 741.38,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0948",
+    "date": "2026-10-14",
+    "customer": "Adventure Works",
+    "amount": 8326.07,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0949",
+    "date": "2026-10-15",
+    "customer": "Southridge Video",
+    "amount": 466.98,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0950",
+    "date": "2026-10-15",
+    "customer": "Humongous Insurance",
+    "amount": 3185.17,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0951",
+    "date": "2026-10-15",
+    "customer": "Graphic Design Institute",
+    "amount": 1916.33,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0952",
+    "date": "2026-10-17",
+    "customer": "Northwind Traders",
+    "amount": 775.54,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0953",
+    "date": "2026-10-16",
+    "customer": "School of Fine Art",
+    "amount": 426.0,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0954",
+    "date": "2026-10-17",
+    "customer": "Lamna Healthcare",
+    "amount": 3485.47,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0955",
+    "date": "2026-10-18",
+    "customer": "Northwind Traders",
+    "amount": 5481.89,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0956",
+    "date": "2026-10-18",
+    "customer": "School of Fine Art",
+    "amount": 116.0,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0957",
+    "date": "2026-10-17",
+    "customer": "Graphic Design Institute",
+    "amount": 2741.11,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0958",
+    "date": "2026-10-18",
+    "customer": "Humongous Insurance",
+    "amount": 2271.57,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0959",
+    "date": "2026-10-18",
+    "customer": "Litware",
+    "amount": 422.15,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0960",
+    "date": "2026-10-19",
+    "customer": "Fabrikam Inc.",
+    "amount": 2275.35,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0961",
+    "date": "2026-10-18",
+    "customer": "Litware",
+    "amount": 291.85,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0962",
+    "date": "2026-10-19",
+    "customer": "Lamna Healthcare",
+    "amount": 4714.61,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0963",
+    "date": "2026-10-20",
+    "customer": "Humongous Insurance",
+    "amount": 7222.31,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0964",
+    "date": "2026-10-20",
+    "customer": "VanArsdel Ltd.",
+    "amount": 2810.26,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0965",
+    "date": "2026-10-20",
+    "customer": "Graphic Design Institute",
+    "amount": 7735.02,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0966",
+    "date": "2026-10-20",
+    "customer": "Lucerne Publishing",
+    "amount": 7601.13,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0967",
+    "date": "2026-10-20",
+    "customer": "Margie's Travel",
+    "amount": 1532.9,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0968",
+    "date": "2026-10-22",
+    "customer": "City Power & Light",
+    "amount": 624.39,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0969",
+    "date": "2026-10-22",
+    "customer": "Woodgrove Bank",
+    "amount": 1537.89,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0970",
+    "date": "2026-10-22",
+    "customer": "Blue Yonder Airlines",
+    "amount": 3558.48,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0971",
+    "date": "2026-10-21",
+    "customer": "Adventure Works",
+    "amount": 362.51,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0972",
+    "date": "2026-10-23",
+    "customer": "Humongous Insurance",
+    "amount": 4382.34,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0973",
+    "date": "2026-10-23",
+    "customer": "Consolidated Messenger",
+    "amount": 3428.65,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0974",
+    "date": "2026-10-23",
+    "customer": "Contoso Ltd.",
+    "amount": 147.01,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0975",
+    "date": "2026-10-24",
+    "customer": "Wingtip Toys",
+    "amount": 1119.4,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0976",
+    "date": "2026-10-23",
+    "customer": "Wingtip Toys",
+    "amount": 1509.53,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0977",
+    "date": "2026-10-24",
+    "customer": "Trey Research",
+    "amount": 1749.54,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0978",
+    "date": "2026-10-24",
+    "customer": "Northwind Traders",
+    "amount": 7283.0,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0979",
+    "date": "2026-10-25",
+    "customer": "School of Fine Art",
+    "amount": 302.47,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0980",
+    "date": "2026-10-24",
+    "customer": "Datum Corporation",
+    "amount": 7378.63,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0981",
+    "date": "2026-10-24",
+    "customer": "Fabrikam Inc.",
+    "amount": 3837.73,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0982",
+    "date": "2026-10-26",
+    "customer": "Northwind Traders",
+    "amount": 230.81,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0983",
+    "date": "2026-10-26",
+    "customer": "Proseware",
+    "amount": 8868.61,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0984",
+    "date": "2026-10-25",
+    "customer": "Northwind Traders",
+    "amount": 119.4,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0985",
+    "date": "2026-10-26",
+    "customer": "Best For You Organics",
+    "amount": 697.49,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0986",
+    "date": "2026-10-26",
+    "customer": "Lucerne Publishing",
+    "amount": 73.35,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0987",
+    "date": "2026-10-26",
+    "customer": "Tailspin Toys",
+    "amount": 171.18,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0988",
+    "date": "2026-10-27",
+    "customer": "Blue Yonder Airlines",
+    "amount": 171.12,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0989",
+    "date": "2026-10-28",
+    "customer": "Humongous Insurance",
+    "amount": 8000.81,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0990",
+    "date": "2026-10-27",
+    "customer": "Woodgrove Bank",
+    "amount": 5254.39,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-0991",
+    "date": "2026-10-28",
+    "customer": "City Power & Light",
+    "amount": 834.76,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0992",
+    "date": "2026-10-29",
+    "customer": "Trey Research",
+    "amount": 3882.9,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0993",
+    "date": "2026-10-28",
+    "customer": "Best For You Organics",
+    "amount": 185.29,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0994",
+    "date": "2026-10-29",
+    "customer": "School of Fine Art",
+    "amount": 7713.37,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0995",
+    "date": "2026-10-30",
+    "customer": "Northwind Traders",
+    "amount": 172.86,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0996",
+    "date": "2026-10-29",
+    "customer": "Best For You Organics",
+    "amount": 340.9,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0997",
+    "date": "2026-10-30",
+    "customer": "Best For You Organics",
+    "amount": 7617.48,
+    "status": "Pending"
+  },
+  {
+    "id": "INV-2026-0998",
+    "date": "2026-10-31",
+    "customer": "School of Fine Art",
+    "amount": 7783.08,
+    "status": "Overdue"
+  },
+  {
+    "id": "INV-2026-0999",
+    "date": "2026-10-30",
+    "customer": "Proseware",
+    "amount": 106.14,
+    "status": "Paid"
+  },
+  {
+    "id": "INV-2026-1000",
+    "date": "2026-10-31",
+    "customer": "Humongous Insurance",
+    "amount": 6564.04,
+    "status": "Pending"
+  }
+]

@@ -1,16 +1,38 @@
 import { Box, Chip, FormControl, InputLabel, MenuItem, Paper, Select, Table, TableBody, TableCell, TableHead, TableRow, Typography, type SelectChangeEvent } from '@mui/material';
-import { invoices } from '../data/invoices';
 import { MetricCard } from '../components/ui/cards';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useAppSelector } from '../store/store';
+import type { Invoice } from '../types/invoice';
 
 const statuses = ['All', 'Paid', 'Pending', 'Overdue', 'Draft'] as const;
 
 export function UserOnly() {
 
-    const user = useAppSelector((state)=>state.auth.user)
+    const user = useAppSelector((state) => state.auth.user)
+    const [invoices, setInvoices] = useState<Invoice[]>([])
 
-    const customers = [...new Set(invoices.map((invoice) => invoice.customer))];
+    const loadData = async () => {
+        try {
+            const res = await fetch("http://localhost:2000/invoices", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({})
+            })
+            console.log(res)
+            const data = (await res.json()) as Invoice[]
+            if (!res.ok) {
+                return null
+            }
+            setInvoices(data)
+        } catch (error) {
+
+        }
+    }
+
+    useEffect(() => {
+        loadData();
+    })
+
     const [selectedCustomer, setSelectedCustomer] = useState(user?.name ?? '');
     const [searchQuery, setSearchQuery] = useState('');
     const [statusFilter, setStatusFilter] = useState<(typeof statuses)[number]>('All');
@@ -102,22 +124,6 @@ export function UserOnly() {
                             ))}
                         </Select>
                     </FormControl>
-
-                    <FormControl size="small" sx={{ minWidth: 220 }}>
-                        <InputLabel id="customer-select-label">Customer</InputLabel>
-                        <Select
-                            labelId="customer-select-label"
-                            value={selectedCustomer}
-                            label="Customer"
-                            onChange={handleChange}
-                        >
-                            {customers.map((customer) => (
-                                <MenuItem key={customer} sx={{background : customer == user?.name ? "blue" : "" }} value={customer}>
-                                    {customer}
-                                </MenuItem>
-                            ))}
-                        </Select>
-                    </FormControl>
                 </Box>
             </Box>
 
@@ -153,10 +159,10 @@ export function UserOnly() {
                                                 invoice.status === 'Paid'
                                                     ? 'success'
                                                     : invoice.status === 'Pending'
-                                                      ? 'secondary'
-                                                      : invoice.status === 'Overdue'
-                                                        ? 'error'
-                                                        : 'info'
+                                                        ? 'secondary'
+                                                        : invoice.status === 'Overdue'
+                                                            ? 'error'
+                                                            : 'info'
                                             }
                                             size="small"
                                         />
