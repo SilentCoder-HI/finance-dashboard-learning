@@ -19,17 +19,18 @@ import { Day2LearningPage } from './day2';
 import { Day3LearningPage } from './day3';
 import { Day4LearningPage } from './day4';
 import { Day5LearningPage } from './day5';
-import { UserDataPage } from './userData';
-import { FinanceDashboardDay2 } from './../day-2/FinanceDashboard';
+import { Day6LearningPage } from './day6';
+import { Invoices } from './Invoices';
 import Login from './login';
 import { useDispatch } from 'react-redux';
 import { logout, useAppSelector } from './../store/store';
-import { UserOnly } from './userOnly';
 import Profile from './profile';
+import Sidenav from '../components/sidenav';
 
-
+import type { PageId } from "../components/sidenav"
+import { Tally4, Menu } from 'lucide-react';
 function App() {
-    const [activePage, setActivePage] = useState<'overview' | 'invoices' | 'userdata' | "useronly" | 'profile' | 'day-1' | 'day-2' | 'day-3' | 'day-4' | 'day-5'>('overview');
+    const [activePage, setActivePage] = useState<PageId>('overview');
     const dispacth = useDispatch()
 
     const user = useAppSelector((state) => state.auth.user)
@@ -37,7 +38,7 @@ function App() {
     if (!user) {
         return <Login />
     }
-
+    const [sideNav, setsideNav] = useState(true)
     const totalRevenue = invoices.reduce((acc, invoice) => acc + invoice.amount, 0);
 
     const totalPaid = invoices.filter((invoice) => invoice.status === "Paid").length;
@@ -77,237 +78,183 @@ function App() {
     const previousYear = selectedYear - 1;
     const yearOptions = availableYears.length > 0 ? availableYears : [selectedYear];
     const selectedYearIndex = yearOptions.indexOf(selectedYear);
-
     return (
 
-        <Box sx={{ display: 'flex', flexDirection: 'row', gap: 1 }}>
-            <Box component="nav" aria-label="Dashboard pages" sx={{ backgroundColor: 'white', width: { xs: '30%', md: '20%' }, minHeight: '100vh', p: 2 }}>
-                <Typography variant="subtitle1" sx={{ fontWeight: 700, color: '#0f172a' }}>
-                    Finance workspace
-                </Typography>
-                <Typography variant="caption" sx={{ display: 'block', mt: 2, color: '#64748b', fontWeight: 700 }}>
-                    APPLICATION
-                </Typography>
-                <ButtonGroup orientation="vertical" variant="outlined" sx={{ mt: 2, width: '100%' }}>
-                    <Button
-                        variant={activePage === 'overview' ? 'contained' : 'outlined'}
-                        onClick={() => setActivePage('overview')}
-                    >
-                        Main Dashboard
-                    </Button>
-                    <Button
-                        variant={activePage === 'invoices' ? 'contained' : 'outlined'}
-                        onClick={() => setActivePage('invoices')}
-                    >
-                        Invoices
-                    </Button>
-                    <Button
-                        variant={activePage === 'userdata' ? 'contained' : 'outlined'}
-                        onClick={() => setActivePage('userdata')}
-                    >
-                        User Data
+        <div className="relative h-screen overflow-hidden">
+            <div className="pointer-events-none fixed inset-0">
+                <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-blue-200/40 to-blue-400/50" />
+                <div className="absolute inset-0 bg-gradient-to-bl from-transparent via-blue-200/40 to-blue-400/50" />
 
-                    </Button>
-                    <Button
-                        variant={activePage === 'useronly' ? 'contained' : 'outlined'}
-                        onClick={() => setActivePage('useronly')}
-                    >
-                        Login User Data Only
-                    </Button>
-                    <Button
-                        variant={activePage === 'profile' ? 'contained' : 'outlined'}
-                        onClick={() => setActivePage('profile')}
-                    >
-                        Profile
-                    </Button>
-                </ButtonGroup>
-                <Typography variant="caption" sx={{ display: 'block', mt: 3, color: '#64748b', fontWeight: 700 }}>
-                    LEARNING JOURNEY
-                </Typography>
-                <ButtonGroup orientation="vertical" variant="outlined" sx={{ mt: 2, width: '100%' }}>
-                    <Button
-                        variant={activePage === 'day-1' ? 'contained' : 'outlined'}
-                        onClick={() => setActivePage('day-1')}
-                    >
-                        Day 1 — Learning Journey
-                    </Button>
-                    <Button
-                        variant={activePage === 'day-2' ? 'contained' : 'outlined'}
-                        onClick={() => setActivePage('day-2')}
-                    >
-                        Day 2 — Learning Journey
-                    </Button>
-                    <Button
-                        variant={activePage === 'day-3' ? 'contained' : 'outlined'}
-                        onClick={() => setActivePage('day-3')}
-                    >
-                        Day 3 — Learning Journey
-                    </Button>
-                    <Button
-                        variant={activePage === 'day-4' ? 'contained' : 'outlined'}
-                        onClick={() => setActivePage('day-4')}
-                    >
-                        Day 4 — Redux Basics
-                    </Button>
-                    <Button
-                        variant={activePage === 'day-5' ? 'contained' : 'outlined'}
-                        onClick={() => setActivePage('day-5')}
-                    >
-                        Day 5 — Invoices & Login
-                    </Button>
-                </ButtonGroup>
+                <div className="absolute -top-32 -left-32 h-[480px] w-[480px] rounded-full bg-blue-300/90 blur-[120px]" />
 
-            </Box>
-            <Box sx={{ backgroundColor: 'white', width: { xs: '70%', md: '80%' }, minWidth: 0, minHeight: '100vh', p: { xs: 2, md: 3 } }}>
-                {activePage === 'invoices' ? (
-                    <FinanceDashboardDay2 />
-                ) : activePage === 'userdata' ? (
-                    <UserDataPage />
-                ) : activePage === "useronly" ? (
-                    <UserOnly />
-                ) : activePage === "profile" ? (
-                    <Profile />
-                ) : activePage === 'day-1' ? (
-                    <Day1LearningPage />
-                ) : activePage === 'day-2' ? (
-                    <Day2LearningPage />
-                ) : activePage === 'day-3' ? (
-                    <Day3LearningPage />
-                ) : activePage === 'day-4' ? (
-                    <Day4LearningPage />
-                ) : activePage === 'day-5' ? (
-                    <Day5LearningPage />
-                ) : <>
-                    <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 3, gap: 2, flexWrap: 'wrap', borderBottom: "1px solid #e2e8f0", pb: 2 }}>
-                        <Box>
-                            <Typography variant="h4" sx={{ fontWeight: 700, color: '#0f172a' }}>
-                                Finance Dashboard {user?.name}
-                            </Typography>
-                            <Typography variant="body2" sx={{ color: '#475569' }}>
-                                Revenue visibility and billing performance
-                            </Typography>
+                <div className="absolute -bottom-40 -right-40 h-[520px] w-[520px] rounded-full bg-blue-500/50 blur-[140px]" />
+            </div>
 
 
-                        </Box>
-                        <ButtonGroup orientation="horizontal" variant="contained" sx={{ mt: 2 }}>
-                            <Button>Filter</Button>
-                            <Button>Export</Button>
-                            <Button onClick={() => dispacth(logout())}>Logout</Button>
-                        </ButtonGroup>
+            <div className="relative h-full z-10 flex gap-5 p-4">
+
+                <Box className='rounded-2xl overflow-x-hidden w-[350px] border border-white/60 bg-white/40 p-5 backdrop-blur-xl shadow-lg overflow-y-auto no-scrollbar' component="nav" aria-label="Dashboard pages">
+                    <Box className="flex justify-between">
+                        <Typography variant="subtitle1" className='text-slate-900 py-2 text-xl font-semibold tracking-tight'>
+                            FW.
+                        </Typography>
+                        <Button onClick={()=>setsideNav(!sideNav)}>
+
+                        {sideNav ? <Menu /> : <Tally4 /> }
+                        </Button>
                     </Box>
-
-                    <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 3, gap: 2, flexWrap: 'wrap' }}>
-                        <Box
-                            component="section"
-                            sx={{
-                                display: 'grid',
-                                gridTemplateColumns: {
-                                    xs: '1fr',               // mobile: 1 card per row
-                                    sm: 'repeat(2, 1fr)',    // tablet: 2 per row
-                                    md: 'repeat(3, 1fr)',    // desktop: 3 per row
-                                },
-                                gap: 2,
-                                mb: 4,
-                            }}
-                        >
-                            <Card>
-                                <CardContent>
-                                    <Typography variant="h6" sx={{ fontWeight: 700, mb: 2 }}>
-                                        Total Revenue
-                                    </Typography>
-                                    <Typography variant="h4" sx={{ fontWeight: 700, color: '#6366f1' }}>
-                                        {totalRevenue.toLocaleString('en-US', { style: 'currency', currency: 'USD' })}
-                                    </Typography>
-                                </CardContent>
-                            </Card>
-                            <Card>
-                                <CardContent>
-                                    <Typography variant="h6" sx={{ fontWeight: 700, mb: 2 }}>
-                                        Total Paid
-                                    </Typography>
-                                    <Typography variant="h4" sx={{ fontWeight: 700, color: '#22c55e' }}>
-                                        {totalPaid}
-                                    </Typography>
-                                </CardContent>
-                            </Card>
-                            <Card>
-                                <CardContent>
-                                    <Typography variant="h6" sx={{ fontWeight: 700, mb: 2 }}>
-                                        Total Overdue
-                                    </Typography>
-                                    <Typography variant="h4" sx={{ fontWeight: 700, color: '#ef4444' }}>
-                                        {totalOverdue}
-                                    </Typography>
-                                </CardContent>
-                            </Card>
-                        </Box>
-                    </Box>
-
-                    <Box component="section" sx={{ mb: 3 }}>
-                        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 2, gap: 2, flexWrap: 'wrap' }}>
-                            <Box>
-                                <Typography variant="h4" sx={{ fontWeight: 700, color: '#0f172a' }}>
-                                    Revenue by Month
+                    <Sidenav activePage={activePage} setActivePage={setActivePage} />
+                </Box>
+                <Box className="rounded-2xl h-full border border-white/60 bg-white/40 p-5 w-full backdrop-blur-xl shadow-lg overflow-y-auto no-scrollbar">
+                    {activePage === 'invoices' ? (
+                        <Invoices />
+                    ) : activePage === "profile" ? (
+                        <Profile />
+                    ) : activePage === 'day-1' ? (
+                        <Day1LearningPage />
+                    ) : activePage === 'day-2' ? (
+                        <Day2LearningPage />
+                    ) : activePage === 'day-3' ? (
+                        <Day3LearningPage />
+                    ) : activePage === 'day-4' ? (
+                        <Day4LearningPage />
+                    ) : activePage === 'day-5' ? (
+                        <Day5LearningPage />
+                    ) : activePage === 'day-6' ? (
+                        <Day6LearningPage />
+                    ) : <>
+                        <Box className="rounded-2xl border  border-white/60 bg-white/40 p-4 flex justify-between shadow-lg ">
+                            <Box className="bg-transparent">
+                                <Typography variant="h4" className="text-slate-900 text-2xl font-semibold">
+                                    Finance overview
                                 </Typography>
-                                <Typography variant="body2" sx={{ color: '#475569' }}>
-                                    Compare {selectedYear} revenue with {previousYear}
+                                <Typography variant="body2" className="text-slate-600 text-sm">
+                                    Revenue visibility and billing performance
                                 </Typography>
+
+
                             </Box>
-                            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                                <Button
-                                    variant="outlined"
-                                    disabled={selectedYearIndex <= 0}
-                                    onClick={() => setSelectedYear(yearOptions[selectedYearIndex - 1])}
-                                    aria-label="Select previous available year"
-                                >
-                                    Previous
-                                </Button>
-                                <FormControl size="small" sx={{ minWidth: 120, backgroundColor: '#fff' }}>
-                                    <InputLabel id="revenue-year-label">Year</InputLabel>
-                                    <Select
-                                        labelId="revenue-year-label"
-                                        value={selectedYear}
-                                        label="Year"
-                                        onChange={(event) => setSelectedYear(Number(event.target.value))}
+                            <ButtonGroup orientation="horizontal" variant="contained" sx={{ mt: 2 }}>
+                                <Button>Filter</Button>
+                                <Button>Export</Button>
+                                <Button onClick={() => dispacth(logout())}>Logout</Button>
+                            </ButtonGroup>
+                        </Box>
+
+                        <Box className="py-5 w-full" sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 3, gap: 2, flexWrap: 'wrap' }}>
+                            <Box
+                                component="section"
+                                className='w-full'
+                                sx={{
+                                    display: 'grid',
+                                    gridTemplateColumns: {
+                                        xs: '1fr',               // mobile: 1 card per row
+                                        sm: 'repeat(2, 1fr)',    // tablet: 2 per row
+                                        md: 'repeat(3, 1fr)',    // desktop: 3 per row
+                                    },
+                                    gap: 2,
+                                    mb: 4,
+                                }}
+                            >
+                                <Card className="rounded-2xl border border-white/60 bg-white/40 p-6 shadow-lg backdrop-blur-xl transition-transform duration-200 hover:scale-[1.02]">
+                                    <CardContent>
+                                        <Typography variant="h6" className="text-slate-600 font-semibold mb-2 text-base">
+                                            Total Revenue
+                                        </Typography>
+                                        <Typography variant="h4" className="tabular-nums text-slate-900 text-2xl font-semibold">
+                                            {totalRevenue.toLocaleString('en-US', { style: 'currency', currency: 'USD' })}
+                                        </Typography>
+                                    </CardContent>
+                                </Card>
+                                <Card className="rounded-2xl border border-white/60 bg-white/40 p-6 shadow-lg backdrop-blur-xl transition-transform duration-200 hover:scale-[1.02]">
+                                    <CardContent>
+                                        <Typography variant="h6" className="text-slate-600 font-semibold mb-2 text-base">
+                                            Total Paid
+                                        </Typography>
+                                        <Typography variant="h4" className="tabular-nums text-slate-900 text-2xl font-semibold">
+                                            {totalPaid}
+                                        </Typography>
+                                    </CardContent>
+                                </Card>
+                                <Card className="rounded-2xl border border-white/60 bg-white/40 p-6 shadow-lg backdrop-blur-xl transition-transform duration-200 hover:scale-[1.02]">
+                                    <CardContent>
+                                        <Typography variant="h6" className="text-slate-600 font-semibold mb-2 text-base">
+                                            Total Overdue
+                                        </Typography>
+                                        <Typography variant="h4" className="tabular-nums text-red-500 text-2xl font-semibold">
+                                            {totalOverdue}
+                                        </Typography>
+                                    </CardContent>
+                                </Card>
+                            </Box>
+                        </Box>
+
+                        <Box component="section" sx={{ mb: 3 }}>
+                            <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 2, gap: 2, flexWrap: 'wrap' }}>
+                                <Box>
+                                    <Typography variant="h4" className="text-slate-900 text-2xl font-semibold">
+                                        Revenue by month
+                                    </Typography>
+                                    <Typography variant="body2" className="text-slate-600 text-sm">
+                                        Compare {selectedYear} revenue with {previousYear}
+                                    </Typography>
+                                </Box>
+                                <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                                    <Button
+                                        variant="outlined"
+                                        disabled={selectedYearIndex <= 0}
+                                        onClick={() => setSelectedYear(yearOptions[selectedYearIndex - 1])}
+                                        aria-label="Select previous available year"
                                     >
-                                        {yearOptions.map((yearOption) => (
-                                            <MenuItem key={yearOption} value={yearOption}>{yearOption}</MenuItem>
-                                        ))}
-                                    </Select>
-                                </FormControl>
-                                <Button
-                                    variant="outlined"
-                                    disabled={selectedYearIndex < 0 || selectedYearIndex >= yearOptions.length - 1}
-                                    onClick={() => setSelectedYear(yearOptions[selectedYearIndex + 1])}
-                                    aria-label="Select next available year"
-                                >
-                                    Next
-                                </Button>
+                                        Previous
+                                    </Button>
+                                    <FormControl size="small" sx={{ minWidth: 120, backgroundColor: 'rgba(255,255,255,0.6)' }}>
+                                        <InputLabel id="revenue-year-label">Year</InputLabel>
+                                        <Select
+                                            labelId="revenue-year-label"
+                                            value={selectedYear}
+                                            label="Year"
+                                            onChange={(event) => setSelectedYear(Number(event.target.value))}
+                                        >
+                                            {yearOptions.map((yearOption) => (
+                                                <MenuItem key={yearOption} value={yearOption}>{yearOption}</MenuItem>
+                                            ))}
+                                        </Select>
+                                    </FormControl>
+                                    <Button
+                                        variant="outlined"
+                                        disabled={selectedYearIndex < 0 || selectedYearIndex >= yearOptions.length - 1}
+                                        onClick={() => setSelectedYear(yearOptions[selectedYearIndex + 1])}
+                                        aria-label="Select next available year"
+                                    >
+                                        Next
+                                    </Button>
+                                </Box>
+                            </Box>
+                            <Box className="rounded-2xl border border-white/60 bg-white/40 p-3 shadow-lg backdrop-blur-xl transition-transform duration-200 hover:scale-[1.01]" sx={{ width: '100%', height: 360, minWidth: 0 }}>
+                                <ResponsiveContainer width="100%" height="100%">
+                                    <BarChart data={chartData} margin={{ top: 12, right: 16, left: 8, bottom: 8 }}>
+                                        <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="rgba(15,23,42,0.08)" />
+                                        <XAxis dataKey="month" tick={{ fill: '#475569', fontSize: 12 }} axisLine={false} tickLine={false} />
+                                        <YAxis tickFormatter={(value: number) => `$${value / 1000}k`} tick={{ fill: '#475569', fontSize: 12 }} axisLine={false} tickLine={false} />
+                                        <Tooltip
+                                            formatter={(value) =>
+                                                typeof value === 'number'
+                                                    ? `$${value.toLocaleString('en-US', { minimumFractionDigits: 2 })}`
+                                                    : String(value ?? '')
+                                            }
+                                        />
+                                        <Legend />
+                                        <Bar dataKey="selectedYearRevenue" fill="#3b82f6" name={`${selectedYear} Revenue`} radius={[4, 4, 0, 0]} />
+                                        <Bar dataKey="previousYearRevenue" fill="#64748b" name={`${previousYear} Revenue`} radius={[4, 4, 0, 0]} />
+                                    </BarChart>
+                                </ResponsiveContainer>
                             </Box>
                         </Box>
-                        <Box sx={{ width: '100%', height: 360, minWidth: 0 }}>
-                            <ResponsiveContainer width="100%" height="100%">
-                                <BarChart data={chartData} margin={{ top: 12, right: 16, left: 8, bottom: 8 }}>
-                                    <CartesianGrid strokeDasharray="3 3" vertical={false} />
-                                    <XAxis dataKey="month" />
-                                    <YAxis tickFormatter={(value: number) => `$${value / 1000}k`} />
-                                    <Tooltip
-                                        formatter={(value) =>
-                                            typeof value === 'number'
-                                                ? `$${value.toLocaleString('en-US', { minimumFractionDigits: 2 })}`
-                                                : String(value ?? '')
-                                        }
-                                    />
-                                    <Legend />
-                                    <Bar dataKey="selectedYearRevenue" fill="#6366f1" name={`${selectedYear} Revenue`} radius={[4, 4, 0, 0]} />
-                                    <Bar dataKey="previousYearRevenue" fill="#94a3b8" name={`${previousYear} Revenue`} radius={[4, 4, 0, 0]} />
-                                </BarChart>
-                            </ResponsiveContainer>
-                        </Box>
-                    </Box>
-                </>}
-            </Box>
-        </Box>
+                    </>}
+                </Box>
+            </div>
+        </div>
     );
 }
 

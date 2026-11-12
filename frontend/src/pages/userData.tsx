@@ -56,10 +56,10 @@ export function UserDataPage() {
         <Box sx={{ maxWidth: '100%', mx: 'auto', py: { xs: 2, md: 4 } }}>
             <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, justifyContent: 'space-between', alignItems: { xs: 'stretch', md: 'center' }, gap: 2, mb: 3 }}>
                 <Box>
-                    <Typography variant="h5" sx={{ fontWeight: 700, color: '#0f172a' }}>
+                    <Typography variant="h5" className="text-slate-900 text-xl font-bold">
                         {selectedCustomer || 'Customer invoices'}
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    <Typography variant="body2" className="text-slate-600 text-sm">
                         Filter, search, and review invoices for one customer at a time.
                     </Typography>
                 </Box>

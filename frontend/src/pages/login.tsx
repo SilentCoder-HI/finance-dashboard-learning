@@ -10,7 +10,7 @@ import {
     Avatar,
 } from '@mui/material';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
-import { login, useAppDispatch, useAppSelector } from '../store/store';
+import { login, useAppDispatch } from '../store/store';
 import { invoices } from '../data/invoices';
 type User = {
     id: string;
@@ -24,7 +24,6 @@ export default function LoginForm() {
     const dispatch = useAppDispatch();
 
     const users = invoices.map(user => user.customer.toLowerCase())
-    const uniqeUser = [... new Set(users)]
 
     // fixed: submit event type is FormEvent, not FocusEvent
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {

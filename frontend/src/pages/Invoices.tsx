@@ -44,7 +44,7 @@ const features = tableFeatures({
 
 const columnHelper = createColumnHelper<any, any>();
 
-export function FinanceDashboardDay2() {
+export function Invoices() {
   const [globalFilter, setGlobalFilter] = useState('');
   const [pagination, setPagination] = useState({ pageIndex: 0, pageSize: 10 });
   const [sorting, setSorting] = useState<SortingState>([]);
