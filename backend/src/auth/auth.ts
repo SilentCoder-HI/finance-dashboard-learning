@@ -16,5 +16,5 @@ authRoutes.post("/login", (req: Request, res: Response) => {
         role: users.role,
     }
 
-    return res.json({ data: userE });
+    return res.json(userE);
 });

@@ -39,9 +39,12 @@ const buttonSx = {
 
 export default function Profile() {
     const cUser = useAppSelector((state) => state.auth.user)
-    const filterUser = alluser.filter((user) => user.company.name.toLocaleLowerCase() == cUser?.name.toLowerCase())
+    const filterUser = alluser.filter((user) => user.company.name.toLocaleLowerCase() == cUser?.name?.toLowerCase())
 
     const user = filterUser[0]
+    if (!user) {
+        return <Box sx={{ p: 4 }}>Profile not found for the current user.</Box>
+    }
     const userinvoice = invoices.filter((state) => state.customer == user.company.name)
     const paid = userinvoice.filter((state) => state.status == "Paid").reduce((sum, invoice) => sum + invoice.amount, 0)
     const overDue = userinvoice.filter((state) => state.status == "Overdue").reduce((sum, invoice) => sum + invoice.amount, 0)
