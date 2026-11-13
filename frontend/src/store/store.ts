@@ -2,10 +2,11 @@ import { configureStore, createSlice, type PayloadAction } from "@reduxjs/toolki
 import { useDispatch, useSelector } from "react-redux"
 
 
-type User = {
+export type User = {
     id: string;
-    name: string;
-    role: "admin" | "user",
+    username: string;
+    email: string;
+    role?: "admin" | "user",
 }
 
 const authSlice = createSlice({

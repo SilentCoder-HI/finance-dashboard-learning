@@ -39,9 +39,17 @@ const buttonSx = {
 
 export default function Profile() {
     const cUser = useAppSelector((state) => state.auth.user)
-    const filterUser = alluser.filter((user) => user.company.name.toLocaleLowerCase() == cUser?.name?.toLowerCase())
+    const filterUser = alluser.filter((user) => user.company.name.toLocaleLowerCase() == cUser?.username?.toLowerCase())
 
-    const user = filterUser[0]
+    const fallbackUser = cUser
+        ? ({
+            profile: { fullName: cUser.username },
+            email: cUser.email,
+            address: { city: 'Guest' },
+            company: { name: cUser.username, industry: 'Demo' },
+        } as any)
+        : undefined;
+    const user = filterUser[0] ?? fallbackUser;
     if (!user) {
         return <Box sx={{ p: 4 }}>Profile not found for the current user.</Box>
     }

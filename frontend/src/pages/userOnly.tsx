@@ -33,13 +33,9 @@ export function UserOnly() {
         loadData();
     })
 
-    const [selectedCustomer, setSelectedCustomer] = useState(user?.name ?? '');
+    const [selectedCustomer] = useState(user?.username ?? '');
     const [searchQuery, setSearchQuery] = useState('');
     const [statusFilter, setStatusFilter] = useState<(typeof statuses)[number]>('All');
-
-    const handleChange = (event: SelectChangeEvent<string>) => {
-        setSelectedCustomer(event.target.value);
-    };
 
     const handleStatusChange = (event: SelectChangeEvent<string>) => {
         setStatusFilter(event.target.value as (typeof statuses)[number]);

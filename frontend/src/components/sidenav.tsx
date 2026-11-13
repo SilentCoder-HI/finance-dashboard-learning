@@ -1,6 +1,7 @@
 import { Box, ButtonGroup, Button } from '@mui/material'
 import { BookOpenCheck, LayoutGrid, UserRound, Wallet } from 'lucide-react';
 import type { ReactElement } from 'react';
+import { useAppSelector } from '../store/store';
 
 export type PageId =
   | 'overview'
@@ -11,7 +12,8 @@ export type PageId =
   | 'day-3'
   | 'day-4'
   | 'day-5'
-  | 'day-6';
+  | 'day-6'
+  | 'day-7';
 
 type SidenavProps = {
     activePage: PageId;
@@ -19,6 +21,7 @@ type SidenavProps = {
 };
 
 export default function Sidenav({ setActivePage, activePage }: SidenavProps) {
+    const user = useAppSelector((state) => state.auth.user);
 
     const nav :{ section: string; items: { id: PageId; label: string; icon: ReactElement }[] }[] = [
 
@@ -30,17 +33,20 @@ export default function Sidenav({ setActivePage, activePage }: SidenavProps) {
                 { id: "invoices", label: "Invoices", icon: <Wallet size={16} strokeWidth={1.5} /> },
             ]
         },
-        {
-            section: "Learning",
-            items: [
-                { id: "day-1", label: "Day 1 - Learning", icon: <BookOpenCheck size={16} strokeWidth={1.5} /> },
-                { id: "day-2", label: "Day 2 - Learning", icon: <BookOpenCheck size={16} strokeWidth={1.5} /> },
-                { id: "day-3", label: "Day 3 - Learning", icon: <BookOpenCheck size={16} strokeWidth={1.5} /> },
-                { id: "day-4", label: "Day 4 - Learning", icon: <BookOpenCheck size={16} strokeWidth={1.5} /> },
-                { id: "day-5", label: "Day 5 - Learning", icon: <BookOpenCheck size={16} strokeWidth={1.5} /> },
-                { id: "day-6", label: "Day 6 - Learning", icon: <BookOpenCheck size={16} strokeWidth={1.5} /> }
-            ]
-        }
+        ...(user
+            ? ([{
+                section: "Learning",
+                items: [
+                    { id: "day-1" as PageId, label: "Day 1 - Learning", icon: <BookOpenCheck size={16} strokeWidth={1.5} /> },
+                    { id: "day-2" as PageId, label: "Day 2 - Learning", icon: <BookOpenCheck size={16} strokeWidth={1.5} /> },
+                    { id: "day-3" as PageId, label: "Day 3 - Learning", icon: <BookOpenCheck size={16} strokeWidth={1.5} /> },
+                    { id: "day-4" as PageId, label: "Day 4 - Learning", icon: <BookOpenCheck size={16} strokeWidth={1.5} /> },
+                    { id: "day-5" as PageId, label: "Day 5 - Learning", icon: <BookOpenCheck size={16} strokeWidth={1.5} /> },
+                    { id: "day-6" as PageId, label: "Day 6 - Learning", icon: <BookOpenCheck size={16} strokeWidth={1.5} /> },
+                    { id: "day-7" as PageId, label: "Day 7 - Learning", icon: <BookOpenCheck size={16} strokeWidth={1.5} /> }
+                ]
+            }] as { section: string; items: { id: PageId; label: string; icon: ReactElement }[] }[])
+            : [])
     ];
 
     return (

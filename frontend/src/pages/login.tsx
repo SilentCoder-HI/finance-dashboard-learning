@@ -8,50 +8,87 @@ import {
     Paper,
     Alert,
     Avatar,
+    Link,
 } from '@mui/material';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import { login, useAppDispatch } from '../store/store';
-import { invoices } from '../data/invoices';
+import { useNavigate } from 'react-router-dom';
+import { dummyUser } from '../data/dummyUser';
+
 type User = {
     id: string;
-    name: string;
-    role: "admin" | "user",
-}
-export default function LoginForm() {
+    username: string;
+    email: string;
+    role?: "admin" | "user";
+};
+
+export default function AuthForm() {
+    const [isLogin, setIsLogin] = useState(false);
     const [username, setUsername] = useState('');
+    const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const dispatch = useAppDispatch();
+    const navigate = useNavigate();
 
-    const users = invoices.map(user => user.customer.toLowerCase())
+    const handleDummyLogin = () => {
+        dispatch(login(dummyUser));
+        navigate('/', { replace: true });
+    };
 
-    // fixed: submit event type is FormEvent, not FocusEvent
+    const toggleMode = () => {
+        setIsLogin((prev) => !prev);
+        setError('');
+        setUsername('');
+        setEmail('');
+        setPassword('');
+    };
+
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        try {
-            const res = await fetch("http://localhost:2000/auth/login", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ username })
-            })
-            console.log(res)
-            const data = (await res.json()) as User
-            if(!res.ok){
-                return null
+        setError('');
+        
+        // Basic validation
+        if (isLogin) {
+            if (!email.trim() || !password.trim()) {
+                setError('Please fill in all required fields.');
+                return;
             }
-            
-            dispatch(login(data))
-        } catch (error) {
-            setError(String(error))
+        } else {
+            if (!username.trim() || !email.trim() || !password.trim()) {
+                setError('Please fill in all required fields.');
+                return;
+            }
         }
 
-        if (username === "" && password == "") {
-            setError("Write ")
+        const endpoint = isLogin
+            ? 'http://localhost:2000/auth/login'
+            : 'http://localhost:2000/auth/register';
+
+        const payload = isLogin
+            ? { email, password }
+            : { username, email, password };
+
+        try {
+            const res = await fetch(endpoint, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload),
+            });
+
+            const data = await res.json();
+
+            if (!res.ok) {
+                setError(data.message || (isLogin ? "User doesn't exist or invalid credentials." : 'Registration failed.'));
+                return;
+            }
+
+            dispatch(login((data.user ?? data) as User));
+            navigate('/', { replace: true });
+        } catch (err) {
+            setError('Network error: ' + String(err));
         }
-        else {
-            setError("User don't exit")
-        }
-    }
+    };
 
     return (
         <Box
@@ -68,71 +105,92 @@ export default function LoginForm() {
                     sx={{
                         p: { xs: 3, sm: 5 },
                         borderRadius: 4,
-                        backdropFilter: 'blur(10px)',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'center',
                     }}
                 >
-                    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                    <Avatar sx={{ m: 1, bgcolor: 'primary.main' }}>
+                        <LockOutlinedIcon />
+                    </Avatar>
 
-                        <Avatar sx={{ bgcolor: 'primary.main', width: 56, height: 56, mb: 2 }}>
-                            <LockOutlinedIcon />
-                        </Avatar>
+                    <Typography variant="h5">
+                        {isLogin ? 'Sign In' : 'Create Account'}
+                    </Typography>
 
-                        <Typography component="h1" variant="h5" sx={{ fontWeight: 700 }}>
-                            Welcome back
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
-                            Sign in to your finance workspace
-                        </Typography>
+                    {error && (
+                        <Alert severity="error" sx={{ width: '100%', mb: 2 }}>
+                            {error}
+                        </Alert>
+                    )}
 
-                        {error && (
-                            <Alert severity="error" sx={{ width: '100%', mb: 2 }}>
-                                {error}
-                            </Alert>
-                        )}
-
-                        <Box component="form" onSubmit={handleSubmit} noValidate sx={{ width: '100%' }}>
-
-                            {/* Email Field */}
+                    <Box component="form" onSubmit={handleSubmit} sx={{ width: '100%' }}>
+                        {!isLogin && (
                             <TextField
-                                name="email"
-                                label="User Name"
-                                placeholder="abccdeabc"
-                                fullWidth
                                 margin="normal"
+                                required
+                                fullWidth
+                                label="Username"
+                                autoComplete="username"
+                                autoFocus
                                 value={username}
                                 onChange={(e) => setUsername(e.target.value)}
                             />
+                        )}
+                        <TextField
+                            margin="normal"
+                            required
+                            fullWidth
+                            label="Email Address"
+                            type="email"
+                            autoComplete="email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                        />
 
-                            {/* Password Field */}
-                            <TextField
-                                name="password"
-                                type="password"
-                                label="Password"
-                                placeholder="123@G222G"
-                                fullWidth
-                                margin="normal"
-                                value={password}
-                                onChange={(e) => setPassword(e.target.value)}
-                            />
+                        <TextField
+                            margin="normal"
+                            required
+                            fullWidth
+                            label="Password"
+                            type="password"
+                            autoComplete={isLogin ? 'current-password' : 'new-password'}
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                        />
 
-                            {/* Submit Button */}
-                            <Button
-                                type="submit"
-                                variant="contained"
-                                fullWidth
-                                size="large"
-                                sx={{
-                                    mt: 3,
-                                    py: 1.5,
-                                    fontSize: '1rem',
-                                    fontWeight: 600,
-                                    borderRadius: 2,
-                                    textTransform: 'none',
-                                }}
+                        <Button
+                            type="submit"
+                            fullWidth
+                            variant="contained"
+                            size="large"
+                            sx={{ mt: 3, mb: 2, borderRadius: 2 }}
+                        >
+                            {isLogin ? 'Login' : 'Register'}
+                        </Button>
+
+                        <Button
+                            type="button"
+                            fullWidth
+                            variant="outlined"
+                            size="large"
+                            sx={{ mb: 2, borderRadius: 2 }}
+                            onClick={handleDummyLogin}
+                        >
+                            Continue as Dummy User
+                        </Button>
+
+                        <Box>
+                            <Link
+                                component="button"
+                                type="button"
+                                variant="body2"
+                                onClick={toggleMode}
                             >
-                                Sign In
-                            </Button>
-
+                                {isLogin
+                                    ? "Don't have an account? Register"
+                                    : 'Already have an account? Login'}
+                            </Link>
                         </Box>
                     </Box>
                 </Paper>
