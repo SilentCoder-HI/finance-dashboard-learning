@@ -20,10 +20,11 @@ import { Day3LearningPage } from './day3';
 import { Day4LearningPage } from './day4';
 import { Day5LearningPage } from './day5';
 import { Day6LearningPage } from './day6';
+import { Day7LearningPage } from './day7';
 import { Invoices } from './Invoices';
-import Login from './login';
+
 import { useDispatch } from 'react-redux';
-import { logout, useAppSelector } from './../store/store';
+import { logout } from './../store/store';
 import Profile from './profile';
 import Sidenav from '../components/sidenav';
 
@@ -33,11 +34,9 @@ function App() {
     const [activePage, setActivePage] = useState<PageId>('overview');
     const dispacth = useDispatch()
 
-    const user = useAppSelector((state) => state.auth.user)
 
-    if (!user) {
-        return <Login />
-    }
+    // Public dashboard: dummy data is shown to everyone.
+    // Learning pages are only available after login (real or dummy).
     const [sideNav, setsideNav] = useState(true)
     const totalRevenue = invoices.reduce((acc, invoice) => acc + invoice.amount, 0);
 
@@ -122,6 +121,8 @@ function App() {
                         <Day5LearningPage />
                     ) : activePage === 'day-6' ? (
                         <Day6LearningPage />
+                    ) : activePage === 'day-7' ? (
+                        <Day7LearningPage />
                     ) : <>
                         <Box className="rounded-2xl border  border-white/60 bg-white/40 p-4 flex justify-between shadow-lg ">
                             <Box className="bg-transparent">

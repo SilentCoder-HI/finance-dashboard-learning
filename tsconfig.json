@@ -1,6 +1,5 @@
 {
     "compilerOptions": {
-        "baseUrl": ".",
         "paths": {
             "@Data": ["./frontend/src/data"],
             "@Data/*": ["./frontend/src/data/*"]
