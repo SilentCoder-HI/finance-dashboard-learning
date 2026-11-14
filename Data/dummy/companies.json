@@ -1,0 +1,62 @@
+[
+  {
+    "id": "c1",
+    "name": "TechVision",
+    "industry": "Software",
+    "website": "https://techvision.test"
+  },
+  {
+    "id": "c2",
+    "name": "GreenLeaf",
+    "industry": "Retail",
+    "website": "https://greenleaf.test"
+  },
+  {
+    "id": "c3",
+    "name": "BluePeak",
+    "industry": "Finance",
+    "website": "https://bluepeak.test"
+  },
+  {
+    "id": "c4",
+    "name": "UrbanNest",
+    "industry": "Real Estate",
+    "website": "https://urbannest.test"
+  },
+  {
+    "id": "c5",
+    "name": "MediCore",
+    "industry": "Healthcare",
+    "website": "https://medicore.test"
+  },
+  {
+    "id": "c6",
+    "name": "EduSpark",
+    "industry": "Education",
+    "website": "https://eduspark.test"
+  },
+  {
+    "id": "c7",
+    "name": "AgroNova",
+    "industry": "Agriculture",
+    "website": "https://agronova.test"
+  },
+  {
+    "id": "c8",
+    "name": "TravelEase",
+    "industry": "Travel",
+    "website": "https://travelease.test"
+  },
+  {
+    "id": "c9",
+    "name": "FoodHive",
+    "industry": "Food",
+    "website": "https://foodhive.test"
+  },
+  {
+    "id": "c10",
+    "name": "AutoPilot",
+    "industry": "Automotive",
+    "website": "https://autopilot.test"
+  }
+]

@@ -1,8 +1,8 @@
 
 import { Box } from '@mui/material'
-import { useAppSelector } from '../store/store'
-import { alluser } from '../data/userData'
-import { invoices } from '../data/invoices'
+import { useAppSelector } from '../../store/store'
+import { alluser } from '../../data/userData'
+import { invoices } from '../../data/invoices'
 
 // Layout only: Box components, theme colors, static placeholder text.
 // Replace the placeholders with your own data/logic.

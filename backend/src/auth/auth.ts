@@ -5,42 +5,42 @@ import type { Request, Response } from "express";
 
 export const authRoutes = Router();
 
-authRoutes.post("/register", async (req: Request, res: Response) => {
-  try {
-    const { username, email, password } = req.body ?? {};
+// authRoutes.post("/register", async (req: Request, res: Response) => {
+//   try {
+//     const { username, email, password } = req.body ?? {};
 
-    if (!username || !email || !password) {
-      return res.status(400).json({ message: "All fields are required" });
-    }
+//     if (!username || !email || !password) {
+//       return res.status(400).json({ message: "All fields are required" });
+//     }
 
-    const normalizedEmail = email.toLowerCase().trim();
-    const existingUser = await User.findOne({ email: normalizedEmail });
+//     const normalizedEmail = email.toLowerCase().trim();
+//     const existingUser = await User.findOne({ email: normalizedEmail });
 
-    if (existingUser) {
-      return res.status(400).json({ message: "User already exists" });
-    }
+//     if (existingUser) {
+//       return res.status(400).json({ message: "User already exists" });
+//     }
 
-    const hashedPassword = await bcrypt.hash(password, 10);
+//     const hashedPassword = await bcrypt.hash(password, 10);
 
-    const newUser = await User.create({
-      username: username.trim(),
-      email: normalizedEmail,
-      password: hashedPassword,
-    });
+//     const newUser = await User.create({
+//       username: username.trim(),
+//       email: normalizedEmail,
+//       password: hashedPassword,
+//     });
 
-    return res.status(201).json({
-      message: "User registered successfully",
-      user: {
-        id: newUser._id,
-        username: newUser.username,
-        email: newUser.email,
-      },
-    });
-  } catch (error) {
-    console.error("Register error:", error);
-    return res.status(500).json({ message: "Internal server error" });
-  }
-});
+//     return res.status(201).json({
+//       message: "User registered successfully",
+//       user: {
+//         id: newUser._id,
+//         username: newUser.username,
+//         email: newUser.email,
+//       },
+//     });
+//   } catch (error) {
+//     console.error("Register error:", error);
+//     return res.status(500).json({ message: "Internal server error" });
+//   }
+// });
 
 authRoutes.post("/login", async (req: Request, res: Response) => {
   try {
@@ -50,12 +50,11 @@ authRoutes.post("/login", async (req: Request, res: Response) => {
       return res.status(400).json({ message: "Email and password are required" });
     }
 
-    const user = await User.findOne({ email: email.toLowerCase().trim() });
+    const user = await User.findOne({ email: email.toLowerCase().trim() }).select("+passwordHash");
     if (!user) {
-      return res.status(401).json({ message: "Invalid email or password" });
+      return res.status(401).json({ message: "User dont exist" });
     }
-
-    const isPasswordValid = await bcrypt.compare(password, user.password);
+    const isPasswordValid = await bcrypt.compare(password, user.passwordHash);
     if (!isPasswordValid) {
       return res.status(401).json({ message: "Invalid email or password" });
     }
@@ -63,9 +62,12 @@ authRoutes.post("/login", async (req: Request, res: Response) => {
     return res.status(200).json({
       message: "Login successful",
       user: {
-        id: user._id,
+        id: user.id,
+        name: user.name,
         username: user.username,
         email: user.email,
+        role: user.role,
+        companyId: user.companyId ? String(user.companyId) : null,
       },
     });
   } catch (error) {

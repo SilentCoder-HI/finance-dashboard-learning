@@ -1,8 +1,8 @@
 {
-    "compilerOptions": {
-        "paths": {
-            "@Data": ["./frontend/src/data"],
-            "@Data/*": ["./frontend/src/data/*"]
-        }
+  "compilerOptions": {
+    "paths": {
+      "@Components/*": ["./frontend/src/components/*"],
+      "@Data/*": ["./frontend/src/data/*"]
     }
+  }
 }

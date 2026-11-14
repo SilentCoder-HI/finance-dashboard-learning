@@ -11,29 +11,25 @@ import {
     Link,
 } from '@mui/material';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
-import { login, useAppDispatch } from '../store/store';
+import { setUser, useAppDispatch, type AuthUser, type Role } from '../store/store';
 import { useNavigate } from 'react-router-dom';
-import { dummyUser } from '../data/dummyUser';
+import { dummyUsers } from '../data/dummyUser';
 
-type User = {
-    id: string;
-    username: string;
-    email: string;
-    role?: "admin" | "user";
-};
 
 export default function AuthForm() {
     const [isLogin, setIsLogin] = useState(false);
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [demoRole, setDemoRole] = useState<'superadmin' | 'admin' | 'accountant' | 'viewer'>('viewer');
     const [error, setError] = useState('');
     const dispatch = useAppDispatch();
     const navigate = useNavigate();
 
     const handleDummyLogin = () => {
-        dispatch(login(dummyUser));
-        navigate('/', { replace: true });
+        const picked = dummyUsers.find((u) => u.role === demoRole) ?? dummyUsers[3];
+        dispatch(setUser(picked));
+        navigate('/dashboard', { replace: true });
     };
 
     const toggleMode = () => {
@@ -83,8 +79,23 @@ export default function AuthForm() {
                 return;
             }
 
-            dispatch(login((data.user ?? data) as User));
-            navigate('/', { replace: true });
+            const roleByEmail: Record<string, Role> = {
+                'superadmin@techvision.test': 'superadmin',
+                'admin@techvision.test': 'admin',
+                'accountant@techvision.test': 'accountant',
+                'viewer@techvision.test': 'viewer',
+            };
+            const incoming = (data.user ?? data) as Partial<AuthUser> & { username?: string };
+            dispatch(setUser({
+                id: incoming.id ?? 'backend-user',
+                name: incoming.name ?? incoming.username ?? incoming.email ?? '',
+                username: incoming.username ?? incoming.email ?? '',
+                email: incoming.email ?? '',
+                role: incoming.role ?? roleByEmail[incoming.email ?? ''] ?? 'viewer',
+                companyId: incoming.companyId ?? null,
+                isActive: incoming.isActive ?? true,
+            } as AuthUser));
+            navigate('/dashboard', { replace: true });
         } catch (err) {
             setError('Network error: ' + String(err));
         }
@@ -169,6 +180,19 @@ export default function AuthForm() {
                             {isLogin ? 'Login' : 'Register'}
                         </Button>
 
+                        <Box sx={{ mb: 2 }}>
+                            <Typography variant="caption" color="text.secondary">Demo role</Typography>
+                            <select
+                                value={demoRole}
+                                onChange={(e) => setDemoRole(e.target.value as any)}
+                                style={{ width: '100%', padding: 8, borderRadius: 8 }}
+                            >
+                                <option value="superadmin">superadmin</option>
+                                <option value="admin">admin</option>
+                                <option value="accountant">accountant</option>
+                                <option value="viewer">viewer</option>
+                            </select>
+                        </Box>
                         <Button
                             type="button"
                             fullWidth

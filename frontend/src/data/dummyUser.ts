@@ -1,10 +1,10 @@
-import type { User } from '../store/store';
+import type { AuthUser } from '../store/store';
 
-// A simple local user used for instant "dummy login".
-// No backend/MongoDB call is made when this is used.
-export const dummyUser: User = {
-    id: 'dummy-user',
-    username: 'guest',
-    email: 'guest@example.com',
-    role: 'user',
-};
+export const dummyUsers: AuthUser[] = [
+    { id: 'dummy-superadmin', name: 'Super Admin', username: 'superadmin', email: 'superadmin@techvision.test', role: 'superadmin', companyId: null, isActive: true },
+    { id: 'dummy-admin', name: 'Admin', username: 'admin', email: 'admin@techvision.test', role: 'admin', companyId: 'techvision', isActive: true },
+    { id: 'dummy-accountant', name: 'Accountant', username: 'accountant', email: 'accountant@techvision.test', role: 'accountant', companyId: 'techvision', isActive: true },
+    { id: 'dummy-viewer', name: 'Viewer', username: 'viewer', email: 'viewer@techvision.test', role: 'viewer', companyId: 'techvision', isActive: true },
+];
+
+export const dummyUser: AuthUser = dummyUsers[3];

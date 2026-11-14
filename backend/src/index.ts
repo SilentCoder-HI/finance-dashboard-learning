@@ -1,9 +1,9 @@
 import express from "express"
 import type { Request, Response } from "express"
-import { allInvoices, getInvoicesByCustomer } from "./data/invocies.js"
 import { authRoutes } from "./auth/auth.js"
 import cors from "cors";
 import { connectDB } from "./db/db.js";
+import routerCompany from "./modules/company/company.routes.js";
 
 
 
@@ -16,9 +16,10 @@ connectDB();
 app.get('/', (req: Request, res: Response) => {
     res.json({ message: "Hello Server is running" })
 })
+app.use("/api/companies/",routerCompany);
 
 app.use("/auth", authRoutes);
-
+app.use
 app.listen(port, () => {
     console.log(`Server is runnig at a http://localhost:${port}`)
 })

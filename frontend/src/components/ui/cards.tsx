@@ -1,15 +1,15 @@
-import { Card,CardContent, Typography } from "@mui/material";
-
+import { Card, CardContent, Typography } from "@mui/material";
 
 type MetricCardProps = {
   title: string;
   value: string;
   accent: string;
+  design?: string;
 };
 
-export function MetricCard({ title, value, accent }: MetricCardProps) {
+export function MetricCard({ title, value, accent, design }: MetricCardProps) {
   return (
-    <Card sx={{ borderTop: `4px solid ${accent}` }}>
+    <Card className={`${design ?? ""}`} sx={{ borderTop: `4px solid ${accent}` }}>
       <CardContent>
         <Typography variant="body2" sx={{ color: '#64748b', mb: 1 }}>
           {title}

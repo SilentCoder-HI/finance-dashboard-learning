@@ -1,0 +1,281 @@
+[
+  {
+    "id": "u-super",
+    "name": "Platform Super Admin",
+    "username": "superadmin",
+    "email": "superadmin@platform.test",
+    "role": "superadmin",
+    "companyId": null,
+    "isActive": true
+  },
+  {
+    "id": "u-c1-admin",
+    "name": "TechVision Admin",
+    "username": "admin@c1",
+    "email": "admin@c1.test",
+    "role": "admin",
+    "companyId": "c1",
+    "isActive": true
+  },
+  {
+    "id": "u-c1-accountant",
+    "name": "TechVision Accountant",
+    "username": "accountant@c1",
+    "email": "accountant@c1.test",
+    "role": "accountant",
+    "companyId": "c1",
+    "isActive": true
+  },
+  {
+    "id": "u-c1-viewer",
+    "name": "TechVision Viewer",
+    "username": "viewer@c1",
+    "email": "viewer@c1.test",
+    "role": "viewer",
+    "companyId": "c1",
+    "isActive": true
+  },
+  {
+    "id": "u-c2-admin",
+    "name": "GreenLeaf Admin",
+    "username": "admin@c2",
+    "email": "admin@c2.test",
+    "role": "admin",
+    "companyId": "c2",
+    "isActive": true
+  },
+  {
+    "id": "u-c2-accountant",
+    "name": "GreenLeaf Accountant",
+    "username": "accountant@c2",
+    "email": "accountant@c2.test",
+    "role": "accountant",
+    "companyId": "c2",
+    "isActive": true
+  },
+  {
+    "id": "u-c2-viewer",
+    "name": "GreenLeaf Viewer",
+    "username": "viewer@c2",
+    "email": "viewer@c2.test",
+    "role": "viewer",
+    "companyId": "c2",
+    "isActive": true
+  },
+  {
+    "id": "u-c3-admin",
+    "name": "BluePeak Admin",
+    "username": "admin@c3",
+    "email": "admin@c3.test",
+    "role": "admin",
+    "companyId": "c3",
+    "isActive": true
+  },
+  {
+    "id": "u-c3-accountant",
+    "name": "BluePeak Accountant",
+    "username": "accountant@c3",
+    "email": "accountant@c3.test",
+    "role": "accountant",
+    "companyId": "c3",
+    "isActive": true
+  },
+  {
+    "id": "u-c3-viewer",
+    "name": "BluePeak Viewer",
+    "username": "viewer@c3",
+    "email": "viewer@c3.test",
+    "role": "viewer",
+    "companyId": "c3",
+    "isActive": true
+  },
+  {
+    "id": "u-c4-admin",
+    "name": "UrbanNest Admin",
+    "username": "admin@c4",
+    "email": "admin@c4.test",
+    "role": "admin",
+    "companyId": "c4",
+    "isActive": true
+  },
+  {
+    "id": "u-c4-accountant",
+    "name": "UrbanNest Accountant",
+    "username": "accountant@c4",
+    "email": "accountant@c4.test",
+    "role": "accountant",
+    "companyId": "c4",
+    "isActive": true
+  },
+  {
+    "id": "u-c4-viewer",
+    "name": "UrbanNest Viewer",
+    "username": "viewer@c4",
+    "email": "viewer@c4.test",
+    "role": "viewer",
+    "companyId": "c4",
+    "isActive": true
+  },
+  {
+    "id": "u-c5-admin",
+    "name": "MediCore Admin",
+    "username": "admin@c5",
+    "email": "admin@c5.test",
+    "role": "admin",
+    "companyId": "c5",
+    "isActive": true
+  },
+  {
+    "id": "u-c5-accountant",
+    "name": "MediCore Accountant",
+    "username": "accountant@c5",
+    "email": "accountant@c5.test",
+    "role": "accountant",
+    "companyId": "c5",
+    "isActive": true
+  },
+  {
+    "id": "u-c5-viewer",
+    "name": "MediCore Viewer",
+    "username": "viewer@c5",
+    "email": "viewer@c5.test",
+    "role": "viewer",
+    "companyId": "c5",
+    "isActive": true
+  },
+  {
+    "id": "u-c6-admin",
+    "name": "EduSpark Admin",
+    "username": "admin@c6",
+    "email": "admin@c6.test",
+    "role": "admin",
+    "companyId": "c6",
+    "isActive": true
+  },
+  {
+    "id": "u-c6-accountant",
+    "name": "EduSpark Accountant",
+    "username": "accountant@c6",
+    "email": "accountant@c6.test",
+    "role": "accountant",
+    "companyId": "c6",
+    "isActive": true
+  },
+  {
+    "id": "u-c6-viewer",
+    "name": "EduSpark Viewer",
+    "username": "viewer@c6",
+    "email": "viewer@c6.test",
+    "role": "viewer",
+    "companyId": "c6",
+    "isActive": true
+  },
+  {
+    "id": "u-c7-admin",
+    "name": "AgroNova Admin",
+    "username": "admin@c7",
+    "email": "admin@c7.test",
+    "role": "admin",
+    "companyId": "c7",
+    "isActive": true
+  },
+  {
+    "id": "u-c7-accountant",
+    "name": "AgroNova Accountant",
+    "username": "accountant@c7",
+    "email": "accountant@c7.test",
+    "role": "accountant",
+    "companyId": "c7",
+    "isActive": true
+  },
+  {
+    "id": "u-c7-viewer",
+    "name": "AgroNova Viewer",
+    "username": "viewer@c7",
+    "email": "viewer@c7.test",
+    "role": "viewer",
+    "companyId": "c7",
+    "isActive": true
+  },
+  {
+    "id": "u-c8-admin",
+    "name": "TravelEase Admin",
+    "username": "admin@c8",
+    "email": "admin@c8.test",
+    "role": "admin",
+    "companyId": "c8",
+    "isActive": true
+  },
+  {
+    "id": "u-c8-accountant",
+    "name": "TravelEase Accountant",
+    "username": "accountant@c8",
+    "email": "accountant@c8.test",
+    "role": "accountant",
+    "companyId": "c8",
+    "isActive": true
+  },
+  {
+    "id": "u-c8-viewer",
+    "name": "TravelEase Viewer",
+    "username": "viewer@c8",
+    "email": "viewer@c8.test",
+    "role": "viewer",
+    "companyId": "c8",
+    "isActive": true
+  },
+  {
+    "id": "u-c9-admin",
+    "name": "FoodHive Admin",
+    "username": "admin@c9",
+    "email": "admin@c9.test",
+    "role": "admin",
+    "companyId": "c9",
+    "isActive": true
+  },
+  {
+    "id": "u-c9-accountant",
+    "name": "FoodHive Accountant",
+    "username": "accountant@c9",
+    "email": "accountant@c9.test",
+    "role": "accountant",
+    "companyId": "c9",
+    "isActive": true
+  },
+  {
+    "id": "u-c9-viewer",
+    "name": "FoodHive Viewer",
+    "username": "viewer@c9",
+    "email": "viewer@c9.test",
+    "role": "viewer",
+    "companyId": "c9",
+    "isActive": true
+  },
+  {
+    "id": "u-c10-admin",
+    "name": "AutoPilot Admin",
+    "username": "admin@c10",
+    "email": "admin@c10.test",
+    "role": "admin",
+    "companyId": "c10",
+    "isActive": true
+  },
+  {
+    "id": "u-c10-accountant",
+    "name": "AutoPilot Accountant",
+    "username": "accountant@c10",
+    "email": "accountant@c10.test",
+    "role": "accountant",
+    "companyId": "c10",
+    "isActive": true
+  },
+  {
+    "id": "u-c10-viewer",
+    "name": "AutoPilot Viewer",
+    "username": "viewer@c10",
+    "email": "viewer@c10.test",
+    "role": "viewer",
+    "companyId": "c10",
+    "isActive": true
+  }
+]

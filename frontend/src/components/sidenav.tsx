@@ -1,19 +1,21 @@
-import { Box, ButtonGroup, Button } from '@mui/material'
-import { BookOpenCheck, LayoutGrid, UserRound, Wallet } from 'lucide-react';
-import type { ReactElement } from 'react';
-import { useAppSelector } from '../store/store';
-
+import { Box, Button, Typography } from '@mui/material'
+import { LayoutGrid, LogOut, User, UserRound, Wallet } from 'lucide-react';
+import { useState, type ReactElement } from 'react';
+import { useAppDispatch } from '../store';
+import { clearUser } from '../store/store';
+import { useNavigate } from 'react-router-dom';
 export type PageId =
-  | 'overview'
-  | 'invoices'
-  | 'profile'
-  | 'day-1'
-  | 'day-2'
-  | 'day-3'
-  | 'day-4'
-  | 'day-5'
-  | 'day-6'
-  | 'day-7';
+    | 'overview'
+    | 'invoices'
+    | 'profile'
+    | 'user'
+    | 'day-1'
+    | 'day-2'
+    | 'day-3'
+    | 'day-4'
+    | 'day-5'
+    | 'day-6'
+    | 'day-7';
 
 type SidenavProps = {
     activePage: PageId;
@@ -21,55 +23,70 @@ type SidenavProps = {
 };
 
 export default function Sidenav({ setActivePage, activePage }: SidenavProps) {
-    const user = useAppSelector((state) => state.auth.user);
+    const [open, setOpen] = useState(true)
+    const dispatch = useAppDispatch()
+    const navigate = useNavigate()
+    const handle_logout = () => {
+        navigate('/login', { replace: true })
+        dispatch(clearUser())
+    }
 
-    const nav :{ section: string; items: { id: PageId; label: string; icon: ReactElement }[] }[] = [
+    const nav: { section: string; items: { id: PageId; label: string; icon: ReactElement }[] }[] = [
 
         {
             section: "Main",
             items: [
                 { id: "overview", label: "Main Dashboard", icon: <LayoutGrid size={16} strokeWidth={1.5} /> },
                 { id: "profile", label: "Profile", icon: <UserRound size={16} strokeWidth={1.5} /> },
+                { id: "user", label: "User", icon: <User size={16} strokeWidth={1.5} /> },
                 { id: "invoices", label: "Invoices", icon: <Wallet size={16} strokeWidth={1.5} /> },
             ]
         },
-        ...(user
-            ? ([{
-                section: "Learning",
-                items: [
-                    { id: "day-1" as PageId, label: "Day 1 - Learning", icon: <BookOpenCheck size={16} strokeWidth={1.5} /> },
-                    { id: "day-2" as PageId, label: "Day 2 - Learning", icon: <BookOpenCheck size={16} strokeWidth={1.5} /> },
-                    { id: "day-3" as PageId, label: "Day 3 - Learning", icon: <BookOpenCheck size={16} strokeWidth={1.5} /> },
-                    { id: "day-4" as PageId, label: "Day 4 - Learning", icon: <BookOpenCheck size={16} strokeWidth={1.5} /> },
-                    { id: "day-5" as PageId, label: "Day 5 - Learning", icon: <BookOpenCheck size={16} strokeWidth={1.5} /> },
-                    { id: "day-6" as PageId, label: "Day 6 - Learning", icon: <BookOpenCheck size={16} strokeWidth={1.5} /> },
-                    { id: "day-7" as PageId, label: "Day 7 - Learning", icon: <BookOpenCheck size={16} strokeWidth={1.5} /> }
-                ]
-            }] as { section: string; items: { id: PageId; label: string; icon: ReactElement }[] }[])
-            : [])
     ];
 
     return (
-        <Box className="bg-transparent w-full">
-            {nav.map((group) => (
-                <Box className="border-b w-full sidebar-item border-slate-200" key={group.section} sx={{ mb: 2 }}>
-                    <ButtonGroup className='flex flex-col w-full gap-2 my-4' variant="outlined" >
-                        {group.items.map((item) => (
-                            <Button
-                                sx={{ border: 0 }}
-                                key={item.id}
-                                variant={activePage === item.id ? "contained" : "outlined"}
-                                className='flex items-center justify-start font-bold gap-5 rounded-2xl border border-white/60 bg-white/40 px-4 py-2 text-slate-800 backdrop-blur-xl transition-all duration-200 hover:bg-white/60 hover:scale-[1.02]'
-                                onClick={()=>setActivePage(item.id)}
-                            >
-                                {item.icon}
-                                {item.label}
-                            </Button>
-                        ))}
-                    </ButtonGroup>
-                </Box>
-            ))}
+        <Box
+            className={`rounded-2xl flex flex-col justify-between  overflow-x-hidden ${open ? "w-[350px]" : "w-[100px]"} border border-white/80 bg-white/60 p-5 backdrop-blur-xl shadow-lg overflow-y-auto no-scrollbar `}
+            component="nav"
+            aria-label="Dashboard pages"
+        >
+            <Box>
+                <Box className={` flex items-center ${!open ? "flex-col-reverse justify-center" : " justify-between"} `}>
+                    <Typography variant="subtitle1" className='text-slate-900 py-2 text-xl font-semibold tracking-tight'>
+                        FW.
+                    </Typography>
+                    <Button onClick={() => setOpen(!open)}>
 
+                        {open ? "Menu" : "Open"}
+                    </Button>
+                </Box>
+                <Box className="bg-transparent w-full">
+                    {nav.map((group) => (
+                        <Box key={group.section} className="flex flex-col w-full gap-2 my-4">
+                            {group.items.map((item) => (
+                                <Button
+                                    key={item.id}
+                                    fullWidth
+                                    variant={activePage === item.id ? "contained" : "outlined"}
+                                    onClick={() => setActivePage(item.id)}
+                                    sx={{
+                                        border: 0,
+                                        justifyContent: open ? 'flex-start' : 'center',
+                                        textTransform: 'none', // Optional: prevents ALL CAPS text
+                                    }}
+                                    className="flex items-center font-bold gap-4 rounded-2xl border border-white/60 bg-white/40 px-4 py-2 text-slate-800 backdrop-blur-xl transition-all duration-200 hover:bg-white/60 hover:scale-[1.02]"
+                                >
+                                    {item.icon}
+                                    {open && <span>{item.label}</span>}
+                                </Button>
+                            ))}
+                        </Box>
+                    ))}
+                </Box>
+            </Box>
+            <Box className="">
+                <Button><LogOut onClick={() => handle_logout()} /></Button>
+            </Box>
         </Box>
     )
 }

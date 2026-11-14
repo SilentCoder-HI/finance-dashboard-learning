@@ -7,6 +7,7 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   resolve: {
     alias: {
+      '@Components': new URL('./src/components', import.meta.url).pathname,
       '@Data': new URL('./src/data', import.meta.url).pathname,
     },
   },
