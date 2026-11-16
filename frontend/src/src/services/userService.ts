@@ -1,12 +1,18 @@
-export const fetchCompanyusers = async (compID: string) => {
+export const fetchCompanyusers = async () => {
     try {
-        const response = await fetch(`http://localhost:2000/api/companies/${compID}`, {
+        const response = await fetch(`http://localhost:2000/api/users`, {
             method: "GET",
-            credentials: "include", // harmless now, needed when the token cookie exists
+            credentials: "include",
         });
-        const data = response.json()
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        return data.data;
     }
     catch (e) {
-        console.error(e)
+        console.error("Error fetching users:", e);
     }
 }

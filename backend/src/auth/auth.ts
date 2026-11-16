@@ -3,6 +3,7 @@ import bcrypt from "bcryptjs";
 import { Router } from "express";
 import type { Request, Response } from "express";
 
+import jwt from "jsonwebtoken"
 export const authRoutes = Router();
 
 // authRoutes.post("/register", async (req: Request, res: Response) => {
@@ -59,6 +60,22 @@ authRoutes.post("/login", async (req: Request, res: Response) => {
       return res.status(401).json({ message: "Invalid email or password" });
     }
 
+    const token = jwt.sign(
+      {
+        userId: user._id,
+        companyId: user.companyId ? String(user.companyId) : null,
+        role: user.role,
+      },
+      process.env.JWT_SECRET as string,
+      { expiresIn: "1d" }
+    )
+    res.cookie("token", token, {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === "production",
+      sameSite: "lax",
+      maxAge: 24 * 60 * 60 * 1000
+    })
+    
     return res.status(200).json({
       message: "Login successful",
       user: {

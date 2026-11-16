@@ -43,7 +43,7 @@ export default function AuthForm() {
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         setError('');
-        
+
         // Basic validation
         if (isLogin) {
             if (!email.trim() || !password.trim()) {
@@ -69,6 +69,7 @@ export default function AuthForm() {
             const res = await fetch(endpoint, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
+                credentials: 'include', // <--- 2. CRUCIAL: Required to accept cookies across different ports!
                 body: JSON.stringify(payload),
             });
 
