@@ -1,23 +1,8 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
+import { ROLES, type Role, type AuthUser } from "../../types";
 
-export const ROLES = [
-  "superadmin",
-  "admin",
-  "accountant",
-  "viewer",
-] as const;
-
-export type Role = (typeof ROLES)[number];
-
-export interface AuthUser {
-  id: string;
-  name: string;
-  username: string;
-  email: string;
-  role: Role;
-  companyId: string | null;
-  isActive: boolean;
-}
+export { ROLES };
+export type { Role, AuthUser };
 
 interface AuthState {
   user: AuthUser | null;

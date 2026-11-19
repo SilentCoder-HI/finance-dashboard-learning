@@ -1,8 +1,8 @@
-import companiesJson from "../../../Data/dummy/companies.json";
-import usersJson from "../../../Data/dummy/users.json";
-import customersJson from "../../../Data/dummy/customers.json";
-import invoicesJson from "../../../Data/dummy/invoices.json";
-import ordersJson from "../../../Data/dummy/orders.json";
+import companiesJson from "./dummy/companies.json";
+import usersJson from "./dummy/users.json";
+import customersJson from "./dummy/customers.json";
+import invoicesJson from "./dummy/invoices.json";
+import ordersJson from "./dummy/orders.json";
 
 export type Company = { id: string; name: string; industry: string; website: string };
 export type User = { id: string; name: string; username: string; email: string; role: "superadmin" | "admin" | "accountant" | "viewer"; companyId: string | null; isActive: boolean };

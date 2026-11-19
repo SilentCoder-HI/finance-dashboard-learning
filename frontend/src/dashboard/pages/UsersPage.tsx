@@ -1,8 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
-import { useAppSelector } from "../../store";
-import { getUsersByCompany, getSuperUserData } from "@Data/data";
-import { fetchCompanyusers } from "../../src/services/userService";
-import { Button, TableRow, TableCell, TableBody } from "@mui/material";
+import { fetchCompanyusers } from "../../services/userService";
+import { TableRow, TableCell, TableBody } from "@mui/material";
 import {
   createColumnHelper,
   columnVisibilityFeature,
@@ -11,6 +9,7 @@ import {
   useTable
 } from "@tanstack/react-table";
 import { Edit } from "lucide-react";
+import ManageUserModal from "../../components/ManageUserModal";
 export interface User {
   _id?: string;
   id?: string;
@@ -32,8 +31,15 @@ export default function UsersPage() {
   const [user, setUser] = useState<User[]>([])
   const [loading, setloading] = useState(true)
   const [error, setError] = useState("")
+  const [selectedUser, setSelectedUser] = useState<any>(null)
 
   const data = user
+
+  const manageUser = (object: any) => {
+    setSelectedUser(object);
+  }
+
+  
   const columns = useMemo(
     () => [
       columnHelper.display({
@@ -49,8 +55,7 @@ export default function UsersPage() {
         id: "Manage",
         header: "Manage",
         cell: ({ row }) => (
-
-          <Edit className="text-blue-400 cursor-pointer" />
+          <Edit className="text-blue-400 cursor-pointer hover:text-red-500" onClick={()=>manageUser(row.original)} />
         )
       })
     ],
@@ -67,10 +72,7 @@ export default function UsersPage() {
     const loadUsers = async () => {
       try {
         setError("");
-        const rows = await Promise.all([
-          fetchCompanyusers(),
-          new Promise((resolve) => setTimeout(resolve, 1500))
-        ])
+        const rows = await fetchCompanyusers()
         setUser(rows ?? []);
       } catch (e) {
         setError(e instanceof Error ? e.message : "Something went wrong");
@@ -136,6 +138,13 @@ export default function UsersPage() {
           </TableBody>
         </table>
       </div>
+
+      {selectedUser && (
+        <ManageUserModal
+          user={selectedUser}
+          onClose={() => setSelectedUser(null)}
+        />
+      )}
     </div >
   );
 }

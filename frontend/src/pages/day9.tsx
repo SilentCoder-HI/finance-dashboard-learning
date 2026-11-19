@@ -1,4 +1,4 @@
-import { Box, Card, CardContent, Chip, Divider, Stack, Typography } from '@mui/material';
+import { Box, Card, CardContent, Chip, Stack, Typography } from '@mui/material';
 
 export function Day9LearningPage() {
   return (

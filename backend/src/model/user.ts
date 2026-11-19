@@ -1,3 +1,4 @@
+// backend/src/model/user.ts
 import { Schema, model, type InferSchemaType } from "mongoose";
 
 export const ROLES = ["superadmin", "admin", "accountant", "viewer"] as const;
@@ -10,6 +11,7 @@ const userSchema = new Schema(
     email: { type: String, required: true, unique: true, lowercase: true },
     passwordHash: { type: String, required: true, select: false },
     role: { type: String, enum: ROLES, default: "viewer", required: true },
+    // null only for the platform superadmin
     companyId: {
       type: Schema.Types.ObjectId,
       ref: "Company",
@@ -20,6 +22,12 @@ const userSchema = new Schema(
       },
     },
     isActive: { type: Boolean, default: true },
+
+    // per-user exceptions on top of the role: final = role + grant - deny
+    permissionOverrides: {
+      grant: { type: [String], default: [] },
+      deny: { type: [String], default: [] },
+    },
   },
   { timestamps: true }
 );

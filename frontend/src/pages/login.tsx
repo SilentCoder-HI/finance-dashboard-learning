@@ -95,6 +95,7 @@ export default function AuthForm() {
                 role: incoming.role ?? roleByEmail[incoming.email ?? ''] ?? 'viewer',
                 companyId: incoming.companyId ?? null,
                 isActive: incoming.isActive ?? true,
+                permissions : incoming.permissions,
             } as AuthUser));
             navigate('/dashboard', { replace: true });
         } catch (err) {

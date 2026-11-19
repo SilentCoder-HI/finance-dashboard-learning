@@ -108,7 +108,6 @@ export function Invoices() {
         <Typography variant="h4" sx={{ fontWeight: 700 }}>Invoices ({data.length})</Typography>
         <TextField size="small" value={globalFilter} onChange={(e) => setGlobalFilter(e.target.value)} placeholder="Search" />
       </Box>
-
       <Box className="grid grid-cols-3 gap-9 my-10">
         <MetricCard design=" p-5" title="Total Rev" value="2" accent="balck"/>
         <MetricCard design=" p-5" title="Total Rev" value="2" accent="balck"/>

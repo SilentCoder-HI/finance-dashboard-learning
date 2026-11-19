@@ -1,3 +1,4 @@
+// backend/src/model/invoice.ts
 import { Schema, model, type InferSchemaType } from "mongoose";
 
 export const INVOICE_STATUSES = ["draft", "pending", "paid", "overdue", "cancelled"] as const;
@@ -8,10 +9,10 @@ const invoiceSchema = new Schema(
     companyId: { type: Schema.Types.ObjectId, ref: "Company", required: true },
     invoiceNumber: { type: String, required: true },
     customerId: { type: Schema.Types.ObjectId, ref: "Customer", required: true },
-    customerName: { type: String, required: true },
+    customerName: { type: String, required: true }, // denormalised for table search
     description: String,
-    amount: { type: Number, required: true },
-    paidAmount: { type: Number, default: 0 },
+    amount: { type: Number, required: true }, // INTEGER, minor units (cents)
+    paidAmount: { type: Number, default: 0 }, // INTEGER, minor units
     status: { type: String, enum: INVOICE_STATUSES, required: true },
     issueDate: { type: Date, required: true },
     dueDate: { type: Date, required: true },
@@ -19,7 +20,6 @@ const invoiceSchema = new Schema(
   },
   { timestamps: true }
 );
-
 invoiceSchema.index({ companyId: 1, invoiceNumber: 1 }, { unique: true });
 invoiceSchema.index({ companyId: 1, issueDate: -1 });
 invoiceSchema.index({ companyId: 1, status: 1 });

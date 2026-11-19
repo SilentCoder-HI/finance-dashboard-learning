@@ -1,3 +1,4 @@
+import { resolvePermissions } from "@/model/permission.service.js";
 import { User } from "../model/user.js";
 import bcrypt from "bcryptjs";
 import { Router } from "express";
@@ -59,7 +60,11 @@ authRoutes.post("/login", async (req: Request, res: Response) => {
     if (!isPasswordValid) {
       return res.status(401).json({ message: "Invalid email or password" });
     }
+    if(!user.isActive){
+      return res.status(403).json({message : "Account is disabled"})
+    }
 
+    const permission = resolvePermissions(user)
     const token = jwt.sign(
       {
         userId: user._id,
@@ -85,6 +90,7 @@ authRoutes.post("/login", async (req: Request, res: Response) => {
         email: user.email,
         role: user.role,
         companyId: user.companyId ? String(user.companyId) : null,
+        permissions : permission,
       },
     });
   } catch (error) {

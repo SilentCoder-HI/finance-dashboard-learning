@@ -1,10 +1,11 @@
+// backend/src/model/company.ts
 import { Schema, model, type InferSchemaType } from "mongoose";
 
 const companySchema = new Schema(
   {
     name: { type: String, required: true, trim: true },
     slug: { type: String, required: true, unique: true, lowercase: true },
-    businessType: { type: String, required: true }, // software-house | retail | logistics
+    businessType: { type: String, required: true },
     currency: { type: String, required: true, default: "USD" },
     timezone: { type: String, default: "UTC" },
     modules: { type: [String], default: [] },
