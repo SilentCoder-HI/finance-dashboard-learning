@@ -10,6 +10,7 @@ import {
 } from "@tanstack/react-table";
 import { Edit } from "lucide-react";
 import ManageUserModal from "../../components/ManageUserModal";
+import { useAppSelector } from "../../store";
 export interface User {
   _id?: string;
   id?: string;
@@ -28,6 +29,7 @@ const features = tableFeatures({
 
 
 export default function UsersPage() {
+  const me = useAppSelector((state) => state.auth.user && state.auth.isAuthenticated)
   const [user, setUser] = useState<User[]>([])
   const [loading, setloading] = useState(true)
   const [error, setError] = useState("")
@@ -68,21 +70,25 @@ export default function UsersPage() {
     columns,
     features,
   })
+  const loadUsers = async () => {
+    try {
+      setError("");
+      const rows = await fetchCompanyusers()
+      setUser(rows ?? []);
+    } catch (e) {
+      setError(e instanceof Error ? e.message : "Something went wrong");
+    } finally {
+      setloading(false);
+    }
+  };
   useEffect(() => {
-    const loadUsers = async () => {
-      try {
-        setError("");
-        const rows = await fetchCompanyusers()
-        setUser(rows ?? []);
-      } catch (e) {
-        setError(e instanceof Error ? e.message : "Something went wrong");
-      } finally {
-        setloading(false);
-      }
-    };
 
     loadUsers();
   }, []);
+
+  const LoaderData = async () => {
+    loadUsers();
+  }
 
   return (
     <div className="space-y-4">
@@ -143,6 +149,7 @@ export default function UsersPage() {
         <ManageUserModal
           user={selectedUser}
           onClose={() => setSelectedUser(null)}
+          onSaved={()=> LoaderData()}
         />
       )}
     </div >

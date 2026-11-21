@@ -47,7 +47,7 @@ export interface AuthResponse {
 
 // ---------- Users (Users table + Manage panel) ----------
 export interface UserListItem {
-  id: string;
+  _id: string;
   name: string;
   username: string;
   email: string;

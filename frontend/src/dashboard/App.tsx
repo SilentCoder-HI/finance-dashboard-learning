@@ -5,6 +5,7 @@ import Profile from "./components/profile";
 import { Invoices } from "./pages/Invoices";
 import UsersPage from "./pages/UsersPage";
 import ProtectedRoute from "../routes/ProtectedRoute";
+import { RoleRoute } from "../components/RoleRoute";
 
 export default function DashboardApp() {
   return (
@@ -13,7 +14,14 @@ export default function DashboardApp() {
         <Route index element={<OverviewPage />} />
         <Route path="profile" element={<Profile />} />
         <Route path="invoices" element={<Invoices />} />
-        <Route path="users" element={<UsersPage />} />
+        <Route
+          path="users"
+          element={
+            <RoleRoute permission="user:read">
+              <UsersPage />
+            </RoleRoute>
+          }
+        />
       </Route>
     </Routes>
   );

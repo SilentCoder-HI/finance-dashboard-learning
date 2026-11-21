@@ -1,22 +1,8 @@
 import { useEffect, useMemo, useState } from "react";
 import { useAppSelector } from "../store/store";
-import type { UserListItem, UserPermissionDetail } from "../types";
+import type { UserListItem } from "../types";
 import { hasPermission } from "../utils/permissions";
 import { handleUser } from "../lib/usermanagement";
-
-// ---- adjust to your API client (cookie auth, so credentials: "include") ----
-const API = import.meta.env.VITE_API_URL ?? "";
-async function api<T>(path: string, init?: RequestInit): Promise<T> {
-  const res = await fetch(`${API}${path}`, {
-    credentials: "include",
-    headers: { "Content-Type": "application/json" },
-    ...init,
-  });
-  const body = await res.json().catch(() => ({}));
-  if (!res.ok) throw new Error(body.message ?? `Request failed (${res.status})`);
-  return body as T;
-}
-
 // ---- permission catalog (same names as backend/src/permissions.ts) ----
 const GROUPS: { resource: string; label: string; actions: string[] }[] = [
   { resource: "dashboard", label: "Dashboard", actions: ["read"] },
@@ -28,42 +14,56 @@ const GROUPS: { resource: string; label: string; actions: string[] }[] = [
   { resource: "company", label: "Company", actions: ["read", "write"] },
   { resource: "profile", label: "Profile", actions: ["read", "write"] },
 ];
+const ALL_PERMISSIONS = [
+  ...GROUPS.flatMap((g) => g.actions.map((a) => `${g.resource}:${a}`)),
+  "platform:read",
+];
+const ROLE_PERMISSIONS: Record<string, string[]> = {
+  superadmin: ALL_PERMISSIONS,
+  admin: [
+    "dashboard:read",
+    "invoice:read", "invoice:write", "invoice:delete",
+    "customer:read", "customer:write", "customer:delete",
+    "order:read", "order:write", "order:delete",
+    "report:read", "report:export",
+    "user:read", "user:write", "user:delete", "user:manage-permissions",
+    "company:read", "company:write",
+    "profile:read", "profile:write",
+  ],
+  accountant: [
+    "dashboard:read",
+    "invoice:read", "invoice:write",
+    "customer:read",
+    "order:read", "order:write",
+    "report:read",
+    "profile:read", "profile:write",
+  ],
+  viewer: [
+    "dashboard:read",
+    "invoice:read",
+    "customer:read",
+    "order:read",
+    "profile:read", "profile:write",
+  ],
+};
 const SENSITIVE = new Set(["user:delete", "user:manage-permissions"]);
 
 type Props = {
   user: UserListItem;
   onClose: () => void;
   onSaved?: () => void;
-  onDeleted?: () => void;
 };
 
-export default function ManageUserModal({ user, onClose, onSaved, onDeleted }: Props) {
+export default function ManageUserModal({ user, onClose, onSaved }: Props) {
+
   const me = useAppSelector((s) => s.auth.user);
   const myPerms = me?.permissions ?? [];
-  const [active, setActive] = useState(true);
 
-  const [detail, setDetail] = useState<UserPermissionDetail | null>(null);
-  const [draft, setDraft] = useState<Set<string>>(new Set());
-  const [loading, setLoading] = useState(true);
+  // start from the user's real status (was hardcoded true before)
+  const [active, setActive] = useState<boolean>(user.isActive);
+  const userP = user.permissionOverrides
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
-
-  // load role defaults + current overrides
-  useEffect(() => {
-    let alive = true;
-    setLoading(true);
-    api<UserPermissionDetail>(`/api/users/${user.id}/permissions`)
-      .then((d) => {
-        if (!alive) return;
-        setDetail(d);
-        setDraft(new Set(d.effective));
-      })
-      .catch((e) => alive && setError(e.message))
-      .finally(() => alive && setLoading(false));
-    return () => {
-      alive = false;
-    };
-  }, [user.id]);
 
   // close on Escape
   useEffect(() => {
@@ -72,17 +72,37 @@ export default function ManageUserModal({ user, onClose, onSaved, onDeleted }: P
     return () => window.removeEventListener("keydown", onKey);
   }, [onClose]);
 
-  const roleSet = useMemo(() => new Set(detail?.rolePermissions ?? []), [detail]);
-  const original = useMemo(() => new Set(detail?.effective ?? []), [detail]);
+  const savedEffectives = useMemo(() => {
+    const eff = new Set([...(ROLE_PERMISSIONS[user.role] ?? []), ...userP.grant]);
+    userP.deny.forEach((p) => eff.delete(p));
+    return eff;
+  }, [user.role, userP]);
 
-  const isSelf = me?.id === user.id;
+  const grantSet = useMemo(() => new Set(userP.grant), [userP.grant]);
+  const denySet = useMemo(() => new Set(userP.deny), [userP.deny]);
+
+  const [draft, setDraft] = useState<Set<string>>(() => new Set(savedEffectives));
+
+  const dirty =
+    active !== user.isActive ||
+    draft.size !== savedEffectives.size ||
+    [...draft].some((p) => !savedEffectives.has(p));
+
+
+  const isSelf = me?.id === user._id;
   const targetIsSuperadmin = user.role === "superadmin";
   const canManage = hasPermission(myPerms, "user:manage-permissions");
   const canDelete = hasPermission(myPerms, "user:delete") && !isSelf && !targetIsSuperadmin;
   const readOnly = !canManage || isSelf || targetIsSuperadmin;
-
-  const dirty =
-    draft.size !== original.size || [...draft].some((p) => !original.has(p));
+  // ---- single source of truth: everything this modal edits ----
+  const form = useMemo(
+    () => ({
+      userId: user._id,
+      isActive: active,
+      permissions: [...draft].sort(),
+    }),
+    [user._id, active, draft]
+  );
 
   function toggle(resource: string, action: string) {
     if (readOnly) return;
@@ -111,13 +131,39 @@ export default function ManageUserModal({ user, onClose, onSaved, onDeleted }: P
     });
   }
 
+  const handleUsers = () => {
+    if (readOnly) return;
+    setActive((prev) => !prev);
+  };
+
+
+  function getChangeType(
+    active: boolean,
+    user: { isActive: boolean },
+    original: Set<string>,
+    draft: Set<string>
+  ) {
+    const statusChanged = active !== user.isActive;
+    const permissionsChanged =
+      original.size !== draft.size ||
+      [...draft].some((p) => !original.has(p));
+
+    if (statusChanged && permissionsChanged) return "update";
+    if (statusChanged) return "status";
+    if (permissionsChanged) return "permissions";
+  }
+
+  // sends the complete form to handleUser
   async function save() {
+    const action = getChangeType(active, user, savedEffectives, draft)
+
     setBusy(true);
     setError("");
     try {
-      await api(`/api/users/${user.id}/permissions`, {
+      await handleUser({
+        ...form,
+        action,
         method: "PUT",
-        body: JSON.stringify({ permissions: [...draft] }),
       });
       onSaved?.();
       onClose();
@@ -128,25 +174,6 @@ export default function ManageUserModal({ user, onClose, onSaved, onDeleted }: P
     }
   }
 
-  async function deleteUser() {
-    if (!window.confirm(`Delete ${user.name}? This cannot be undone.`)) return;
-    setBusy(true);
-    setError("");
-    try {
-      await api(`/api/users/${user.id}`, { method: "DELETE" });
-      onDeleted?.();
-      onClose();
-    } catch (e) {
-      setError((e as Error).message);
-    } finally {
-      setBusy(false);
-    }
-  }
-
-  const handleUsers = () => {
-    handleUser({isActive: active, action:"status",method:"PUT"})
-    setActive((prev) => !prev)
-  }
   return (
     <div
       className="fixed inset-0 z-30 flex items-center justify-center bg-black/40 p-4"
@@ -170,17 +197,23 @@ export default function ManageUserModal({ user, onClose, onSaved, onDeleted }: P
                 {user.role}
               </span>
               <span
-                className={`rounded px-2 py-0.5 font-medium ${user.isActive ? "bg-green-100 text-green-700" : "bg-gray-200 text-gray-600"
+                className={`rounded px-2 py-0.5 font-medium ${active ? "bg-green-100 text-green-700" : "bg-gray-200 text-gray-600"
                   }`}
               >
-                {user.isActive ? "Active" : "Disabled"}
+                {active ? "Active" : "Disabled"}
               </span>
             </div>
           </div>
-          <button onClick={onClose} className="text-xl leading-none text-gray-400 hover:text-gray-700" aria-label="Close">
+          <button
+            onClick={onClose}
+            className="text-xl leading-none text-gray-400 hover:text-gray-700"
+            aria-label="Close"
+          >
             ×
           </button>
         </div>
+
+        {/* status switch */}
         <div className="flex items-start justify-between border-b px-5 py-4">
           <h2>Active</h2>
 
@@ -188,12 +221,15 @@ export default function ManageUserModal({ user, onClose, onSaved, onDeleted }: P
             type="button"
             role="switch"
             aria-checked={active}
-            onClick={() => handleUsers()}
-            className={`w-20 h-10 flex items-center overflow-hidden p-1 rounded-full border cursor-pointer transition-colors ${active ? "bg-blue-500 border-blue-500" : "bg-white border-gray-300"
-              }`}
+            disabled={readOnly}
+            onClick={() => {
+              handleUsers();
+            }}
+            className={`flex h-10 w-20 items-center overflow-hidden rounded-full border p-1 transition-colors ${readOnly ? "cursor-not-allowed opacity-50" : "cursor-pointer"
+              } ${active ? "border-blue-500 bg-blue-500" : "border-gray-300 bg-white"}`}
           >
             <span
-              className={`block w-1/2 h-full rounded-full transition-transform duration-200 ${active ? "translate-x-full bg-white" : "translate-x-0 bg-gray-400"
+              className={`block h-full w-1/2 rounded-full transition-transform duration-200 ${active ? "translate-x-full bg-white" : "translate-x-0 bg-gray-400"
                 }`}
             />
           </button>
@@ -201,77 +237,78 @@ export default function ManageUserModal({ user, onClose, onSaved, onDeleted }: P
 
         {/* body: permission table */}
         <div className="flex-1 overflow-y-auto px-5 py-3">
-          {loading ? (
-            <p className="py-10 text-center text-sm text-gray-500">Loading permissions...</p>
-          ) : !detail ? (
-            <p className="py-10 text-center text-sm text-red-600">{error || "Could not load permissions"}</p>
-          ) : (
-            <>
-              {readOnly && (
-                <p className="mb-3 rounded bg-yellow-50 px-3 py-2 text-xs text-yellow-800">
-                  {targetIsSuperadmin
-                    ? "Superadmin permissions cannot be edited."
-                    : isSelf
-                      ? "You cannot edit your own permissions."
-                      : "You do not have permission to edit permissions."}
-                </p>
-              )}
+          <>
+            {readOnly && (
+              <p className="mb-3 rounded bg-yellow-50 px-3 py-2 text-xs text-yellow-800">
+                {targetIsSuperadmin
+                  ? "Superadmin permissions cannot be edited."
+                  : isSelf
+                    ? "You cannot edit your own permissions."
+                    : "You do not have permission to edit permissions."}
+              </p>
+            )}
 
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="border-b text-left text-xs uppercase text-gray-500">
-                    <th className="w-36 py-2">Area</th>
-                    <th className="py-2">Permissions</th>
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b text-left text-xs uppercase text-gray-500">
+                  <th className="w-36 py-2">Area</th>
+                  <th className="py-2">Permissions</th>
+                </tr>
+              </thead>
+              <tbody>
+                {GROUPS.map((g) => (
+                  <tr key={g.resource} className="border-b align-top">
+                    <td className="py-3 font-medium">{g.label}</td>
+                    <td className="py-3">
+                      <div className="flex flex-wrap gap-x-5 gap-y-2">
+                        {g.actions.map((a) => {
+                          const perm = `${g.resource}:${a}`;
+                          const checked = draft.has(perm);
+                          const iHoldIt = hasPermission(myPerms, perm);
+                          // cannot grant what you do not hold yourself
+                          const disabled = readOnly || (!checked && !iHoldIt);
+                          const granted = grantSet.has(perm);
+                          const blocked = denySet.has(perm);
+                          return (
+                            <label
+                              key={perm}
+                              className={`flex items-center gap-1.5 ${disabled ? "cursor-not-allowed opacity-50" : "cursor-pointer"
+                                }`}
+                              title={!iHoldIt && !checked ? "You do not hold this permission" : perm}
+                            >
+                              <input
+                                type="checkbox"
+                                checked={checked}
+                                disabled={disabled}
+                                className={blocked ? "accent-red-500" : granted ? "accent-green-600" : ""}
+                                onChange={() => toggle(g.resource, a)}
+                              />
+                              <span className="capitalize">{a.replace("-", " ")}</span>
+                              {SENSITIVE.has(perm) && (
+                                <span className="rounded bg-red-100 px-1 text-[10px] text-red-700">
+                                  sensitive
+                                </span>
+                              )}
+                              {granted && (
+                                <span className="rounded bg-green-100 px-1 text-[10px] text-green-700">
+                                  granted
+                                </span>
+                              )}
+                              {blocked && (
+                                <span className="rounded bg-red-100 px-1 text-[10px] text-red-700">
+                                  blocked
+                                </span>
+                              )}
+                            </label>
+                          );
+                        })}
+                      </div>
+                    </td>
                   </tr>
-                </thead>
-                <tbody>
-                  {GROUPS.map((g) => (
-                    <tr key={g.resource} className="border-b align-top">
-                      <td className="py-3 font-medium">{g.label}</td>
-                      <td className="py-3">
-                        <div className="flex flex-wrap gap-x-5 gap-y-2">
-                          {g.actions.map((a) => {
-                            const perm = `${g.resource}:${a}`;
-                            const checked = draft.has(perm);
-                            const iHoldIt = hasPermission(myPerms, perm);
-                            // cannot grant what you do not hold yourself
-                            const disabled = readOnly || (!checked && !iHoldIt);
-                            const granted = checked && !roleSet.has(perm);
-                            const blocked = !checked && roleSet.has(perm);
-                            return (
-                              <label
-                                key={perm}
-                                className={`flex items-center gap-1.5 ${disabled ? "cursor-not-allowed opacity-50" : "cursor-pointer"
-                                  }`}
-                                title={!iHoldIt && !checked ? "You do not hold this permission" : perm}
-                              >
-                                <input
-                                  type="checkbox"
-                                  checked={checked}
-                                  disabled={disabled}
-                                  onChange={() => toggle(g.resource, a)}
-                                />
-                                <span className="capitalize">{a.replace("-", " ")}</span>
-                                {SENSITIVE.has(perm) && (
-                                  <span className="rounded bg-red-100 px-1 text-[10px] text-red-700">sensitive</span>
-                                )}
-                                {granted && (
-                                  <span className="rounded bg-green-100 px-1 text-[10px] text-green-700">granted</span>
-                                )}
-                                {blocked && (
-                                  <span className="rounded bg-red-100 px-1 text-[10px] text-red-700">blocked</span>
-                                )}
-                              </label>
-                            );
-                          })}
-                        </div>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </>
-          )}
+                ))}
+              </tbody>
+            </table>
+          </>
         </div>
 
         {/* footer */}
@@ -279,27 +316,33 @@ export default function ManageUserModal({ user, onClose, onSaved, onDeleted }: P
           <div className="flex items-center gap-3">
             {canDelete && (
               <button
-                onClick={deleteUser}
+                // onClick={deleteUser}
                 disabled={busy}
                 className="rounded border border-red-300 px-3 py-1.5 text-sm text-red-600 hover:bg-red-50 disabled:opacity-50"
               >
                 Delete user
               </button>
             )}
-            {error && detail && <span className="text-sm text-red-600">{error}</span>}
+            {error && <span className="text-sm text-red-600">{error}</span>}
           </div>
 
           <div className="flex items-center gap-2">
-            {!readOnly && detail && (
+            {!readOnly && (
               <button
-                onClick={() => setDraft(new Set(detail.rolePermissions))}
+                onClick={() => {
+                  setDraft(new Set(ROLE_PERMISSIONS[user.role] ?? []));
+                  setActive(user.isActive);
+                }}
                 disabled={busy}
                 className="rounded px-3 py-1.5 text-sm text-gray-600 hover:bg-gray-100"
               >
                 Reset to role defaults
               </button>
             )}
-            <button onClick={onClose} className="rounded border px-3 py-1.5 text-sm hover:bg-gray-50">
+            <button
+              onClick={onClose}
+              className="rounded border px-3 py-1.5 text-sm hover:bg-gray-50"
+            >
               Cancel
             </button>
             {!readOnly && (

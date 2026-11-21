@@ -19,6 +19,7 @@ import {
 import { useAppSelector } from "../../store";
 import { getInvoicesByCompany, getSuperUserData } from "@Data/data";
 import { MetricCard } from "@Components/ui/cards";
+import { hasPermission } from "../../types";
 
 const features = tableFeatures({
   columnVisibilityFeature,
@@ -35,6 +36,8 @@ const columnHelper = createColumnHelper<any, any>();
 
 export function Invoices() {
   const user = useAppSelector((state) => state.auth.user);
+  const access = hasPermission(user?.permissions ?? [], "invoice:read")
+  console.log(access)
 
   const [globalFilter, setGlobalFilter] = useState("");
   const [pagination, setPagination] = useState({ pageIndex: 0, pageSize: 10 });

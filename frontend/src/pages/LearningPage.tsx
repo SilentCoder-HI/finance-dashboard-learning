@@ -7,6 +7,7 @@ import { Day6LearningPage } from "./day6";
 import { Day7LearningPage } from "./day7";
 import { Day9LearningPage } from "./day9";
 import { Day10LearningPage } from "./day10";
+import { Day11LearningPage } from "./day11";
 
 export default function LearningPage() {
   return (
@@ -20,6 +21,7 @@ export default function LearningPage() {
       <Day7LearningPage />
       <Day9LearningPage />
       <Day10LearningPage />
+      <Day11LearningPage />
     </div>
   );
 }

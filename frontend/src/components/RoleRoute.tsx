@@ -1,29 +1,22 @@
 import { useEffect, useRef } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useAppSelector } from "../store/store";
-import type { Role } from "../store/store";
-import { navConfig } from "../nav/config";
 import { useToast } from "../toast/ToastContext";
+import { hasPermission } from "../types";
 
 type RoleRouteProps = {
-    allowedRoles?: Role[];
-    path?: string;
     children: React.ReactNode;
+    permission: string
 };
 
-export function RoleRoute({ allowedRoles, path, children }: RoleRouteProps) {
+export function RoleRoute({ children, permission }: RoleRouteProps) {
     const user = useAppSelector((state) => state.auth.user);
     const location = useLocation();
     const navigate = useNavigate();
     const { showToast } = useToast();
     const shown = useRef(false);
 
-    const resolvedRoles =
-        allowedRoles ??
-        navConfig.find((item) => item.path === (path ?? location.pathname))?.roles ??
-        [];
-
-    const forbidden = !!user && !resolvedRoles.includes(user.role);
+    const forbidden = !!user && !!permission && !hasPermission(user.permissions ?? [], permission)
 
     useEffect(() => {
         if (!user) {
